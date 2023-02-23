@@ -1,8 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Titillium+Web:wght@200&display=swap);
+* {margin: 0%;}
 /* 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap' 
 https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap
 https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Titillium+Web:wght@200&display=swap*/
 body {background-color: gray; font-family: 'Quicksand' sans-serif;}
-header {background-color: black; font-family: 'Titillium Web';} h1 {color: grey;} span {color: white;font-family: 'Titillium Web', cursive; font-style: italic;}
+header {background-color: black; font-family: 'Titillium Web';} 
+header .grid-layout {
+width: 80%;
+margin: 0 auto;
+background-color: khaki;}
+h1 {color: grey;} 
+span {color: white;font-family: 'Titillium Web', cursive; font-style: italic;}
 div {color: white;}
