@@ -12,4 +12,8 @@ margin: 0 auto;
 background-color: khaki;}
 h1 {color: grey;} 
 span {color: white;font-family: 'Titillium Web', cursive; font-style: italic;}
-div {color: white;}
+div {color: white}
+div .grid-layout {display: flex;
+justify-content: space-between;
+align-items: center;
+width: 300px;}
