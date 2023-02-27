@@ -4,30 +4,31 @@
 /* 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap' 
 https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap
 https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Titillium+Web:wght@200&display=swap*/
-body {background-color: gray; font-family: 'Quicksand' sans-serif;}
+body {background-color: #edeced; font-family: 'Quicksand' sans-serif;}
 header {background-color: black; font-family: 'Titillium Web';} 
-
 .grid-layout {
 width: 80%;
 margin: 0 auto;
 }
-
 header .header-flex {
     display: flex;
     justify-content: space-between;
 }
 h1 {color: grey;} 
 span {color: white;font-family: 'Titillium Web', cursive; font-style: italic;}
-div {color: white}
-
+main {margin: 20px; color: black;}
 header nav {
     width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header nav a {
     color: white;
     text-decoration: none;
 }
+#lapis {width: 100%;}
+.coluna-flex {display: flex; justify-content: space-between;}
+main .coluna1 {background-color: white; width: 70%;}
+main .coluna2 article {padding-bottom: 50px; margin-bottom: 20px; background-color: white}
+footer {background-color: black; font-family: 'Titillium Web'; color: white;}
