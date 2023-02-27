@@ -6,14 +6,28 @@ https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap
 https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Titillium+Web:wght@200&display=swap*/
 body {background-color: gray; font-family: 'Quicksand' sans-serif;}
 header {background-color: black; font-family: 'Titillium Web';} 
-header .grid-layout {
+
+.grid-layout {
 width: 80%;
 margin: 0 auto;
-background-color: khaki;}
+}
+
+header .header-flex {
+    display: flex;
+    justify-content: space-between;
+}
 h1 {color: grey;} 
 span {color: white;font-family: 'Titillium Web', cursive; font-style: italic;}
 div {color: white}
-div .grid-layout {display: flex;
-justify-content: space-between;
-align-items: center;
-width: 300px;}
+
+header nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
