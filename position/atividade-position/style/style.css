@@ -70,7 +70,6 @@ section.como-ajudamos {
     color: white;
 }
 section .como-ajudamos-flex {
-    position: relative;
     display: flex;
     justify-content: space-between;
 }
