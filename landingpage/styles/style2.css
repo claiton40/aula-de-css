@@ -1,23 +1,16 @@
-    @font-face {
-    font-family: 'BebasNeue-Regular';
-    src: url(/landingpage/assets_/fonts/BebasNeue-Regular.ttf)
-}
-/*reset do css*/
-* {margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
-
-.html {background-color: aqua;}
-
-    .layout-grid {width: 100%;
-    max-width: 1200px;
-margin: 0% auto;
-border: 4px #F9003D;}
-    
-   header nav a {font-family:'BebasNeue-Regular'}
-
-   header {background-color: #F9003D;}
-   
-   div nav {display: flex; justify-content: right;}
-
- 
+        @font-face {
+            font-family: "BebasNeue";
+            src: url(/assets_/fonts/BebasNeue-Regular.ttf);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body .layout-grif {
+            width: 100%;
+            max-width: 992px;
+            margin: 0 auto;
+        }
