@@ -49,10 +49,24 @@ body {
 }
 
 #bannerinfo {
-    background-color: blue;
-    display: flex;
-    align-items: center;
+    border-bottom: 2px solid #FFAF00;
     width: 550px;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 20px;
+}
+
+#bannerinfo h1 {
+    font-family: Bebas;
+    font-size: 96px;
+}
+
+#bannerinfo p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F9003D;
 }
 
 .principal {
