@@ -1,6 +1,6 @@
 @font-face {
     font-family: bebas;
-    src: url(/landingpage/assets/fonts/BebasNeue-Regular.ttf);
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
 }
 
 * {
@@ -9,7 +9,9 @@
     box-sizing: border-box;
 }
 
-body{background-color: darkblue;}
+body {
+    background-color: darkblue;
+}
 
 .layout-grid {
     color: aliceblue;
@@ -30,19 +32,38 @@ body{background-color: darkblue;}
     margin-right: 10%;
     display: flex;
     justify-content: space-between;
+}
+
+.navbar a {
     font-family: Bebas;
 }
-.banner {width: 1440px;
+
+.banner {
+    width: 1440px;
     height: 740px;
     top: 60px;
     color: white;
-    background-color: rebeccapurple;}
-    
-    .principal{
-        color: aliceblue;
-        width: 1200px;
-        height: 617px;
-        top: 864px;
-        left: 120px;
-    }
+    background-image: url(../assets/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#bannerinfo {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    width: 550px;
+}
+
+.principal {
+    color: aliceblue;
+    width: 1200px;
+    height: 617px;
+    top: 864px;
+    left: 120px;
+}
+
+footer div p {
+    display: flex;
+    justify-content: center;
+}
