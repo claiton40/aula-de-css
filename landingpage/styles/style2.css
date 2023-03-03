@@ -1,16 +1,48 @@
-        @font-face {
-            font-family: "BebasNeue";
-            src: url(/assets_/fonts/BebasNeue-Regular.ttf);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body .layout-grif {
-            width: 100%;
-            max-width: 992px;
-            margin: 0 auto;
-        }
+@font-face {
+    font-family: bebas;
+    src: url(/landingpage/assets/fonts/BebasNeue-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background-color: darkblue;}
+
+.layout-grid {
+    color: aliceblue;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    width: 1440px;
+    height: 60px;
+    background-color: #F9003D;
+}
+
+.navbar {
+    padding-top: 20px;
+    margin-left: 40%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Bebas;
+}
+.banner {width: 1440px;
+    height: 740px;
+    top: 60px;
+    color: white;
+    background-color: rebeccapurple;}
+    
+    .principal{
+        color: aliceblue;
+        width: 1200px;
+        height: 617px;
+        top: 864px;
+        left: 120px;
+    }
+
