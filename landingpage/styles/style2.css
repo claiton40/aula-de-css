@@ -52,7 +52,6 @@ body {
     background-size: cover;
 }
 
-.banner-flex "{}"
 
 #bannerinfo {
     border-bottom: 2px solid #FFAF00;
@@ -73,6 +72,12 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: #F9003D;
+}
+
+.sobre-flex {
+    background-color: #F9003D;
+    display: flex;
+    justify-content: space-between;
 }
 
 
