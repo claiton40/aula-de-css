@@ -10,7 +10,11 @@
 }
 
 body {
-    background-color: darkblue;
+
+    background-color:#080324;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: white;
 }
 
 .layout-grid {
@@ -48,14 +52,16 @@ body {
     background-size: cover;
 }
 
+.banner-flex "{}"
+
 #bannerinfo {
     border-bottom: 2px solid #FFAF00;
+    background-color: aquamarine;
     width: 550px;
     flex-direction: column;
     padding-top: 200px;
     padding-bottom: 20px;
 }
-
 #bannerinfo h1 {
     font-family: Bebas;
     font-size: 96px;
@@ -69,13 +75,7 @@ body {
     color: #F9003D;
 }
 
-.principal {
-    color: aliceblue;
-    width: 1200px;
-    height: 617px;
-    top: 864px;
-    left: 120px;
-}
+
 
 footer div p {
     display: flex;
