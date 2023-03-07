@@ -9,9 +9,15 @@
     box-sizing: border-box;
 }
 
+/* desktopfirst */
+/* esconde o burgao */
+.header #menu-hanburguer {
+    display: none;
+}
+
 body {
 
-    background-color:#080324;
+    background-color: #080324;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: white;
@@ -20,19 +26,23 @@ body {
 .layout-grid {
     color: aliceblue;
     width: 100%;
-    max-width: 992px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .cabecalho {
-    width: 1440px;
+    width: 100%;
     height: 60px;
     background-color: #F9003D;
 }
-
+.header-flex {
+    display: flex;
+    justify-content: flex-end;
+}
 .navbar {
     padding-top: 20px;
-    margin-left: 40%;
+    /* margin-left: 40%; */
+    width: 600px;
     margin-right: 10%;
     display: flex;
     justify-content: space-between;
@@ -60,6 +70,7 @@ body {
     /* background-color: aquamarine; */
     width: 550px;
 }
+
 #bannerinfo h1 {
     font-family: Bebas;
     font-size: 96px;
@@ -80,14 +91,37 @@ body {
     background-color: aqua;
 }
 
-.sobre-flex {display: flex;
+.sobre-flex {
+    display: flex;
 }
 
-.participantes {background-color: #F9003D;
-padding-left: 117px;
+.sobrebox {
+    width: 800px;
+}
+
+.participantes {
+    background-color: #F9003D;
+    width: 800px;
 }
 
 footer div p {
     display: flex;
     justify-content: center;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px ) {
+
+    main,footer{
+        display: none;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .header #menu-hanburguer {
+        display: block;
+    }
+
 }
