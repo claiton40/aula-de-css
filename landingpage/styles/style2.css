@@ -50,16 +50,15 @@ body {
     background-image: url(../assets/imagem-fundo-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 
 #bannerinfo {
     border-bottom: 2px solid #FFAF00;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 550px;
-    flex-direction: column;
-    padding-top: 200px;
-    padding-bottom: 20px;
 }
 #bannerinfo h1 {
     font-family: Bebas;
@@ -74,13 +73,19 @@ body {
     color: #F9003D;
 }
 
-.sobre-flex {
-    background-color: #F9003D;
-    display: flex;
-    justify-content: space-between;
+.sobre {
+    width: 1440px;
+    height: 740px;
+    top: 60px;
+    background-color: aqua;
 }
 
+.sobre-flex {display: flex;
+}
 
+.participantes {background-color: #F9003D;
+padding-left: 117px;
+}
 
 footer div p {
     display: flex;
