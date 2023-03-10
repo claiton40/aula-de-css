@@ -1,13 +1,43 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: blue;
+body {
+    /* background-color: blue; */
     color: white;
 }
+
+.layout-grid {
+    background-color: deeppink;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 header {
     background-color: #1B1426;
+    height: 60px
+}
+
+/* mobile first  */
+    /* header */
+
+header .headertop {display: none;
+}
+
+.navbar
+ {display: none;
+}
+
+header .menu-usuarios {display: none;
+}
+
+.botonflex {
+    display: flex;
+}
+header nav {
+    position: fixed;
+    top: 60px
 }
