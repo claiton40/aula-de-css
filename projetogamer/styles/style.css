@@ -68,6 +68,7 @@ header nav {
     background-color: grey;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     transition: 0.4s;
 
 }
