@@ -1,43 +1,63 @@
+/* Imports de fonts */
+
+/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    /* background-color: blue; */
-    color: white;
-}
-
+/* Classes Genéricas */
 .layout-grid {
-    background-color: deeppink;
     width: 90%;
     height: 100%;
     margin: 0 auto;
+    border: 1px solid salmon;
 }
 
-header {
-    background-color: #1B1426;
-    height: 60px
-}
-
-/* mobile first  */
-    /* header */
-
-header .headertop {display: none;
-}
-
-.navbar
- {display: none;
-}
-
-header .menu-usuarios {display: none;
-}
-
-.botonflex {
+/* justify content + align items */
+.alinhamento-between-center {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+body {
+    color: white;
+}
+/* Mobile First */
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #1B1426;
+}
+
+header .header-top {
+    display: none;
+}
+
+header .header-bottom {
+    height: 60px;
+}
+header .logo {
+    width: 86px;
+}
+
 header nav {
     position: fixed;
-    top: 60px
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: grey;
+
+    display: flex;
+    flex-direction: column;
+
+}
+header .menu-usuarios {
+    display: none;
 }
