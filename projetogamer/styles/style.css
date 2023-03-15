@@ -1,4 +1,8 @@
 /* Imports de fonts */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
 
 /* Reset CSS */
 
@@ -44,11 +48,14 @@ header {
     height: 60px;
     background-color: #1B1426;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100;
 }
 
 header .header-top {
     display: none;
+    
 }
 
 header .header-bottom {
@@ -93,41 +100,37 @@ main {
     margin-top: 60px;
 }
 
-/* Banner */
 .banner {
-    width: 100%;
+    background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
     height: 606px;
-    padding: 40px 0;
-
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
-    background-color: rebeccapurple;
-    background-image: url(../assets/images/fundo-banner-mobile.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
 }
 
-.banner h1 {
-    font-family: TitilliumWeb-Black;
+main .banner h1 {
+    display: flex;
+    justify-content: space-around;
+    height: 61px;
+    width: 222px;
     font-size: 40px;
-    text-shadow: 0 0 7px #FD4255;
-
+    /* background-color: aqua; */
+    font-family: TitilliumWeb-Black;
+padding-bottom: 406px;
+padding-top: 11px;
 }
 
-.banner .botao-sobre {
+.banner a {
     width: 171px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F9AA01;
     color: #1B1426;
-    text-decoration: none;
-    font-family: TitilliumWeb-Bold;
+    background-color: #F9AA01;
+    font-family: TitilliumWeb-Black;
     font-size: 24px;
+    text-align: center;
+    text-decoration: none;
     border-radius: 8px;
 }
