@@ -21,12 +21,12 @@
 }
 
 .mostrar-menu {
-left: 0 !important;
+    left: 0 !important;
 }
- 
+
 .mostrar-menu2 {
     right: 0 !important;
-    }
+}
 
 /* justify content + align items */
 .alinhamento-between-center {
@@ -55,7 +55,7 @@ header {
 
 header .header-top {
     display: none;
-    
+
 }
 
 header .header-bottom {
@@ -77,6 +77,7 @@ header nav {
     flex-direction: column;
     justify-content: space-between;
     transition: 0.4s;
+    text-decoration: none;
 
 }
 
@@ -119,8 +120,8 @@ main .banner h1 {
     font-size: 40px;
     /* background-color: aqua; */
     font-family: TitilliumWeb-Black;
-padding-bottom: 406px;
-padding-top: 11px;
+    padding-bottom: 406px;
+    padding-top: 11px;
 }
 
 .banner a {
@@ -133,4 +134,63 @@ padding-top: 11px;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
+}
+
+/* Tablets >= 768px */
+@media screen and (min-width: 768px) {}
+
+/* Desktop >= 1200px*/
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+/* header */
+
+header {
+height: 140px;
+}
+
+header .header-top {
+    display: block;
+    border-bottom: #F9AA01;
+}
+
+    /* esconde os elementos desnecessários */
+    #menu-hamburger,
+    #menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+header .logo {
+    width: 200px;
+}
+
+header .header-top .contatos {background-color: deeppink;}
+
+
+header .header-top .midias-sociais {background-color:mediumspringgreen}
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: red; */
+        justify-content: space-between;
+        padding-bottom: 0%;
+        background-color: transparent;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        width: 140px;
+        flex-direction: row;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
+    }
 }

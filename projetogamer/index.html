@@ -12,16 +12,16 @@
 <body>
     <header>
         <div class="header-top">
-            <div class="layout-grid">
+            <div class="layout-grid alinhamento-between-center">
 
                 <div class="contatos">
                     <div class="phone">
                         <img src="../projetogamer/assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
-                        <p>(11) 0900-1010</p>
+                        <span>(11) 0900-1010</span>
                     </div>
                     <div class="mail">
                         <img src="../projetogamer/assets/icons/icone_email.svg" alt="Ícone de email de contato">
-                        <p>contato@gamer.com.br</p>
+                        <span>contato@gamer.com.br</span>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!-- Menu Hamburger. Visível apenas no smartphone -->
-                <img onclick="mostrarMenu()" src="../projetogamer/assets/icons/burguermenuicon.svg"
+                <img id="menu-hamburger" onclick="mostrarMenu()" src="../projetogamer/assets/icons/burguermenuicon.svg"
                     alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
 
                 <img class="logo" src="../projetogamer/assets/images/logotipo-gamer.svg"
@@ -83,7 +83,7 @@
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img onclick="mostrarMenu2()" src="../projetogamer/assets/icons/trepointsmenuicon.svg"
+                <img id="menu-hamburger" onclick="mostrarMenu2()" src="../projetogamer/assets/icons/trepointsmenuicon.svg"
                     alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
 
                 <div class="menu-usuarios" id="menu-usuarios">
