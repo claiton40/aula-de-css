@@ -60,6 +60,10 @@ header .header-top {
 
 header .header-bottom {
     height: 60px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    /* background-color: #F9AA01; */
 }
 
 header .logo {
@@ -148,12 +152,13 @@ main .banner h1 {
 /* header */
 
 header {
-height: 140px;
+height: 200px;
 }
 
 header .header-top {
     display: block;
-    border-bottom: #F9AA01;
+    border-bottom:solid #F9AA01;
+    height: 40px;
 }
 
     /* esconde os elementos desnecessários */
@@ -166,12 +171,42 @@ header .header-top {
     }
 header .logo {
     width: 200px;
+    height: 70px;
+} 
+
+
+
+header .header-top .contatos{
+/* background-color: deeppink; */
+width: 400px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+/* align-content: center; */
 }
 
-header .header-top .contatos {background-color: deeppink;}
+header .header-top .contatos > div {
+display: flex;
+gap: 10px;
+width: 200px;
+}
 
 
-header .header-top .midias-sociais {background-color:mediumspringgreen}
+header .header-top .midias-sociais
+{
+/* background-color:mediumspringgreen; */
+height: 40px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-evenly;
+
+}
+
+header .header-bottom {
+    height: 160px;
+}
 
     header .header-bottom nav {
         position: static;
@@ -179,7 +214,7 @@ header .header-top .midias-sociais {background-color:mediumspringgreen}
         height: 50px;
         flex-direction: row;
         align-items: center;
-        /* background-color: red; */
+        background-color: red;
         justify-content: space-between;
         padding-bottom: 0%;
         background-color: transparent;
@@ -192,5 +227,26 @@ header .header-top .midias-sociais {background-color:mediumspringgreen}
         height: auto;
         background-color: transparent;
         background-image: none;
-    }
+        display: flex;
+        justify-content: space-between;
+    }  
+    
+    .banner {
+        background-image: url(../assets/images/Banner_background_1.png);
+       
+        height: 722px;}
+
+        main .banner h1 {
+            display: flex;
+            justify-content: space-around;
+            height: 61px;
+            width: 444px;
+            font-size: 80px;
+            /* background-color: aqua; */
+            font-family: TitilliumWeb-Black;
+            padding-bottom: 406px;
+            padding-top: 100px;
+        
+}
+
 }
