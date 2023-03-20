@@ -1,0 +1,200 @@
+/* Imports de fonts */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes Genéricas */
+.layout-grid {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid salmon; */
+}
+
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-menu2 {
+    right: 0 !important;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body {
+    color: white;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .header-top {
+    display: none;
+
+}
+
+header .header-bottom {
+    height: 60px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    /* background-color: #F9AA01; */
+}
+
+header .logo {
+    width: 86px;
+}
+
+header nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s;
+    text-decoration: none;
+
+}
+
+header .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -15vw;
+    width: 15vw;
+    height: 170px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.4s;
+
+}
+
+main {
+    margin-top: 60px;
+    margin-left: 0;
+    background-image: url(../assets/images/fundologinmobile.png);
+    height: 700px;
+    width: 374px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Desktop >= 1200px*/
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+/* header */
+
+header {
+height: 200px;
+}
+
+header .header-top {
+    display: block;
+    border-bottom:solid #F9AA01;
+    height: 40px;
+}
+
+    /* esconde os elementos desnecessários */
+    #menu-hamburger,
+    #menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+header .logo {
+    width: 200px;
+    height: 70px;
+} 
+
+
+
+header .header-top .contatos{
+/* background-color: deeppink; */
+width: 400px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+/* align-content: center; */
+}
+
+header .header-top .contatos > div {
+display: flex;
+gap: 10px;
+width: 200px;
+}
+
+
+header .header-top .midias-sociais
+{
+/* background-color:mediumspringgreen; */
+height: 40px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-evenly;
+
+}
+
+header .header-bottom {
+    height: 160px;
+}
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+        align-items: center;
+        background-color: red;
+        justify-content: space-between;
+        padding-bottom: 0%;
+        background-color: transparent;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        width: 140px;
+        flex-direction: row;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
+        display: flex;
+        justify-content: space-between;
+    }  
+}

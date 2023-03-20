@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Gamer Tarde</title>
+    <link rel="stylesheet" href="../projetogamer/styles/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="layout-grid alinhamento-between-center">
+
+                <div class="contatos">
+                    <div class="phone">
+                        <img src="../projetogamer/assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <span>(11) 0900-1010</span>
+                    </div>
+                    <div class="mail">
+                        <img src="../projetogamer/assets/icons/icone_email.svg" alt="Ícone de email de contato">
+                        <span>contato@gamer.com.br</span>
+                    </div>
+                </div>
+
+                <div class="midias-sociais">
+                    <a href="">
+                        <img src="../projetogamer/assets/icons/faceicon.svg" alt="Imagem link do facebook da empresa">
+                    </a>
+                    <a href="">
+                        <img src="../projetogamer/assets/icons/linkedinicon.svg"
+                            alt="Imagem link do Linkedin da empresa">
+                    </a>
+                    <a href="">
+                        <img src="../projetogamer/assets/icons/igicon.svg" alt="Imagem link do instagram da empresa">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="layout-grid alinhamento-between-center">
+                <!-- Menu Hamburger. Visível apenas no smartphone -->
+                <img id="menu-hamburger" onclick="mostrarMenu()" src="../projetogamer/assets/icons/burguermenuicon.svg"
+                    alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
+
+                <img class="logo" src="../projetogamer/assets/images/logotipo-gamer.svg"
+                    alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
+
+                <nav class="menu" id="menu">
+                    <a href="">Início</a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipes</a>
+                    <a href="">Notícias</a>
+
+                    <!-- vísível apenas no mobile -->
+                    <a class="phone">
+                        <img src="../projetogamer/assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <p>(11) 0900-1010</p>
+                    </a>
+                    <a class="mail">
+                        <img src="..//projetogamer/assets/icons/icone_email.svg" alt="Ícone de email de contato">
+                        <p>contato@gamer.com.br</p>
+                    </a>
+
+
+                    <div class="midias-sociais">
+                        <a href="">
+                            <img src="../projetogamer/assets/icons/faceicon.svg"
+                                alt="Imagem link do facebook da empresa">
+                        </a>
+                        <a href="">
+                            <img src="../projetogamer/assets/icons/linkedinicon.svg"
+                                alt="Imagem link do Linkedin da empresa">
+                        </a>
+                        <a href="">
+                            <img src="../projetogamer/assets/icons/igicon.svg"
+                                alt="Imagem link do instagram da empresa">
+                        </a>
+                    </div>
+                </nav>
+
+                <!-- menu 3 pontinhos -->
+                <img id="menu-hamburger" onclick="mostrarMenu2()" src="../projetogamer/assets/icons/trepointsmenuicon.svg"
+                    alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
+
+                <div class="menu-usuarios" id="menu-usuarios">
+                    <a href="">
+                        <img src="../projetogamer/assets/icons/loginicon.svg" alt="Ícone de perfil">
+                    </a>
+                    <a href="">
+                        <img src="../projetogamer/assets/icons/bagicon.svg" alt="Ícone de sacola">
+                    </a>
+                    <a href="">
+                        <img src="../projetogamer/assets/icons/searchicon.svg" alt="Ícone lupa de pesquisa">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+    </main>
+
+    <footer>
+    </footer>
+    
+    <script>
+
+
+        function mostrarMenu() {
+            // pega a nav pelo id
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+
+        }
+
+        function mostrarMenu2() {
+            // pega a nav pelo id
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-menu2");
+
+        }
+
+    </script>
+</body>
+
+</html>

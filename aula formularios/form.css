@@ -1,0 +1,10 @@
+body {display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-items: center; */
+    color: fuchsia;
+    background-color: aqua;
+}
+
+body button {width: 250px;
+}
