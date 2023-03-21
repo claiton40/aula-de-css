@@ -104,10 +104,51 @@ main {
     margin-top: 60px;
     margin-left: 0;
     background-image: url(../assets/images/fundologinmobile.png);
-    height: 700px;
-    width: 374px;
+    height: 687px;
+    width: 374;
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form { 
+    /* background-color: aqua; */
+    width: 335px;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+form h1 {
+    /* background-color: deepskyblue; */
+    text-align: center;
+    border-top: #F9AA01 3px solid;
+    width: 90px;
+    height: 43px;
+    font-size: 28;
+    font-family: TitilliumWeb-Black;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+main form div {
+    /* background-color: deeppink; */
+    /* border: solid chartreuse; */
+    width: 273px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+main form button {
+    width: 273px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 76px;
 }
 
 /* Desktop >= 1200px*/
