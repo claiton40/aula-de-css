@@ -1,7 +1,12 @@
 /* Imports de fonts */
 @font-face {
     font-family: TitilliumWeb-Black;
-    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);}
+
+@font-face {
+        font-family: TitilliumWeb-Regular;
+        src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+    
 }
 
 /* Reset CSS */
@@ -114,13 +119,15 @@ main {
 }
 
 main form { 
-    /* background-color: aqua; */
+    background-color: rgba(16, 0, 16, .50);
     width: 335px;
     height: 462px;
+    border: solid 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
+    /* mexer na borda */
 }
 
 form h1 {
@@ -136,11 +143,26 @@ form h1 {
 }
 
 main form div {
-    /* background-color: deeppink; */
-    /* border: solid chartreuse; */
+    background-image: linear-gradient( to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10) ) ;
     width: 273px;
     height: 40px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main form input {
+    background-color:transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: TitilliumWeb-Regular;
+    font-size: 16px;
+}
+
+main form input::placeholder {
+    color: white;
 }
 
 main form button {
@@ -149,6 +171,9 @@ main form button {
     border-radius: 8px;
     margin-top: 50px;
     margin-bottom: 76px;
+    background-color: #F9AA01;
+    font-size: 24px;
+    font-family: TitilliumWeb-Black;
 }
 
 /* Desktop >= 1200px*/
