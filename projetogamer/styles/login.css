@@ -119,15 +119,20 @@ main {
 }
 
 main form { 
-    background-color: rgba(16, 0, 16, .50);
+    background: 
+    /* content */
+    linear-gradient( to right bottom, rgba(36, 20, 20, 0.6), rgba(36, 20, 20, 0.1) ) content-box, 
+    /* border */
+    linear-gradient( to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10)  ) border-box;
     width: 335px;
     height: 462px;
-    border: solid 3px;
+    border: solid transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
-    /* mexer na borda */
+   
+
 }
 
 form h1 {
@@ -143,13 +148,17 @@ form h1 {
 }
 
 main form div {
-    background-image: linear-gradient( to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10) ) ;
     width: 273px;
     height: 40px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border: solid;
+    background: linear-gradient( to right bottom, rgba(239, 239, 239, 0.80), rgba(239, 239, 239, 0.02) );
+
+    backdrop-filter: blur(4px); 
+
 }
 
 main form input {
