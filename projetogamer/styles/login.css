@@ -121,9 +121,9 @@ main {
 main form { 
     background: 
     /* content */
-    linear-gradient( to right bottom, rgba(36, 20, 20, 0.6), rgba(36, 20, 20, 0.1) ) content-box, 
+    linear-gradient( to right bottom, rgba(30, 20, 38, 0.38), rgba(60, 30, 65, 0.60) ) content-box, 
     /* border */
-    linear-gradient( to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10)  ) border-box;
+    linear-gradient( to right bottom, rgba(239, 239, 239, 0.17), rgba(60, 30, 65, 0.1)  ) border-box;
     width: 335px;
     height: 462px;
     border: solid transparent;
@@ -154,9 +154,12 @@ main form div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: solid;
-    background: linear-gradient( to right bottom, rgba(239, 239, 239, 0.80), rgba(239, 239, 239, 0.02) );
-
+    border:  solid transparent;
+    background: 
+                /* content */
+                linear-gradient( to right bottom, rgba(239, 239, 239, 0.40), rgba(239, 239, 239, 0.01) ) content-box, 
+                /* border */
+                linear-gradient( to right bottom,rgba(239, 239, 239, 0.50), rgba(239, 239, 239, 0.01) ) border-box;
     backdrop-filter: blur(4px); 
 
 }
@@ -183,6 +186,7 @@ main form button {
     background-color: #F9AA01;
     font-size: 24px;
     font-family: TitilliumWeb-Black;
+    text-transform: capitalize;
 }
 
 /* Desktop >= 1200px*/

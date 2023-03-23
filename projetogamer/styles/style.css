@@ -4,6 +4,12 @@
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
 
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
 /* Reset CSS */
 
 * {
@@ -75,14 +81,30 @@ header nav {
     top: 60px;
     left: -80vw;
     width: 80vw;
-    height: 100vh;
-    background-color: grey;
+    height: 100vw;
+    background-image: linear-gradient( to right bottom, rgba(27, 20, 38, 100), rgba(255, 255, 255, 0.70) );
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     transition: 0.4s;
-    text-decoration: none;
+    font-family: inter;
+}
 
+
+.phone, .mail {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+}
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-family: inter;
 }
 
 header .menu-usuarios {
@@ -99,6 +121,8 @@ header .menu-usuarios {
     transition: 0.4s;
 
 }
+
+
 
 /* MAIN */
 main {
