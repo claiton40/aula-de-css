@@ -81,30 +81,48 @@ header nav {
     top: 60px;
     left: -80vw;
     width: 80vw;
-    height: 100vw;
-    background-image: linear-gradient( to right bottom, rgba(27, 20, 38, 100), rgba(255, 255, 255, 0.70) );
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    height: 600px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 100), rgba(255, 255, 255, 0.70));
     transition: 0.4s;
     font-family: inter;
-}
-
-
-.phone, .mail {
-    /* background-color: aqua; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    width: 250px;
 }
-
 
 header nav a {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 85px;
+    border-bottom: #F9AA01 solid 2px;
     text-decoration: none;
     font-family: inter;
+    font-size: 15px;
+    color: white;
+}
+
+.phone, .mail {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 85px;
+    border: none
+    
+}
+
+.mail { border-top: #F9AA01 solid 2px;}
+
+.midias-sociais {
+    /* background-color:deeppink; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    width: 80vw;
+    height: 85px;
 }
 
 header .menu-usuarios {
@@ -113,7 +131,7 @@ header .menu-usuarios {
     right: -15vw;
     width: 15vw;
     height: 170px;
-    background-color: grey;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 100), rgba(255, 255, 255, 0.70));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,17 +191,18 @@ main .banner h1 {
         width: 100%;
         max-width: 1200px;
     }
-/* header */
 
-header {
-height: 200px;
-}
+    /* header */
 
-header .header-top {
-    display: block;
-    border-bottom:solid #F9AA01;
-    height: 40px;
-}
+    header {
+        height: 200px;
+    }
+
+    header .header-top {
+        display: block;
+        border-bottom: solid #F9AA01;
+        height: 40px;
+    }
 
     /* esconde os elementos desnecessários */
     #menu-hamburger,
@@ -193,44 +212,44 @@ header .header-top {
     header .header-bottom nav .midias-sociais {
         display: none;
     }
-header .logo {
-    width: 200px;
-    height: 70px;
-} 
+
+    header .logo {
+        width: 200px;
+        height: 70px;
+    }
 
 
 
-header .header-top .contatos{
-/* background-color: deeppink; */
-width: 400px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-/* align-content: center; */
-}
+    header .header-top .contatos {
+        /* background-color: deeppink; */
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-content: center; */
+    }
 
-header .header-top .contatos > div {
-display: flex;
-gap: 10px;
-width: 200px;
-}
+    header .header-top .contatos>div {
+        display: flex;
+        gap: 10px;
+        width: 200px;
+    }
 
 
-header .header-top .midias-sociais
-{
-/* background-color:mediumspringgreen; */
-height: 40px;
-width: 200px;
-display: flex;
-justify-content: center;
-align-items: center;
-justify-content: space-evenly;
+    header .header-top .midias-sociais {
+        /* background-color:mediumspringgreen; */
+        height: 40px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
 
-}
+    }
 
-header .header-bottom {
-    height: 160px;
-}
+    header .header-bottom {
+        height: 160px;
+    }
 
     header .header-bottom nav {
         position: static;
@@ -253,24 +272,25 @@ header .header-bottom {
         background-image: none;
         display: flex;
         justify-content: space-between;
-    }  
-    
+    }
+
     .banner {
         background-image: url(../assets/images/Banner_background_1.png);
-       
-        height: 722px;}
 
-        main .banner h1 {
-            display: flex;
-            justify-content: space-around;
-            height: 61px;
-            width: 444px;
-            font-size: 80px;
-            /* background-color: aqua; */
-            font-family: TitilliumWeb-Black;
-            padding-bottom: 406px;
-            padding-top: 100px;
-        
-}
+        height: 722px;
+    }
+
+    main .banner h1 {
+        display: flex;
+        justify-content: space-around;
+        height: 61px;
+        width: 444px;
+        font-size: 80px;
+        /* background-color: aqua; */
+        font-family: TitilliumWeb-Black;
+        padding-bottom: 406px;
+        padding-top: 100px;
+
+    }
 
 }
