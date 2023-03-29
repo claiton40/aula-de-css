@@ -1,0 +1,15 @@
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\bin\Debug\net7.0\idade.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\bin\Debug\net7.0\idade.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\bin\Debug\net7.0\idade.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\bin\Debug\net7.0\idade.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\bin\Debug\net7.0\idade.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\refint\idade.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\idade.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\idade\obj\Debug\net7.0\ref\idade.dll
