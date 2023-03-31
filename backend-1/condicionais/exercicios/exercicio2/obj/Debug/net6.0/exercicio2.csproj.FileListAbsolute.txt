@@ -1,0 +1,15 @@
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\bin\Debug\net6.0\exercicio2.exe
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\bin\Debug\net6.0\exercicio2.deps.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\bin\Debug\net6.0\exercicio2.runtimeconfig.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\bin\Debug\net6.0\exercicio2.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\bin\Debug\net6.0\exercicio2.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.csproj.AssemblyReference.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.AssemblyInfoInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.AssemblyInfo.cs
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.csproj.CoreCompileInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\refint\exercicio2.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\exercicio2.genruntimeconfig.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\condicionais\exercicios\exercicio2\obj\Debug\net6.0\ref\exercicio2.dll

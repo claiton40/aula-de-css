@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio2\\exercicio2.csproj",
-      "projectName": "exercicio2",
-      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio2\\exercicio2.csproj",
+      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio3\\exercicio3.csproj",
+      "projectName": "exercicio3",
+      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio3\\exercicio3.csproj",
       "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio2\\obj\\",
+      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"
