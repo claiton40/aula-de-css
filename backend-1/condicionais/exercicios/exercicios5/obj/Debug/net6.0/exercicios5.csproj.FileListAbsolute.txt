@@ -1,0 +1,15 @@
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\bin\Debug\net6.0\exercicios5.exe
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\bin\Debug\net6.0\exercicios5.deps.json
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\bin\Debug\net6.0\exercicios5.runtimeconfig.json
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\bin\Debug\net6.0\exercicios5.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\bin\Debug\net6.0\exercicios5.pdb
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.csproj.AssemblyReference.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.AssemblyInfoInputs.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.AssemblyInfo.cs
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.csproj.CoreCompileInputs.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\refint\exercicios5.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.pdb
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\exercicios5.genruntimeconfig.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\condicionais\exercicios\exercicios5\obj\Debug\net6.0\ref\exercicios5.dll

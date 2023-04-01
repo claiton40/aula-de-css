@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\siqueiracla\\.nuget\\packages\\": {}
+    "C:\\Users\\Claiton\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio4\\exercicio4.csproj",
+      "projectUniqueName": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio4\\exercicio4.csproj",
       "projectName": "exercicio4",
-      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio4\\exercicio4.csproj",
-      "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio4\\obj\\",
+      "projectPath": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio4\\exercicio4.csproj",
+      "packagesPath": "C:\\Users\\Claiton\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\condicionais\\exercicios\\exercicio4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Claiton\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
