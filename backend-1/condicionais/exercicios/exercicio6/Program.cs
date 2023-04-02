@@ -8,16 +8,18 @@ if (freq>totalfreq){
     Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine("frequência invalida");
 }
-else if (freq<75){
+else if (freq<75 | media<3){
 Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine("Aluno reprovado!");
 Console.ResetColor();
 }
-else if (media >=3&& media <=7) {
+
+else if (media<=7) {
 Console.BackgroundColor = ConsoleColor.Yellow;
 Console.WriteLine("Aluno de recuperação!");
 Console.ResetColor();
 }
+
 else {
 Console.BackgroundColor = ConsoleColor.Green;
 Console.WriteLine ("Aluno aprovado!!");
