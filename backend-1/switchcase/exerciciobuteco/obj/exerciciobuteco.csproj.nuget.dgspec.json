@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\condicionais\\exercicios3002\\exercicio6\\exercicio6.csproj": {}
+    "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\switchcase\\exerciciobuteco\\exerciciobuteco.csproj": {}
   },
   "projects": {
-    "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\condicionais\\exercicios3002\\exercicio6\\exercicio6.csproj": {
+    "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\switchcase\\exerciciobuteco\\exerciciobuteco.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\condicionais\\exercicios3002\\exercicio6\\exercicio6.csproj",
-        "projectName": "exercicio6",
-        "projectPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\condicionais\\exercicios3002\\exercicio6\\exercicio6.csproj",
+        "projectUniqueName": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\switchcase\\exerciciobuteco\\exerciciobuteco.csproj",
+        "projectName": "exerciciobuteco",
+        "projectPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\switchcase\\exerciciobuteco\\exerciciobuteco.csproj",
         "packagesPath": "C:\\Users\\29321863885\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\condicionais\\exercicios3002\\exercicio6\\obj\\",
+        "outputPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\switchcase\\exerciciobuteco\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\29321863885\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",

@@ -5,11 +5,11 @@ Console.WriteLine("insira as presenças");
 int freq = int.Parse (Console.ReadLine());
 int totalfreq = (100);
 if (freq>totalfreq){
-    Console.ForegroundColor = ConsoleColor.Red;
+    Console.BackgroundColor = ConsoleColor.Red;
 Console.WriteLine("frequência invalida");
 }
-else if (freq<75 | media<3){
-Console.ForegroundColor = ConsoleColor.Red;
+else if (freq<75 || media<3){
+Console.BackgroundColor = ConsoleColor.Red;
 Console.WriteLine("Aluno reprovado!");
 Console.ResetColor();
 }
