@@ -13,3 +13,18 @@ C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\switchcase\exerciciobuteco\
 C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.pdb
 C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.genruntimeconfig.cache
 C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\ref\exerciciobuteco.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\bin\Debug\net6.0\exerciciobuteco.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\bin\Debug\net6.0\exerciciobuteco.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\bin\Debug\net6.0\exerciciobuteco.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\bin\Debug\net6.0\exerciciobuteco.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\bin\Debug\net6.0\exerciciobuteco.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\refint\exerciciobuteco.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\exerciciobuteco.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\switchcase\exerciciobuteco\obj\Debug\net6.0\ref\exerciciobuteco.dll
