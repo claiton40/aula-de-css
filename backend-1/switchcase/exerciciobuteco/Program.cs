@@ -13,8 +13,7 @@ char pinga = char.Parse(Console.ReadLine())!;
 Console.WriteLine ("Acompanha gelo? s ou n");
 string gelo = Console.ReadLine()!;
 
-static void geloso(string gelo)
-{
+
 if (gelo == "S") 
 {
     Console.WriteLine("com gelo");
@@ -22,18 +21,20 @@ if (gelo == "S")
 else if (gelo == "N")
 {Console.WriteLine("sem gelo");
 }
+else
+{ Console.WriteLine($"opcao invalida");
 }
 
 switch (pinga)
 {
     case '1':
-        Console.WriteLine($"voce escolheu corote " + geloso);
+        Console.WriteLine($"voce escolheu corote"  );
         break;
     case '2':
-        Console.WriteLine($"voce escolheu jurupinga " + geloso);
+        Console.WriteLine($"voce escolheu jurupinga " );
         break; 
     case '3':
-        Console.WriteLine($"voce escolheu etanol " + geloso);
+        Console.WriteLine($"voce escolheu etanol ");
         break;
 default:
         Console.WriteLine($"nao temos essa opcao");        
