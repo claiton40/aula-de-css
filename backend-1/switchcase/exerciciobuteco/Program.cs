@@ -2,30 +2,38 @@
 // A depender da opção, exiba uma mensagem se gostaria de acrescentar gelo.
 // Se sim, exiba uma mensagem que a bebida em questão será com adicional de gelo, caso contrário, a bebida é sem gelo adicional.
 Console.WriteLine($@"Buteco do Claitinho
-Ambiente caseiro (bebe aqui, morre em casa)
+Ambiente cas'eiro (bebe aqui, morre em casa)
 
 ");
 Console.WriteLine($@"digite:
 1 para corote
 2 para jurupinga
 3 para etanol");
-char pinga = char.Parse(Console.ReadLine());
+char pinga = char.Parse(Console.ReadLine())!;
 Console.WriteLine ("Acompanha gelo? s ou n");
-if (gelo == "S")
+string gelo = Console.ReadLine()!;
+
+static void geloso(string gelo)
 {
-    Console.WriteLine ("com gelo");
+if (gelo == "S") 
+{
+    Console.WriteLine("com gelo");
+    }
+else if (gelo == "N")
+{Console.WriteLine("sem gelo");
+}
 }
 
 switch (pinga)
 {
     case '1':
-        Console.WriteLine($"voce escolheu corote");
+        Console.WriteLine($"voce escolheu corote " + geloso);
         break;
     case '2':
-        Console.WriteLine($"voce escolheu jurupinga");
-        break;
+        Console.WriteLine($"voce escolheu jurupinga " + geloso);
+        break; 
     case '3':
-        Console.WriteLine($"voce escolheu etanol");
+        Console.WriteLine($"voce escolheu etanol " + geloso);
         break;
 default:
         Console.WriteLine($"nao temos essa opcao");        
