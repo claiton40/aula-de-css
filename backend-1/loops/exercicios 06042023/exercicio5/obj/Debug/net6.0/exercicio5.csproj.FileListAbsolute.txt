@@ -13,3 +13,18 @@ C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\loops\exercicios 0604
 C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.pdb
 C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.genruntimeconfig.cache
 C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\ref\exercicio5.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\bin\Debug\net6.0\exercicio5.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\bin\Debug\net6.0\exercicio5.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\bin\Debug\net6.0\exercicio5.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\bin\Debug\net6.0\exercicio5.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\bin\Debug\net6.0\exercicio5.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\refint\exercicio5.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\exercicio5.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\exercicios 06042023\exercicio5\obj\Debug\net6.0\ref\exercicio5.dll
