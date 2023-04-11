@@ -1,0 +1,15 @@
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\bin\Debug\net6.0\exercicio6.exe
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\bin\Debug\net6.0\exercicio6.deps.json
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\bin\Debug\net6.0\exercicio6.runtimeconfig.json
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\bin\Debug\net6.0\exercicio6.dll
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\bin\Debug\net6.0\exercicio6.pdb
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.csproj.AssemblyReference.cache
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.AssemblyInfoInputs.cache
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.AssemblyInfo.cs
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.csproj.CoreCompileInputs.cache
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.dll
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\refint\exercicio6.dll
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.pdb
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\exercicio6.genruntimeconfig.cache
+C:\Users\clait\Documents\backupclaiton\Backup\dev\senai\todas-aulas\backend-1\loops\exercicios 06042023\exercicio6\obj\Debug\net6.0\ref\exercicio6.dll
