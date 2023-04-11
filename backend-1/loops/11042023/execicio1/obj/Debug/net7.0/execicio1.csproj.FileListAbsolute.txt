@@ -1,0 +1,15 @@
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\bin\Debug\net7.0\execicio1.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\bin\Debug\net7.0\execicio1.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\bin\Debug\net7.0\execicio1.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\bin\Debug\net7.0\execicio1.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\bin\Debug\net7.0\execicio1.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\refint\execicio1.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\execicio1.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\loops\11042023\execicio1\obj\Debug\net7.0\ref\execicio1.dll
