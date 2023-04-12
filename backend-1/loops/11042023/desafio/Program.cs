@@ -4,13 +4,21 @@
 int[] n = new int[6];
 for (int i = 0; i < 6; i++)
 {
-    Console.WriteLine($"insira o {i+1}º numero");
-   n [i] = int.Parse(Console.ReadLine());
+Console.WriteLine($"insira o {i+1}º numero");
+n [i] = int.Parse(Console.ReadLine());
 }
-
-for (int i = 0; i < 6; i++)
+for (int i = 1; i <=6; i++)
 {
-
-Console.WriteLine($"O numero e {n[i]*2}");
-
+if (i%2==0)
+{
+Console.ForegroundColor=ConsoleColor.Magenta;
+Console.WriteLine($"{i}--par");
+Console.ResetColor();
+}
+else
+{
+Console.ForegroundColor=ConsoleColor.Yellow;
+Console.WriteLine($"{i}--impar");
+Console.ResetColor();
+}
 }
