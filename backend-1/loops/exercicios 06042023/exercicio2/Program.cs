@@ -6,5 +6,5 @@ string senha = Console.ReadLine();
 while (senha == login)
 {
     Console.WriteLine($"Senha invalida");
-senha = Console.ReadLine();
+    senha = Console.ReadLine();
 }

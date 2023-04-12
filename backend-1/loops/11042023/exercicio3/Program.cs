@@ -25,10 +25,10 @@ string[] aluno = new string[5];
 int[] idade = new int[5];
 for (int i = 0; i < 5; i++)
 {
-    Console.WriteLine($"insira o nome do fulano");
-   aluno [i] = Console.ReadLine();
-   Console.WriteLine($"insira a idade do fulano");
-   idade [i] = int.Parse(Console.ReadLine());
+Console.WriteLine($"insira o nome do fulano");
+aluno [i] = Console.ReadLine();
+Console.WriteLine($"insira a idade do fulano");
+idade [i] = int.Parse(Console.ReadLine());
 }
 for (int i = 0; i < 5; i++)
 {
