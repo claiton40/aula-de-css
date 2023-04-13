@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\29321863885\\.nuget\\packages\\": {}
+    "C:\\Users\\siqueiracla\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\funçoes\\funçoes.csproj",
+      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\funçoes\\funçoes.csproj",
       "projectName": "funçoes",
-      "projectPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\funçoes\\funçoes.csproj",
-      "packagesPath": "C:\\Users\\29321863885\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\funçoes\\obj\\",
+      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\funçoes\\funçoes.csproj",
+      "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\funçoes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\29321863885\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

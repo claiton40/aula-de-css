@@ -13,3 +13,18 @@ C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\o
 C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.pdb
 C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.genruntimeconfig.cache
 C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\ref\funçoes.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\bin\Debug\net7.0\funçoes.exe
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\bin\Debug\net7.0\funçoes.deps.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\bin\Debug\net7.0\funçoes.runtimeconfig.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\bin\Debug\net7.0\funçoes.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\bin\Debug\net7.0\funçoes.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.csproj.AssemblyReference.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.AssemblyInfoInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.AssemblyInfo.cs
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.csproj.CoreCompileInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\refint\funçoes.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\funçoes.genruntimeconfig.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\obj\Debug\net7.0\ref\funçoes.dll

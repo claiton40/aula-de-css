@@ -1,25 +1,63 @@
 ﻿// criar metodo para: multiplicar, dividir, subtrair
-static float X (float n1, float n2)
+string escolha = ("");
+
+static float X(float n1, float n2)
 {
-    float n=n1*n2;
+    float n = n1 * n2;
     return n;
 }
-static float Dividir (float n1, float n2)
+static float Dividir(float n1, float n2)
 {
-    float n=n1/n2;
+    float n = n1 / n2;
     return n;
 }
-static float Subtracao (float n1, float n2)
+static float Subtracao(float n1, float n2)
 {
-    float n=n1*n2;
+    float n = n1 - n2;
     return n;
 }
+
 Console.WriteLine($"insira o 1º nº");
 int numero1 = int.Parse(Console.ReadLine());
 Console.WriteLine($"insira o 2º nº");
 int numero2 = int.Parse(Console.ReadLine());
 
-float teste = X(numero1, numero2 );
+Console.WriteLine($@"escolha a operação
+X - Multipicar
+/ - Dividir
+- - Subtrair");
+escolha = Console.ReadLine().ToUpper();
 
-Console.WriteLine(teste);
+if (escolha == "X")
+{
+    float teste = X(numero1, numero2);
+ Console.ForegroundColor=ConsoleColor.DarkMagenta;
+    Console.WriteLine($"{numero1}X{numero2} = {teste}");
+    Console.ResetColor();
+}
 
+
+else if (escolha == "/")
+{
+    float teste = Dividir(numero1, numero2);
+    Console.ForegroundColor=ConsoleColor.DarkMagenta;
+    Console.WriteLine($"{numero1}:{numero2} = {teste}");
+    Console.ResetColor();
+}
+
+else if (escolha == "-")
+{
+    float teste = Subtracao(numero1, numero2);
+    Console.ForegroundColor=ConsoleColor.DarkMagenta;
+    Console.WriteLine($"{numero1}-{numero2} = {teste}");
+    Console.ResetColor();
+}
+
+else
+{
+    Console.WriteLine($@"escolha a operação
+X - Multipicar
+/ - Dividir
+- - Subtrair");
+    escolha = Console.ReadLine();
+}
