@@ -3,3 +3,13 @@ C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\e
 C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\exercicio3.AssemblyInfoInputs.cache
 C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\exercicio3.AssemblyInfo.cs
 C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\exercicio3.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\bin\Debug\net7.0\exercicio3.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\bin\Debug\net7.0\exercicio3.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\bin\Debug\net7.0\exercicio3.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\bin\Debug\net7.0\exercicio3.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\bin\Debug\net7.0\exercicio3.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\exercicio3.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\refint\exercicio3.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\exercicio3.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\exercicio3.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio3\obj\Debug\net7.0\ref\exercicio3.dll
