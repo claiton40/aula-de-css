@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj": {}
+    "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj": {}
   },
   "projects": {
-    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj": {
+    "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj",
+        "projectUniqueName": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj",
         "projectName": "desafio do Fibonacci",
-        "projectPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj",
-        "packagesPath": "C:\\Users\\clait\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\obj\\",
+        "projectPath": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\desafio do Fibonacci.csproj",
+        "packagesPath": "C:\\Users\\Claiton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\loops\\exercicios 06042023\\desafio do Fibonacci\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\clait\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Claiton\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
