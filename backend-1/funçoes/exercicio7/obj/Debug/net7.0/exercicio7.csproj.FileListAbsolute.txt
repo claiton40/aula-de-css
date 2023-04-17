@@ -1,0 +1,15 @@
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\bin\Debug\net7.0\exercicio7.exe
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\bin\Debug\net7.0\exercicio7.deps.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\bin\Debug\net7.0\exercicio7.runtimeconfig.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\bin\Debug\net7.0\exercicio7.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\bin\Debug\net7.0\exercicio7.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.csproj.AssemblyReference.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.AssemblyInfoInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.AssemblyInfo.cs
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.csproj.CoreCompileInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\refint\exercicio7.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\exercicio7.genruntimeconfig.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\funçoes\exercicio7\obj\Debug\net7.0\ref\exercicio7.dll
