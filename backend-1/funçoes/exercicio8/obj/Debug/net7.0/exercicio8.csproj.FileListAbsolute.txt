@@ -1,0 +1,15 @@
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\bin\Debug\net7.0\exercicio8.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\bin\Debug\net7.0\exercicio8.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\bin\Debug\net7.0\exercicio8.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\bin\Debug\net7.0\exercicio8.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\bin\Debug\net7.0\exercicio8.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\refint\exercicio8.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\exercicio8.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\funçoes\exercicio8\obj\Debug\net7.0\ref\exercicio8.dll
