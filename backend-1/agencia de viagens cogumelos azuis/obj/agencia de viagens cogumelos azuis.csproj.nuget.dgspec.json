@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj": {}
+    "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj": {
+    "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
+        "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
         "projectName": "agencia de viagens cogumelos azuis",
-        "projectPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
-        "packagesPath": "C:\\Users\\clait\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\obj\\",
+        "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
+        "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\clait\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
