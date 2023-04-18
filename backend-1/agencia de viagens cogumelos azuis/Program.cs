@@ -16,6 +16,8 @@ do
      senha = int.Parse(Console.ReadLine());
     
 } while (senha!= 123456);
+
+do{
 Console.ForegroundColor=ConsoleColor.Blue;
 Console.WriteLine(@$"
     Bem vindo a Cogumelos Azuis Viagens
@@ -28,9 +30,10 @@ Console.WriteLine(@$"
 menu = Console.ReadLine();
 Console.ResetColor();
 
-  switch (menu){
-
+  switch (menu)
+  {
   case "1":
+ 
 for (var i = 0; i <= 3; i++)
 {
 Console.WriteLine($"Nome");
@@ -43,25 +46,35 @@ Console.WriteLine($"Data do voo");
 passagem[0,3] = Console.ReadLine();
 Console.WriteLine($"deseja cadastrar nova passagem?");
 menu = Console.ReadLine().ToUpper();
+if(menu == "N")
+{
+  i = (8);
 }
+  }
+
     break;
     case "2":
       for (var i = 0; i <= 3; i++)
 {
-  Console.ForegroundColor=ConsoleColor.Blue;  
-Console.WriteLine($"Nome");
-Console.WriteLine(passagem[0,0]);
-Console.WriteLine($"Origem");
-Console.WriteLine(passagem[0,1]);
-Console.WriteLine($"Destino");
-Console.WriteLine(passagem[0,2]);
-Console.WriteLine($"Data do voo");
-Console.WriteLine(passagem[0,3]);
+Console.ForegroundColor=ConsoleColor.Blue;  
+Console.WriteLine($"Nome: {passagem[0,0]}");
+Console.WriteLine($"Origem: {passagem[0,1]}");
+Console.WriteLine($"Destino: {passagem[0,2]}");
+Console.WriteLine($"Data do voo: {passagem[0,3]}");
+Console.WriteLine();
 Console.ResetColor();
 }
-    break;
+break;
+
+case "0":
+
+Console.WriteLine($"FIM");
+
+ break;
+
   default:
+  Console.WriteLine($"OPCAO INVALIDA");
+  
     break;
 }  
-
-
+} while (menu != "0");
