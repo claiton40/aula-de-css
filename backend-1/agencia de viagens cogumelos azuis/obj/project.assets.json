@@ -1,38 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\29321863885\\.nuget\\packages\\": {}
+    "C:\\Users\\clait\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
+      "projectUniqueName": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
       "projectName": "agencia de viagens cogumelos azuis",
-      "projectPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
-      "packagesPath": "C:\\Users\\29321863885\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\obj\\",
+      "projectPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\agencia de viagens cogumelos azuis.csproj",
+      "packagesPath": "C:\\Users\\clait\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\agencia de viagens cogumelos azuis\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\29321863885\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\clait\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -43,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

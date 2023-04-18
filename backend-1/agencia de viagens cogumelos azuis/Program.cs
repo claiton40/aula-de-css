@@ -29,23 +29,30 @@ menu = Console.ReadLine();
 Console.ResetColor();
 //  aqui vou montar o banco de dados
 
-string[,] passagem = new string[5, 4];
-for (var i = 0; i < 10; i++)
+string[,] passagem = new string[3, 4];
+
+for (var i = 0; i <= 3; i++)
 {
-    Console.WriteLine($"Insira o {i}º dado
-    ");
-    passagem[i,0,] = Console.ReadLine();
+Console.WriteLine($"Nome");
+passagem[0,0] = Console.ReadLine();
+Console.WriteLine($"Origem");
+passagem[0,1] = Console.ReadLine();
+Console.WriteLine($"Destino");
+passagem[0,2] = Console.ReadLine();
+Console.WriteLine($"Data do voo");
+passagem[0,3] = Console.ReadLine();
+}
+for (var i = 0; i <= 3; i++)
+{
+  Console.ForegroundColor=ConsoleColor.Blue;  
+Console.WriteLine($"Nome");
+Console.WriteLine(passagem[0,0]);
+Console.WriteLine($"Origem");
+Console.WriteLine(passagem[0,1]);
+Console.WriteLine($"Destino");
+Console.WriteLine(passagem[0,2]);
+Console.WriteLine($"Data do voo");
+Console.WriteLine(passagem[0,3]);
+Console.ResetColor();
 }
 
-
-
-switch (menu)
-{
-    case "1":
-
-    Console.WriteLine($"ta funcionado o switch case, seja feliz!!!!!");
-    
-        break;
-    default:
-        break;
-}
