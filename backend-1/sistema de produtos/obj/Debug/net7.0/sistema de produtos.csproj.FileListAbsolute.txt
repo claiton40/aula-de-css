@@ -1,0 +1,15 @@
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\bin\Debug\net7.0\sistema de produtos.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\bin\Debug\net7.0\sistema de produtos.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\bin\Debug\net7.0\sistema de produtos.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\bin\Debug\net7.0\sistema de produtos.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\bin\Debug\net7.0\sistema de produtos.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\refint\sistema de produtos.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\sistema de produtos.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\sistema de produtos\obj\Debug\net7.0\ref\sistema de produtos.dll
