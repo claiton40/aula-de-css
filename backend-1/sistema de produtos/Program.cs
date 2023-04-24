@@ -53,7 +53,7 @@ Console.WriteLine($"deseja cadastrar novo produto?");
 menu = Console.ReadLine().ToUpper();
 if(menu == "N")
 {
-  i = (-1);
+  i = (50);
 }
   }
 
@@ -62,6 +62,7 @@ if(menu == "N")
       for (var i = 0; i <= 3; i++)
      
 {
+Console.WriteLine();
 Console.ForegroundColor=ConsoleColor.Blue;  
 Console.WriteLine($"PRODUTO{produto[0]}");
 Console.WriteLine($"PRECO{produto[1]}");
