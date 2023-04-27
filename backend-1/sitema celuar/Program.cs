@@ -6,10 +6,19 @@
 using sitema_celuar;
 
 Console.WriteLine($@"o que vc deseja?
-|L|---> Ligar o Claitinhophone
-|D|---> Ligar o Claitinhophone");
-
+|L|---> Ligar o ClaiPhone
+|D|---> Ligar o ClaiPhone");
+ 
 Celular novo = new Celular();
-
-novo.Ligado=Console.ReadLine();
-
+novo.Ligado = (Console.ReadLine().ToUpper());
+novo.LigDesl();
+if (novo.opcao=true)
+{
+    Console.WriteLine($"menu1");
+    
+}
+else if (novo.opcao=false)
+{
+    Console.WriteLine($"menu2");
+    
+}

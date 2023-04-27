@@ -1,0 +1,15 @@
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.csproj.AssemblyReference.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.AssemblyInfoInputs.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.AssemblyInfo.cs
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.csproj.CoreCompileInputs.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\bin\Debug\net6.0\sitema celuar.exe
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\bin\Debug\net6.0\sitema celuar.deps.json
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\bin\Debug\net6.0\sitema celuar.runtimeconfig.json
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\bin\Debug\net6.0\sitema celuar.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\bin\Debug\net6.0\sitema celuar.pdb
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\refint\sitema celuar.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.pdb
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\sitema celuar.genruntimeconfig.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\sitema celuar\obj\Debug\net6.0\ref\sitema celuar.dll

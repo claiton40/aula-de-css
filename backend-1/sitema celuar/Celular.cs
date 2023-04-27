@@ -7,24 +7,27 @@ namespace sitema_celuar
 // Envie o link do repositório como entrega desta atividade.
     {
      public string Cor;  
-     public string Modelo
-     public string Tamanho
-     public bool Ligado;
+     public string Model;
+     public string Tamanho;
+     public string Ligado;
+     public bool opcao;
 
 public bool LigDesl()
 {
-if (Ligado=true)
+if (Ligado=="L")
 {
-    return bool.Parse("menu1");
+    return opcao= true;
 }
-else if (Ligado=false)
+else if (Ligado=="L")
+
 {
-    return bool.Parse("menu2");
+    return opcao= false;
 }
 else
 {
-    bool.Parse("opcao invalida");
+   return bool.Parse("opcao invalida");
 }
 }
 }
 }
+
