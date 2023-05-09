@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "exercicio 0905/1.0.0": {
+        "runtime": {
+          "exercicio 0905.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "exercicio 0905/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
