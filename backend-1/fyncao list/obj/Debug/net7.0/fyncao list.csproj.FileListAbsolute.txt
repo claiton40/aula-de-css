@@ -1,0 +1,15 @@
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\bin\Debug\net7.0\fyncao list.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\bin\Debug\net7.0\fyncao list.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\bin\Debug\net7.0\fyncao list.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\bin\Debug\net7.0\fyncao list.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\bin\Debug\net7.0\fyncao list.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\refint\fyncao list.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\fyncao list.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\fyncao list\obj\Debug\net7.0\ref\fyncao list.dll

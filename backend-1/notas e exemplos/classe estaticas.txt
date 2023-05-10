@@ -25,3 +25,11 @@ public static class ConversorTemperatura
 
 **************************************************************************
 
+progran
+
+
+﻿using Classes_Estáticas;
+
+Console.WriteLine(ConversorTemperatura.CelsiusParaFahrenheit(30));
+
+Console.WriteLine(ConversorTemperatura.FahreinheitParaCelsius(100));
