@@ -1,0 +1,15 @@
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\bin\Debug\net7.0\interfaces.exe
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\bin\Debug\net7.0\interfaces.deps.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\bin\Debug\net7.0\interfaces.runtimeconfig.json
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\bin\Debug\net7.0\interfaces.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\bin\Debug\net7.0\interfaces.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.csproj.CoreCompileInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\refint\interfaces.dll
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.pdb
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\interfaces.genruntimeconfig.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\obj\Debug\net7.0\ref\interfaces.dll
