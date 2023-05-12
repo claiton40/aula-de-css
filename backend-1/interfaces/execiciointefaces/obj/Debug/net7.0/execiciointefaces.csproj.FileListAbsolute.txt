@@ -1,0 +1,5 @@
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\execiciointefaces\obj\Debug\net7.0\execiciointefaces.csproj.AssemblyReference.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\execiciointefaces\obj\Debug\net7.0\execiciointefaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\execiciointefaces\obj\Debug\net7.0\execiciointefaces.AssemblyInfoInputs.cache
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\execiciointefaces\obj\Debug\net7.0\execiciointefaces.AssemblyInfo.cs
+C:\Users\29321863885\Desktop\claitinho da massa\todas-aulas\backend-1\interfaces\execiciointefaces\obj\Debug\net7.0\execiciointefaces.csproj.CoreCompileInputs.cache
