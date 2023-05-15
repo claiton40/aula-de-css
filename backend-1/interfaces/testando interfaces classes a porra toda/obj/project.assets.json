@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\execiciointefaces\\execiciointefaces.csproj",
-      "projectName": "execiciointefaces",
-      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\execiciointefaces\\execiciointefaces.csproj",
+      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj",
+      "projectName": "testando interfaces classes a porra toda",
+      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj",
       "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\execiciointefaces\\obj\\",
+      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"

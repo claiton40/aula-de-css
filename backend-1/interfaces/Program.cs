@@ -1,4 +1,6 @@
-﻿using interfaces;
+﻿using Projeto_Produto_Interface;
+
+//instanciar um objeto carrinho para acessar os métodos
 Carrinho carrinho = new Carrinho();
 
 //instanciar objeto(s) da classe Produto

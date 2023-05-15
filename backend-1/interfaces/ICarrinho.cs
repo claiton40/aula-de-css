@@ -1,4 +1,5 @@
-namespace interfaces
+ //interface ICarrinho
+    namespace Projeto_Produto_Interface
 {
     //interface ICarrinho
     public interface ICarrinho

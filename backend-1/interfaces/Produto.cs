@@ -1,4 +1,4 @@
-namespace interfaces
+namespace Projeto_Produto_Interface
 {
     public class Produto
     {
