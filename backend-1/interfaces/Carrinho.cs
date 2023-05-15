@@ -2,27 +2,40 @@ namespace interfaces
 {
     public class Carrinho : ICarrinho
     {
-        float Valor;
+        //propriedades
+        public float Valor { get; set; }
+        
+
+        //criar uma lista para manipular os nossos objetos
         List<Produto> carrinho = new List<Produto>();
+
         public void Adicionar(Produto _produto)
         {
-             carrinho.Add(_produto);
+            carrinho.Add(_produto);
         }
 
-        public void Atualizar(int _codigo, Produto _novoproduto)
+        public void Atualizar(int _codigo, Produto _novoProduto)
         {
-            carrinho.Find(X=>X.Codigo == _codigo).Nome = _novoproduto.Nome;
+            carrinho.Find(x => x.Codigo == _codigo).Nome = _novoProduto.Nome;
+            carrinho.Find(x => x.Codigo == _codigo).Preco = _novoProduto.Preco;
         }
 
         public void Listar()
         {
-            foreach(Produto p in carrinho)
+            if (carrinho.Count > 0)
             {
-                Console.WriteLine(@$"
-                Nome: {p.Nome}
-                Codigo: {p.Codigo}
-                Preco: {p.Preco}");
-                
+                foreach (Produto p in carrinho)
+                {
+                    Console.WriteLine(@$"
+                    Código: {p.Codigo}
+                    Nome: {p.Nome}
+                    Preco: {p.Preco:C}
+                    ");                   
+                }               
+            }
+            else
+            {
+                Console.WriteLine($"Carrinho vazio!");                
             }
         }
 
@@ -31,17 +44,21 @@ namespace interfaces
             carrinho.Remove(_produto);
         }
 
-        public void TotaCarrinho(){
+        public void TotalCarrinho()
+        {
             Valor = 0;
-            
-            if (Valor >0)
+
+            if (carrinho.Count > 0)
             {
                 foreach (Produto p in carrinho)
                 {
-                    Valor += p.Preco;
+                   Valor += p.Preco;
                 }
-                Console.WriteLine($"O total e {Valor}");
-                
+                Console.WriteLine($"O Total do seu carrinho é : {Valor:C}");                
+            }
+            else
+            {
+                Console.WriteLine($"Carrinho vazio!");                
             }
         }
     }
