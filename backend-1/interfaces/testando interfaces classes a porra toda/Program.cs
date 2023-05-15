@@ -4,14 +4,19 @@ List<Produto> Computador = new List<Produto>();
 
 Produto produto = new Produto();
 
-
-Computador.Add (produto);
+string p;
+string g;
+string h;
+Computador.Add(produto);
 Console.WriteLine($"Insira o modelo");
 produto.Modelo = Console.ReadLine();
-Console.WriteLine(@$"Adicona periferico?
+Console.WriteLine($"Insira o preço");
+produto.Preco = float.Parse(Console.ReadLine());
+Console.WriteLine(@$"Adiciona periferico?
 |S|===> SIM
 |N|===> NÃO");
 produto.ValidaPeriferico = Console.ReadLine().ToUpper();
-Console.WriteLine($"Insira o preço");
-produto.Preco = float.Parse(Console.ReadLine());
+produto.AddPeriferico();
+
+Console.WriteLine(produto.Modelo, 0);
 

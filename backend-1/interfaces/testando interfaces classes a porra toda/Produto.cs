@@ -4,27 +4,42 @@ namespace testando_interfaces_classes_a_porra_toda
     {
         public string Modelo;
         public string ValidaPeriferico;
-        // public string Periferico;
+        public string NovoPeriferico;
         public float Preco;
-        List<Periferico> perifericos = new List<Periferico>();
+        
+
+List<Periferico> produtos = new List<Periferico>();
+Periferico equip = new Periferico();      
 
         public void AddPeriferico()
         {
             if (ValidaPeriferico == "S")
+            { do
             {
+                
+            
+            produtos.Add(new ());
+            Console.WriteLine($"Insira a Descrição do periferico");
+            equip.Descricao= Console.ReadLine();
+            Console.WriteLine($"Insira a Marca do periferico");
+            equip.Marca= Console.ReadLine();
+            Console.WriteLine($"Insira o Preço do periferico");
+            equip.Preco= float.Parse(Console.ReadLine());
+            Console.WriteLine($"Deseja cadastra novo periferico?");
+            NovoPeriferico=Console.ReadLine().ToUpper();
+            
+} while (NovoPeriferico == "S");
+foreach (var equip in produtos)
+{
+    Console.WriteLine(@$"{equip.Descricao}, {equip.Marca}, {equip.Preco:c}");
+    
+}
 
-                foreach (var Periferico in perifericos)
-                {
-                    perifericos.Add(Periferico);
-                    Periferico.Descricao= Console.ReadLine();
-                    Periferico.Preco=float.Parse(Console.ReadLine());
-                    Console.WriteLine($"{Periferico.Descricao}, {Periferico.Marca} adicionado com sucesso á {Modelo}");
 
-                }
-            }
+;            }
             else if (ValidaPeriferico == "N")
             {
-                Console.WriteLine($"{Modelo} apenas com recurso onboard");
+               Console.WriteLine($"Apenas com recurso onboard");
             }
             else
             {

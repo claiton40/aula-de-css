@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj": {}
+    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj": {
+    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj",
+        "projectUniqueName": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj",
         "projectName": "testando interfaces classes a porra toda",
-        "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj",
-        "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\obj\\",
+        "projectPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\testando interfaces classes a porra toda.csproj",
+        "packagesPath": "C:\\Users\\clait\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\interfaces\\testando interfaces classes a porra toda\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\clait\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
