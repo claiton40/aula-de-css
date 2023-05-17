@@ -1,0 +1,5 @@
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\Projeto login\obj\Debug\net7.0\Projeto login.csproj.AssemblyReference.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\Projeto login\obj\Debug\net7.0\Projeto login.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\Projeto login\obj\Debug\net7.0\Projeto login.AssemblyInfoInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\Projeto login\obj\Debug\net7.0\Projeto login.AssemblyInfo.cs
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend-1\Projeto login\obj\Debug\net7.0\Projeto login.csproj.CoreCompileInputs.cache
