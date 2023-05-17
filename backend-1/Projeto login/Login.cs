@@ -4,9 +4,9 @@ namespace Projeto_login
     {
         private bool Logado { get; set; }
 
-        public void login(bool logado)
+        public void login()
         {
-            Logado = logado;
+        
         }
         public string Logar()
         {
