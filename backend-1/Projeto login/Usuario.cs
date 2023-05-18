@@ -2,25 +2,35 @@ namespace Projeto_login
 {
     public class Usuario
     {
-        public int Codigo;
-        public string Nome;
-        public string Email;
-        public string Senha;
+        public int Codigo {get; set;}
+        public string Nome {get; set;} 
+        public string Email {get; set;}
+        public string Senha {get; set;} 
+        public DateTime DataDeCadastro {get; set;}
 
-        private DateTime DataDeCadastro = DateTime.Now;
-
-        List<Usuario> ListaDeUsuarios = new List<Usuario>()
-         Usuario User = new Usuario();
-        public string Cadastrar() 
+        public Usuario()
         {
-            User.Codigo = 123
-            User.Nome= "jose das couves";
-            User.Email = "jose@jose.com";
-            User.Senha = "123";
-            User.DataDeCadastro = DateTime.Now;
+             Cadastrar();
+        }
+        public void Cadastrar() 
+        {
+            this.Codigo = 123;
+            this.Nome= "jose das couves";
+            this.Email = "jose@jose.com";
+            this.Senha = "123";
+            this.DataDeCadastro = DateTime.Now;
+        }
+    
+        public string Deletar() 
+        {
+            this.Codigo = 0 ;
+            this.Nome= "";
+            this.Email = "";
+            this.Senha = "";
+            this.DataDeCadastro = DateTime.Parse("0000-00-00T00:00:00");
         
 
-            return $"Usuario {User.Nome} inserida com sucesso em XXXXXXXXXXXXX ";
+            return $"Usuario removido com sucesso em {DateTime.Now  } ";
         }
     
 

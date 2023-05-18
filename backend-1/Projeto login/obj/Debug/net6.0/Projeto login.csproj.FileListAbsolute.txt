@@ -1,0 +1,15 @@
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.csproj.AssemblyReference.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.AssemblyInfoInputs.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.AssemblyInfo.cs
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.csproj.CoreCompileInputs.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\bin\Debug\net6.0\Projeto login.exe
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\bin\Debug\net6.0\Projeto login.deps.json
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\bin\Debug\net6.0\Projeto login.runtimeconfig.json
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\bin\Debug\net6.0\Projeto login.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\bin\Debug\net6.0\Projeto login.pdb
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\refint\Projeto login.dll
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.pdb
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\Projeto login.genruntimeconfig.cache
+C:\Users\Claiton\Documents\dev\todas-aulas\backend-1\Projeto login\obj\Debug\net6.0\ref\Projeto login.dll

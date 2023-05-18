@@ -1,5 +1,4 @@
 ﻿using Projeto_login;
 
-Login teste = new Login();
+Login teste1 = new Login();
 
-teste.login();
