@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\siqueiracla\\.nuget\\packages\\": {}
+    "C:\\Users\\clait\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
+      "projectUniqueName": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
       "projectName": "projeto marcas",
-      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
-      "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\projeto marcas\\obj\\",
+      "projectPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
+      "packagesPath": "C:\\Users\\clait\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\backend-1\\projeto marcas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\clait\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
