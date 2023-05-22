@@ -9,7 +9,7 @@ namespace projeto_marcas
         public string opcao;
         public int deletar;
 
-        List<Marca> ListaDeMarcas = new List<Marca>();
+        public List<Marca> ListaDeMarcas = new List<Marca>();
         public void Cadastrar()
 
         {
@@ -34,7 +34,6 @@ namespace projeto_marcas
         }
         public void Listar()
         {
-            // Marca NovaMarca = new Marca();
             foreach (var NovaMarca in ListaDeMarcas)
             {
                 Console.WriteLine(@$"
@@ -71,12 +70,3 @@ namespace projeto_marcas
         }
     }
 }
-
-
-
-
-
-
-
-
-
