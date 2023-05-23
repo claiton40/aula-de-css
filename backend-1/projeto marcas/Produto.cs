@@ -10,15 +10,15 @@ namespace projeto_marcas
         public Usuario CadastradoPor { get; set; }
         public string opcao;
         public int deletar;
+        string NomeMarca;
+        
        public static List<Produto> ListaDeProdutos = new List<Produto>();
         
        
         public void Cadastrar()
-
         {
             do
             {
-                
                 Produto NovoProduto = new Produto();
                 ListaDeProdutos.Add(NovoProduto);
                 Console.WriteLine($"Insira o codigo do Produto");
@@ -26,17 +26,15 @@ namespace projeto_marcas
                 Console.WriteLine($"Insira o Nome do Produto");
                 NovoProduto.NomeProduto = Console.ReadLine(); 
                 Console.WriteLine($"Insira a Marca do Produto");
+                NomeMarca = Console.ReadLine();
                 
+                     Marca.ListaDeMarcas.Find((x => x.NomeMarca.Contains(this.NomeMarca)));
                 
-                
-                NovoProduto.Marca = Console.ReadLine(); 
-
-                
+                Console.WriteLine($"Text"); 
+                 
                 Console.WriteLine($"Insira o preço e do Produto");
                 NovoProduto.Preco = float.Parse(Console.ReadLine());
                 NovoProduto.DataCadastro =DateTime.Now;
-                
-                
                  Console.WriteLine(@$"
                 Produto Cdastrado com sucesso!
                 *****************************
@@ -51,12 +49,12 @@ namespace projeto_marcas
         {
             foreach (var NovoProduto in ListaDeProdutos)
             {
-               
             Console.WriteLine(@$"
             Nome: {NovoProduto.NomeProduto}
             Codigo: {NovoProduto.Codigo}
             Preço: {NovoProduto.Preco:c}
             Data do cadastro: {NovoProduto.DataCadastro}
+            Marca: {NovoProduto.Marca.NomeMarca}
             ");
             }
         }
