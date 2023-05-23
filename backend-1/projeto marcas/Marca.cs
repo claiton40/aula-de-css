@@ -9,7 +9,7 @@ namespace projeto_marcas
         public string opcao;
         public int deletar;
 
-        public List<Marca> ListaDeMarcas = new List<Marca>();
+        public static List<Marca> ListaDeMarcas = new List<Marca>();
         public void Cadastrar()
 
         {

@@ -10,7 +10,7 @@ namespace projeto_marcas
         public Usuario CadastradoPor { get; set; }
         public string opcao;
         public int deletar;
-        List<Produto> ListaDeProdutos = new List<Produto>();
+       public static List<Produto> ListaDeProdutos = new List<Produto>();
         
        
         public void Cadastrar()
@@ -25,9 +25,17 @@ namespace projeto_marcas
                 NovoProduto.Codigo = int.Parse(Console.ReadLine());
                 Console.WriteLine($"Insira o Nome do Produto");
                 NovoProduto.NomeProduto = Console.ReadLine(); 
+                Console.WriteLine($"Insira a Marca do Produto");
+                
+                
+                
+                NovoProduto.Marca = Console.ReadLine(); 
+
+                
                 Console.WriteLine($"Insira o preço e do Produto");
                 NovoProduto.Preco = float.Parse(Console.ReadLine());
                 NovoProduto.DataCadastro =DateTime.Now;
+                
                 
                  Console.WriteLine(@$"
                 Produto Cdastrado com sucesso!
