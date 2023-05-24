@@ -57,10 +57,6 @@ namespace projeto_marcas
                 Console.WriteLine($"Insira o preço e do Produto");
                 NovoProduto.Preco = float.Parse(Console.ReadLine());
                 NovoProduto.DataCadastro = DateTime.Now;
-                foreach (var jose in Usuario.ListaDeUsuario)
-                {
-                    jose.Nome = Cadastrador;
-                }
                 Console.WriteLine(@$"
                 Produto Cdastrado com sucesso!
                 *****************************

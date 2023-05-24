@@ -8,12 +8,11 @@ namespace projeto_marcas
        public string Senha { get; set; }
        public DateTime DataCadastro { get; set; }
 
-       public static List<Usuario> ListaDeUsuario = new List<Usuario>();
+      //  public static List<Usuario> ListaDeUsuario = new List<Usuario>();
 
        public void Cadastrar()
        {
         Usuario NovoUsuario = new Usuario();
-        ListaDeUsuario.Add(NovoUsuario);
         NovoUsuario.Codigo = 123;
         NovoUsuario.Nome= "Jose das Couves";
         NovoUsuario.Email= "jose@dascouves.org";
