@@ -1,36 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Claiton\\.nuget\\packages\\": {}
+    "C:\\Users\\siqueiracla\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
+      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
       "projectName": "projeto marcas",
-      "projectPath": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
-      "packagesPath": "C:\\Users\\Claiton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Claiton\\Documents\\dev\\todas-aulas\\backend-1\\projeto marcas\\obj\\",
+      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\projeto marcas\\projeto marcas.csproj",
+      "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend-1\\projeto marcas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Claiton\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

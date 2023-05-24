@@ -1,8 +1,8 @@
 ﻿using projeto_marcas;
 
-// Usuario user = new Usuario();
+Usuario user = new Usuario();
 
-// user.Cadastrar();
+user.Cadastrar();
 
 Marca ListagemDeMarcas=new Marca();
 
@@ -11,7 +11,7 @@ ListagemDeMarcas.Cadastrar();
 // ListagemDeMarcas.Deletar();
 // ListagemDeMarcas.Listar();
 
-Produto produtinho=new Produto(ListagemDeMarcas);
+Produto produtinho=new Produto(ListagemDeMarcas, user);
 
 
 // Console.WriteLine(produtinho.NomeProduto);
@@ -20,7 +20,7 @@ Produto produtinho=new Produto(ListagemDeMarcas);
 produtinho.Cadastrar();
 // produtinho.Listar();
 // produtinho.Deletar();
-// produtinho.Listar();
+produtinho.Listar();
 
 
 

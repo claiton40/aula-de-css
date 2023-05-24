@@ -8,7 +8,7 @@ namespace projeto_marcas
        public string Senha { get; set; }
        public DateTime DataCadastro { get; set; }
 
-       List<Usuario> ListaDeUsuario = new List<Usuario>();
+       public static List<Usuario> ListaDeUsuario = new List<Usuario>();
 
        public void Cadastrar()
        {

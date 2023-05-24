@@ -7,16 +7,18 @@ namespace projeto_marcas
         public float Preco { get; set; }
         public DateTime DataCadastro { get; set; }
         public Marca MarcaDoProduto;
-        public Usuario CadastradoPor { get; set; }
+        public Usuario CadastradoPor;
         public string opcao;
         public int deletar;
         string NomeMarca;
+        string Cadastrador;
 
         public static List<Produto> ListaDeProdutos = new List<Produto>();
 
-        public Produto(Marca marca)
+        public Produto(Marca marca, Usuario usuario)
         {
             MarcaDoProduto = marca;
+            CadastradoPor = usuario;
         }
 
 
@@ -25,7 +27,7 @@ namespace projeto_marcas
         {
             do
             {
-                Produto NovoProduto = new Produto(this.MarcaDoProduto);
+                Produto NovoProduto = new Produto(this.MarcaDoProduto, this.CadastradoPor);
                 ListaDeProdutos.Add(NovoProduto);
                 Console.WriteLine($"Insira o codigo do Produto");
                 NovoProduto.Codigo = int.Parse(Console.ReadLine());
@@ -36,10 +38,10 @@ namespace projeto_marcas
 
                 bool MarcaExiste = false;
 
-                foreach (var item  in Marca.ListaDeMarcas)
+                foreach (var item in Marca.ListaDeMarcas)
                 {
-                    Console.WriteLine(item.NomeMarca);
-                    
+
+
                     if (item.NomeMarca == NomeMarca)
                     {
                         MarcaDoProduto = item;
@@ -55,6 +57,10 @@ namespace projeto_marcas
                 Console.WriteLine($"Insira o preço e do Produto");
                 NovoProduto.Preco = float.Parse(Console.ReadLine());
                 NovoProduto.DataCadastro = DateTime.Now;
+                foreach (var jose in Usuario.ListaDeUsuario)
+                {
+                    jose.Nome = Cadastrador;
+                }
                 Console.WriteLine(@$"
                 Produto Cdastrado com sucesso!
                 *****************************
@@ -70,10 +76,12 @@ namespace projeto_marcas
             foreach (var NovoProduto in ListaDeProdutos)
             {
                 Console.WriteLine(@$"
-            Nome: {NovoProduto.NomeProduto}
-            Codigo: {NovoProduto.Codigo}
-            Preço: {NovoProduto.Preco:c}
-            Data do cadastro: {NovoProduto.DataCadastro}
+                Codigo: {NovoProduto.Codigo}
+                Nome: {NovoProduto.NomeProduto}
+                Marca: {NomeMarca}
+                Preço: {NovoProduto.Preco:c}
+                Cadastrado por: {Cadastrador}
+                Data do cadastro: {NovoProduto.DataCadastro}
           
             ");
             }
