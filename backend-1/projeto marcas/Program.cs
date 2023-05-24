@@ -1,22 +1,26 @@
 ﻿using projeto_marcas;
 
-Usuario user = new Usuario();
+// Usuario user = new Usuario();
 
-user.Cadastrar();
+// user.Cadastrar();
 
-Marca Marquinha=new Marca();
+Marca ListagemDeMarcas=new Marca();
 
-Marquinha.Cadastrar();
-Marquinha.Listar();
-Marquinha.Deletar();
-Marquinha.Listar();
+ListagemDeMarcas.Cadastrar();
+// ListagemDeMarcas.Listar();
+// ListagemDeMarcas.Deletar();
+// ListagemDeMarcas.Listar();
 
-Produto produtinho=new Produto();
+Produto produtinho=new Produto(ListagemDeMarcas);
+
+
+// Console.WriteLine(produtinho.NomeProduto);
+
 
 produtinho.Cadastrar();
-produtinho.Listar();
-produtinho.Deletar();
-produtinho.Listar();
+// produtinho.Listar();
+// produtinho.Deletar();
+// produtinho.Listar();
 
 
 

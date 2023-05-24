@@ -6,36 +6,56 @@ namespace projeto_marcas
         public string NomeProduto { get; set; }
         public float Preco { get; set; }
         public DateTime DataCadastro { get; set; }
-        public Marca Marca = new Marca();
+        public Marca MarcaDoProduto;
         public Usuario CadastradoPor { get; set; }
         public string opcao;
         public int deletar;
         string NomeMarca;
-        
-       public static List<Produto> ListaDeProdutos = new List<Produto>();
-        
-       
+
+        public static List<Produto> ListaDeProdutos = new List<Produto>();
+
+        public Produto(Marca marca)
+        {
+            MarcaDoProduto = marca;
+        }
+
+
+
         public void Cadastrar()
         {
             do
             {
-                Produto NovoProduto = new Produto();
+                Produto NovoProduto = new Produto(this.MarcaDoProduto);
                 ListaDeProdutos.Add(NovoProduto);
                 Console.WriteLine($"Insira o codigo do Produto");
                 NovoProduto.Codigo = int.Parse(Console.ReadLine());
                 Console.WriteLine($"Insira o Nome do Produto");
-                NovoProduto.NomeProduto = Console.ReadLine(); 
+                NovoProduto.NomeProduto = Console.ReadLine();
                 Console.WriteLine($"Insira a Marca do Produto");
                 NomeMarca = Console.ReadLine();
-                
-                     Marca.ListaDeMarcas.Find((x => x.NomeMarca.Contains(this.NomeMarca)));
-                
-                Console.WriteLine($"Text"); 
-                 
+
+                bool MarcaExiste = false;
+
+                foreach (var item  in Marca.ListaDeMarcas)
+                {
+                    Console.WriteLine(item.NomeMarca);
+                    
+                    if (item.NomeMarca == NomeMarca)
+                    {
+                        MarcaDoProduto = item;
+                        MarcaExiste = true;
+                    }
+                }
+                if (MarcaExiste == false)
+                {
+                    Console.WriteLine($"Marca não encontrada. Cadastre uma nova");
+                    MarcaDoProduto.Cadastrar();
+                }
+
                 Console.WriteLine($"Insira o preço e do Produto");
                 NovoProduto.Preco = float.Parse(Console.ReadLine());
-                NovoProduto.DataCadastro =DateTime.Now;
-                 Console.WriteLine(@$"
+                NovoProduto.DataCadastro = DateTime.Now;
+                Console.WriteLine(@$"
                 Produto Cdastrado com sucesso!
                 *****************************
                 Deseja incluir um novo Produto?
@@ -49,12 +69,12 @@ namespace projeto_marcas
         {
             foreach (var NovoProduto in ListaDeProdutos)
             {
-            Console.WriteLine(@$"
+                Console.WriteLine(@$"
             Nome: {NovoProduto.NomeProduto}
             Codigo: {NovoProduto.Codigo}
             Preço: {NovoProduto.Preco:c}
             Data do cadastro: {NovoProduto.DataCadastro}
-            Marca: {NovoProduto.Marca.NomeMarca}
+          
             ");
             }
         }

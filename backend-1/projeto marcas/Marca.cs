@@ -10,6 +10,10 @@ namespace projeto_marcas
         public int deletar;
 
         public static List<Marca> ListaDeMarcas = new List<Marca>();
+
+
+
+
         public void Cadastrar()
 
         {
