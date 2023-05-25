@@ -10,12 +10,25 @@ namespace backend2.View
             foreach (var item in produto)
             {
                 Console.WriteLine(@$"
-                Codigo: {iten.Codigo}
-                Nome: {iten.Nome}
-                Preco: {iten.Preco:c}
-                ");
-                
+                Codigo: {item.Codigo}
+                Nome: {item.Nome}
+                Preco: {item.Preco:c}
+                ");                
             }
         }
+        public Produto cadastrar ()
+        {
+            Produto p = new Produto();
+
+           Console.WriteLine($"Insira o Codigo");
+           p.Codigo = int.Parse(Console.ReadLine());
+           Console.WriteLine($"Nome");
+           p.Nome = Console.ReadLine();Console.WriteLine($"Insira o preco");
+           p.Preco = float.Parse(Console.ReadLine());
+           
+           return p;
+        }
+
+
     }
 }
