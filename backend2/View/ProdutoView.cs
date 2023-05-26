@@ -4,7 +4,7 @@ namespace backend2.View
 {
     public class ProdutoView
     {
-        // exibir dados
+        // fazendo metodo para para trazer os dados na tela. Chamando a partir da lista com os objetos. 
         public void Listar (List<Produto> produto)
         {
             foreach (var item in produto)
@@ -16,6 +16,7 @@ namespace backend2.View
                 ");                
             }
         }
+        // criando interface para inserir os dados.
         public Produto cadastrar ()
         {
             Produto p = new Produto();

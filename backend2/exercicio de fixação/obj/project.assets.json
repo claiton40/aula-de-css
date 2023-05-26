@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend2\\backend2.csproj",
-      "projectName": "backend2",
-      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend2\\backend2.csproj",
+      "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend2\\exercicio de fixação\\exercicio de fixação.csproj",
+      "projectName": "exercicio de fixação",
+      "projectPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend2\\exercicio de fixação\\exercicio de fixação.csproj",
       "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend2\\obj\\",
+      "outputPath": "C:\\Users\\siqueiracla\\Desktop\\claiton\\todas-aulas\\backend2\\exercicio de fixação\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config"

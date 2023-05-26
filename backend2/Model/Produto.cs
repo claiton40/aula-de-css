@@ -52,7 +52,7 @@ namespace backend2.Model
         //o metdodo retorna a lista produtos com o objeto p com os dados do array splitados     
         return produtos;
     }
-    // metodo para preparar linhas para jogar dados digitados no .csv
+    // metodo para preparar linhas para jogar dados digitados na view no .csv
     public string PrepararLinhasCSV(Produto p)
     {
         return $"{p.Codigo};{p.Nome};{p.Preco}";
@@ -60,10 +60,10 @@ namespace backend2.Model
     // metodo para para jogar dados digitados no .csv
     public void Inserir(Produto p)
     {
+        // criando array de para receber os dados digitados chamando o metodo de cima que vai formatar os dados.
         string[] linhas = {PrepararLinhasCSV(p)};
+        // efetivamente lançando todos as linhas no arquivo .CSV
         File.AppendAllLines(PATH,  linhas);
     }
-
-
 }
 }
