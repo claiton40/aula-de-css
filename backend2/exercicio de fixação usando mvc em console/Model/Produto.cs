@@ -32,10 +32,14 @@ namespace exercicio_de_fixação_usando_mvc_em_console.Model
             {
                 string[] atributos = item.Split(";")
                 Produto p = new Produto();
-                
+                p.Codigo = int.Parse(atributos[0]);
+                p.Nome = atributos[1];
+                p.Preço = float.Parse(atributos[2]);
             }
 
             return produtos;
         }
+
+
     }
 }
