@@ -1,0 +1,15 @@
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.csproj.AssemblyReference.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.AssemblyInfoInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.AssemblyInfo.cs
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.csproj.CoreCompileInputs.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\bin\Debug\net7.0\exercicio de fixação usando mvc em console.exe
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\bin\Debug\net7.0\exercicio de fixação usando mvc em console.deps.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\bin\Debug\net7.0\exercicio de fixação usando mvc em console.runtimeconfig.json
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\bin\Debug\net7.0\exercicio de fixação usando mvc em console.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\bin\Debug\net7.0\exercicio de fixação usando mvc em console.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\refint\exercicio de fixação usando mvc em console.dll
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.pdb
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\exercicio de fixação usando mvc em console.genruntimeconfig.cache
+C:\Users\siqueiracla\Desktop\claiton\todas-aulas\backend2\exercicio de fixação usando mvc em console\obj\Debug\net7.0\ref\exercicio de fixação usando mvc em console.dll
