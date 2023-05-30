@@ -15,7 +15,7 @@ namespace ProjetoGamer.Infra
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(
-                    "Data Source = NOTE03-S1; initial catalog = gamerTarde; Integrated Security = True; TrustServerCertificate = true"
+                    "Data Source = note03-s15; initial catalog = gamerTarde; User Id = sa; pwd = Senai@134; TrustServerCertificate = true"
                 );
             }
         }
