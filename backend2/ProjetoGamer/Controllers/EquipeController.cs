@@ -28,14 +28,16 @@ namespace ProjetoGamer.Controllers
         {
             Equipe novaEquipe = new Equipe();
             novaEquipe.Nome = form["Nome"].ToString();
-            novaEquipe.Imagem = form["Imagem"].ToString();
+            // essa linha vai como string e queremos imagem.
+            // novaEquipe.Imagem = form["Imagem"].ToString();
+
             c.Equipe.Add(novaEquipe);
             c.SaveChanges();
-            ViewBag.Equipe=c.Equipe.ToList();
             return LocalRedirect("~/Equipe/Listar");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [Route("Cadastrar")]
         public IActionResult Error()
         {
             return View("Error!");
