@@ -30,6 +30,25 @@ namespace ProjetoGamer.Controllers
             novaEquipe.Nome = form["Nome"].ToString();
             // essa linha vai como string e queremos imagem.
             // novaEquipe.Imagem = form["Imagem"].ToString();
+            if (form.Files.Count > 0)
+            {
+                var file = form.Files(0);
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+                var path = Path.Combine(folder, file.FileName);
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+                novaEquipe.Imagem = file.FileNme;
+            }
+            else
+            {
+                novaEquipe.Imagem = "padrao.png";
+            }
 
             c.Equipe.Add(novaEquipe);
             c.SaveChanges();
