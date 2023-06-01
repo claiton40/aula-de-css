@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TP7jp4PiFHMCDwi8kwN5Zzl3WlEby69Y1p/U0E0nQto=",
+  "Hash": "uoGfS/raLMUzk9W02Jeb200ERJHWShPARrBL/eR7NUs=",
   "Source": "ProjetoGamer",
   "BasePath": "_content/ProjetoGamer",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend2\\ProjetoGamer\\wwwroot\\img\\Equipes\\46635669-9d78-42d2-9c66-abb58844a7b4-profile_image-300x300.png",
+      "SourceId": "ProjetoGamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend2\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer",
+      "RelativePath": "img/Equipes/46635669-9d78-42d2-9c66-abb58844a7b4-profile_image-300x300.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\46635669-9d78-42d2-9c66-abb58844a7b4-profile_image-300x300.png"
+    },
+    {
+      "Identity": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend2\\ProjetoGamer\\wwwroot\\img\\Equipes\\atividade.png",
+      "SourceId": "ProjetoGamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend2\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer",
+      "RelativePath": "img/Equipes/atividade.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\atividade.png"
     },
     {
       "Identity": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\backend2\\ProjetoGamer\\wwwroot\\js\\site.js",

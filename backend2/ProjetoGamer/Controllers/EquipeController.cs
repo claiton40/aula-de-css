@@ -32,7 +32,7 @@ namespace ProjetoGamer.Controllers
             // novaEquipe.Imagem = form["Imagem"].ToString();
             if (form.Files.Count > 0)
             {
-                var file = form.Files(0);
+                var file = form.Files[0];
                 var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
                 if (!Directory.Exists(folder))
                 {
@@ -43,7 +43,7 @@ namespace ProjetoGamer.Controllers
                 {
                     file.CopyTo(stream);
                 }
-                novaEquipe.Imagem = file.FileNme;
+                novaEquipe.Imagem = file.FileName;
             }
             else
             {
@@ -54,6 +54,29 @@ namespace ProjetoGamer.Controllers
             c.SaveChanges();
             return LocalRedirect("~/Equipe/Listar");
         }
+        [Route("Excluir/(id)")]
+
+        public IActionResult Excluir(int id)
+        {
+            Equipe e = c.Equipe.First(e=> e.IdEquipe==id);
+            c.Equipe.Remove(e);
+            c.SaveChanges();
+            return LocalRedirect("~/Equipe/Listar");
+        }
+        [Route("Editar/(id)")]
+
+        public IActionResult Editar(int id)
+        {
+            Equipe e = c.Equipe.First(e => e.IdEquipe==id);
+            ViewBag.Equipe = e;
+            return View("Edit");
+        }
+
+        public IActionResult Atualizar(IFormCollection form, Equipe e)
+        {
+            
+        }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         [Route("Cadastrar")]

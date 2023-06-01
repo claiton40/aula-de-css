@@ -1,0 +1,20 @@
+@model Equipe
+@{
+    ViewData["Ttle"] = "Edit";
+}
+<h2>Edição de Equipe</h2>
+
+<form action="" method="post" asp-action="@Url.Action("Atualizar")"
+>   <input type="hidden" name="idEquipe" value="@ViewBag
+.Equipe.idEquipe">
+
+    <label for="">Nome</label>
+    <input type="text" name="Nome" value="@ViewBag
+    .Equipe.Nome">
+    
+    <label for="">Imagem</label>
+    <input type="file" name ="Imagem" value="@ViewBag.Equipe.imagem">
+    
+
+    <button type="submit">Atualizar</button>
+</form>
