@@ -24,6 +24,7 @@
         <th>Nome</th>
         <th>Imagem</th>
         <th>Ações</th>
+        <td></td>
     </thead>
 
     <tbody>
@@ -39,7 +40,7 @@
                 <a class="nav-link text-dark" asp-area="link para esxcluir equipe" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@item.IdEquipe">Excluir</a>
             </td>
             <td>
-                <a class="nav-link text-dark" asp-area="link para esxcluir equipe" asp-controller="Equipe" asp-action="Editar" asp-route-id="@item.IdEquipe">Editar</a>
+                <a class="nav-link text-dark" asp-area="link para editar equipe" asp-controller="Equipe" asp-action="Editar" asp-route-id="@item.IdEquipe">Editar</a>
             </td>
         </tr>    
         }

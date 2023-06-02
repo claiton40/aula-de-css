@@ -13,17 +13,18 @@ namespace ProjetoGamer.Controllers
         {
             _logger = logger;
         }
+
         Context c = new Context(); // instancia do objeto que acess o bd
-        
 
-        [Route("Listar")]//http://localhost/Equipe/Listar
-
+        [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
-           ViewBag.Equipe = c.Equipe.ToList();
-           //ViewBag e uma classe do framework para mostrar a lista na View 
+            ViewBag.Equipe = c.Equipe.ToList();
+            //ViewBag e uma classe do framework para mostrar a lista na View
             return View();
         }
+
+        [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
             Equipe novaEquipe = new Equipe();
@@ -54,25 +55,24 @@ namespace ProjetoGamer.Controllers
             c.SaveChanges();
             return LocalRedirect("~/Equipe/Listar");
         }
-        [Route("Excluir/(id)")]
 
+        [Route("Excluir/(id)")]
         public IActionResult Excluir(int id)
         {
-            Equipe e = c.Equipe.First(e=> e.IdEquipe==id);
+            Equipe e = c.Equipe.First(e => e.IdEquipe == id);
             c.Equipe.Remove(e);
             c.SaveChanges();
             return LocalRedirect("~/Equipe/Listar");
         }
-        [Route("Editar/(id)")]
 
+        [Route("Editar/(id)")]
         public IActionResult Editar(int id)
         {
-            Equipe e = c.Equipe.First(e => e.IdEquipe==id);
+            Equipe e = c.Equipe.First(e => e.IdEquipe == id);
             ViewBag.Equipe = e;
             return View("Edit");
         }
 
-        
         [Route("Atualizar")]
         public IActionResult Atualizar(IFormCollection form, Equipe e)
         {
@@ -94,7 +94,7 @@ namespace ProjetoGamer.Controllers
 
                 var path = Path.Combine(folder, file.FileName);
 
-                using(var stream = new FileStream(path, FileMode.Create))
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
                     file.CopyTo(stream);
                 }
@@ -118,11 +118,7 @@ namespace ProjetoGamer.Controllers
             return LocalRedirect("~/Equipe/Listar");
         }
 
-
-        
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        [Route("Cadastrar")]
         public IActionResult Error()
         {
             return View("Error!");
