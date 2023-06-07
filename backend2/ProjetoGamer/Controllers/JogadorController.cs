@@ -53,9 +53,34 @@ namespace ProjetoGamer.Controllers
         [Route("Editar/(id)")]
         public IActionResult Editar(int id)
         {
-            Jogador jog = j.Jogador.First (jog => jog.IdJogador == id);;
+            Jogador Jog = j.Jogador.First (Jog => Jog.IdJogador == id);;
             ViewBag.Jogador = jog;
             return View("Edit");
+        }
+
+         [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        {
+            Jogador Jog = new Jogador();
+            
+            Jog.IdJogador = int.Parse(form["IdJogador"].ToString());
+            Jog.Nome = form["Nome"].ToString();
+            Jog.Email = form["Email"].ToString();
+            Jog.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            Jogador Jog  = j.Jogador.First(j => j.IdJogador == Jog.IdJogador);
+
+            Jog.Nome = Jog.Nome;
+            Jog.Email = Jog.Email;
+            Jog.Senha = Jog.Senha;
+            Jog.IdEquipe = Jog.IdEquipe;
+
+            j.Jogador.Update(Jog);
+            j.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
+
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
