@@ -11,7 +11,7 @@ using ProjetoGamer.Infra;
 namespace ProjetoGamer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230529201448_InitialCreate")]
+    [Migration("20230607180345_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -61,6 +61,10 @@ namespace ProjetoGamer.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

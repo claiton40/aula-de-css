@@ -61,6 +61,10 @@ namespace ProjetoGamer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("IdJogador");
 
                     b.HasIndex("IdEquipe");

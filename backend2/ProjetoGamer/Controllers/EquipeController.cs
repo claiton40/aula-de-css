@@ -19,6 +19,7 @@ namespace ProjetoGamer.Controllers
         [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserNanme");
             ViewBag.Equipe = c.Equipe.ToList();
             //ViewBag e uma classe do framework para mostrar a lista na View
             return View();

@@ -20,6 +20,7 @@ namespace ProjetoGamer.Controllers
         [Route("Listar")]
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserNanme");
             ViewBag.Jogador = j.Jogador.ToList();
             ViewBag.Equipe = j.Equipe.ToList();
             //ViewBag e uma classe do framework para mostrar a lista na View
@@ -34,6 +35,7 @@ namespace ProjetoGamer.Controllers
 
             novoJogador.Nome = form["Nome"].ToString();
             novoJogador.Email = form["Email"].ToString();
+            novoJogador.Senha = form["Senha"].ToString();
             novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
 
             j.Jogador.Add(novoJogador);
@@ -54,7 +56,8 @@ namespace ProjetoGamer.Controllers
         public IActionResult Editar(int id)
         {
             Jogador Jog = j.Jogador.First (Jog => Jog.IdJogador == id);;
-            ViewBag.Jogador = jog;
+            ViewBag.Jogador = Jog;
+            ViewBag.Equipe = j.Equipe.ToList();
             return View("Edit");
         }
 
@@ -66,16 +69,17 @@ namespace ProjetoGamer.Controllers
             Jog.IdJogador = int.Parse(form["IdJogador"].ToString());
             Jog.Nome = form["Nome"].ToString();
             Jog.Email = form["Email"].ToString();
+            Jog.Senha = form["Senha"].ToString();
             Jog.IdEquipe = int.Parse(form["IdEquipe"].ToString());
 
-            Jogador Jog  = j.Jogador.First(j => j.IdJogador == Jog.IdJogador);
+            Jogador Joga  = j.Jogador.First(j => j.IdJogador == Jog.IdJogador);
 
-            Jog.Nome = Jog.Nome;
-            Jog.Email = Jog.Email;
-            Jog.Senha = Jog.Senha;
-            Jog.IdEquipe = Jog.IdEquipe;
+            Joga.Nome = Jog.Nome;
+            Joga.Email = Jog.Email;
+            Joga.Senha = Jog.Senha;
+            Joga.IdEquipe = Jog.IdEquipe;
 
-            j.Jogador.Update(Jog);
+            j.Jogador.Update(Joga);
             j.SaveChanges();
 
             return LocalRedirect("~/Jogador/Listar");
