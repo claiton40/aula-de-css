@@ -18,9 +18,10 @@ namespace ProjetoGamer.Controllers
             _logger = logger;
         }
 
+        [Route("Login")]
         public IActionResult Index()
         {
-            ViewBag.UserName = HttpContext.Session.GetString("UserNanme");
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return View();
         }
 
