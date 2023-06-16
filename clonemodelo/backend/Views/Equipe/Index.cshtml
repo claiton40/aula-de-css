@@ -46,7 +46,8 @@ else
                         <th>Id</th>
                         <th>Nome</th>
                         <th>Imagem</th>
-                        <th>Ações</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -65,9 +66,10 @@ else
                     <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
                 </td>
                 <td>
-                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
-                    <img class="yellow-trash" src="./assets/trash.png" alt="">
-                    <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"><img src=" ../assets/trash.png" alt=""></a>
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe"><img src=" ../assets/Editar.png" alt=""></a>
                 </td>
             </tr>
         }
@@ -87,7 +89,7 @@ else
 
 
 
-<h1>Tela de Equipes</h1>
+@* <h1>Tela de Equipes</h1>
 
 @if (ViewBag.UserName == null)
 {
@@ -135,5 +137,5 @@ else
         
     </tbody>
 </table>
-}
+} *@
 

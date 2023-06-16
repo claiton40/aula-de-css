@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HJqzr8DBjmMDa1foOeQpljh6AMS3Y0wXr1hl5iNbLls=",
+  "Hash": "Daicngl5zjY57CuXMGlWv/jAO7cgbuyWGyfH0tZhGj8=",
   "Source": "projeto-gamer-tarde",
   "BasePath": "_content/projeto-gamer-tarde",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\Botao_voltar_ao_topo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\clonemodelo\\backend\\wwwroot\\assets\\Editar.png",
+      "SourceId": "projeto-gamer-tarde",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\clonemodelo\\backend\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer-tarde",
+      "RelativePath": "assets/Editar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Editar.png"
     },
     {
       "Identity": "C:\\Users\\29321863885\\Desktop\\claitinho da massa\\todas-aulas\\clonemodelo\\backend\\wwwroot\\assets\\envelope-icon.png",

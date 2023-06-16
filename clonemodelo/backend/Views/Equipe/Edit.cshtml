@@ -3,9 +3,12 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
+<link rel="stylesheet" href="~/css/equipes.css">
 <h2>Edição de Equipes</h2>
+<main>
 
+        <section class="container-grid cadastro-equipes">
+     
 @if (ViewBag.UserName == null)
 {
     <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
@@ -27,3 +30,5 @@ else
 
     </form>
 }
+ </section>
+    </main>
