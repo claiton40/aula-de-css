@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "agencia de viagens cogumelos azuis/1.0.0": {
+        "runtime": {
+          "agencia de viagens cogumelos azuis.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "agencia de viagens cogumelos azuis/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
