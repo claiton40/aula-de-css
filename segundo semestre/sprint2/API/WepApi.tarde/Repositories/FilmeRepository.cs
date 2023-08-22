@@ -3,24 +3,24 @@ using WepApi.tarde.Interfaces;
 
 namespace WepApi.tarde.Repositories
 {
-    public class GeneroRpository : IGeneroRepositery
+    public class FilmeRepository : IFilmeRepository
     {
-        public void AtualizarIdCorpo(GeneroDomain Genero)
+        public void AtualizarIdCorpo(FilmeDomain Filme)
         {
             throw new NotImplementedException();
         }
 
-        public void AtualizarIdURL(int id, GeneroDomain Genero)
+        public void AtualizarIdURL(int id, FilmeDomain Filme)
         {
             throw new NotImplementedException();
         }
 
-        public GeneroDomain BuscarPorId(int Id)
+        public FilmeDomain BuscarPorId(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public void Cadastrar(GeneroDomain NovoGenero)
+        public void Cadastrar(FilmeDomain NovoFilme)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace WepApi.tarde.Repositories
             throw new NotImplementedException();
         }
 
-        public List<GeneroDomain> ListarTodos()
+        public List<FilmeDomain> ListarTodos()
         {
             throw new NotImplementedException();
         }

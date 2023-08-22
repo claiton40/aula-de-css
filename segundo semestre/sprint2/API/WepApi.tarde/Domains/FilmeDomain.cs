@@ -14,6 +14,6 @@ namespace WepApi.tarde.Domains
         public int? IdGenero { get; set; }
 
     //referencia para a classe genero
-    public GeneroDomain Genero { get; set; }
+    public GeneroDomain? Genero { get; set; }
 }
 }

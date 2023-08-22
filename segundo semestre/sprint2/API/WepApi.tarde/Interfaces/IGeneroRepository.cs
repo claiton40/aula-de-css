@@ -6,7 +6,7 @@ namespace WepApi.tarde.Interfaces
     /// Responsavel pelo repositorio GeneroRepository
     /// Define os metodos que serao implemenetados pelo respositorio
     /// </summary>
-    public interface IGeneroRepositery
+    public interface IGeneroRepository
     {
         //CRUD
 
