@@ -43,6 +43,49 @@ namespace WepApi.tarde.Repositories
             throw new NotImplementedException();
         }
 
+        ///// <summary>
+        ///// listar todos os objetos do tipo genero
+        ///// </summary>
+        ///// <returns> lista de objetos do tipo genero </returns>
+        ///// <exception cref="notimplementedexception"></exception>
+        //public list<generodomain> listarid()
+        //{
+        //    //cria uma lista de generos onde serao armazenados os generos
+        //    generodomain genero = new generodomain();
+
+        //    //declara a sql conectio passsando a string de conexao como parametro
+        //    using (sqlconnection con = new sqlconnection(stringconexao))
+        //    {
+        //        //declara a isntrucao a ser executada
+        //        string consulta = "select idgenero, nome from genero";
+        //        //abre a conexao com o banco de dados
+        //        con.open();
+        //        //declara o sql data reader para percorrer a tabela do banco de dados
+        //        sqldatareader leitor;
+        //        //declara o sqlcommand passan do a query que sera execultada e a conexao
+        //        using (sqlcommand cmd = new sqlcommand(consulta, con))
+        //        {
+
+        //            leitor = cmd.executereader();
+
+        //            while (leitor.read())
+        //            {
+        //                generodomain genero = new generodomain()
+        //                {
+        //                    //atribui a prppriedade id genero o valor da primeira coluna da tabela
+        //                    idgenero = convert.toint32(leitor[0]),
+        //                    //atribui a proprieade nmome o valor da coluna nome
+        //                    nome = leitor["nome"].tostring(),
+        //                };
+
+        //            }
+        //        }
+        //    }
+        //    //retorna a lista de generos
+        //    return listagenero;
+        //}
+
+
         /// <summary>
         /// Listar todos os objetos do tipo Genero
         /// </summary>
@@ -63,7 +106,7 @@ namespace WepApi.tarde.Repositories
                 //declara o SQL data reader para percorrer a tabela do banco de dados
                 SqlDataReader Leitor;
                 //declara o sqlCommand passan do a Query que sera execultada e a conexao
-                using (SqlCommand cmd = new SqlCommand())
+                using (SqlCommand cmd = new SqlCommand(Consulta, Con))
                 {
 
                     Leitor = cmd.ExecuteReader();
