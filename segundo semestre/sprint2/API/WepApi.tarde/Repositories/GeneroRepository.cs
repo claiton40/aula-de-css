@@ -32,15 +32,36 @@ namespace WepApi.tarde.Repositories
         {
             throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Cadastrar genero
+        /// </summary>
+        /// <param name="NovoGenero">Objeto com as informacoes cadastradas</param>
+        /// <exception cref="NotImplementedException"></exception>
         public void Cadastrar(GeneroDomain NovoGenero)
         {
-            throw new NotImplementedException();
+            using (SqlConnection Con = new SqlConnection(StringConexao))
+            {
+                //Declara a query q sera executada
+                string QueryInsert = "insert into Genero (Nome) values (' " + NovoGenero.Nome + "')";
+                
+                //declara o SQLCommand passando a Query que sera execultado e a conexao com o bd
+                using (SqlCommand cmd = new SqlCommand(QueryInsert, Con))
+                {
+                    //Abre a conexao com o banco de dados
+                    Con.Open();
+
+                    ///Executa a Query
+                    cmd.ExecuteNonQuery();
+                }
+             }
         }
 
         public void Deletar(int Id)
         {
-            throw new NotImplementedException();
+           
+
+           
+           
         }
 
         ///// <summary>

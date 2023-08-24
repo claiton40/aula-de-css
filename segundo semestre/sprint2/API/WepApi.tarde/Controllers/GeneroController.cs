@@ -57,8 +57,24 @@ namespace WepApi.tarde.Controllers
                 return BadRequest(erro.Message);
             }
 
-
-
         }
+
+        [HttpPost]
+        public IActionResult Post(GeneroDomain NovoGenero)
+        {
+            try
+            {
+                _generoRepository.Cadastrar(NovoGenero);
+
+                return Created("Objeto criado", NovoGenero);
+            }
+            catch (Exception erro)
+            {
+
+                return BadRequest(erro.Message);
+            }
+        }
+          
+
     }
 }
