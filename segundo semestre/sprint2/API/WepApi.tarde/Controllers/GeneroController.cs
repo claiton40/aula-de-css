@@ -59,6 +59,23 @@ namespace WepApi.tarde.Controllers
 
         }
 
+        [HttpGet("Id")]
+        public IActionResult GetById(int Id)
+        {
+            try
+            {
+                GeneroDomain GeneroBuscado = _generoRepository.BuscarPorId(Id);
+               
+                return Ok(GeneroBuscado);
+            }
+            catch (Exception erro)
+            {
+
+                return BadRequest(erro.Message);
+            }
+
+        }
+
         [HttpPost]
         public IActionResult Post(GeneroDomain NovoGenero)
         {
@@ -74,7 +91,22 @@ namespace WepApi.tarde.Controllers
                 return BadRequest(erro.Message);
             }
         }
-          
+
+        [HttpDelete]
+        public IActionResult Delete(int Id)
+        {
+            try
+            {
+                _generoRepository.Deletar(Id);
+
+                return StatusCode(204);
+            }
+            catch (Exception erro)
+            {
+
+                return BadRequest(erro.Message);
+            }
+        }
 
     }
 }
