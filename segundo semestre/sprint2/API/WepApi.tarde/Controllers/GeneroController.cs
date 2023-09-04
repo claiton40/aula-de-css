@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using WepApi.tarde.Domains;
@@ -41,6 +42,7 @@ namespace WepApi.tarde.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize] //precisa estar logado para acessar a rota
         public IActionResult Get()
         {
             try

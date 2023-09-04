@@ -11,29 +11,30 @@ namespace WepApi.tarde.Repositories
         {
             using (SqlConnection Con = new SqlConnection(StringConexao))
             {
-                
-                string QueryLogin = "Select IdUsuario, Email, Permissao fron Usuario where Email = @email and Senha @Senha";
-                Con.Open(); 
 
-                using(SqlCommand cmd = new SqlCommand(QueryLogin, Con)) 
+                string QueryLogin = "Select IdUsuario, Email, Permissao from Usuario where Email = @email and Senha = @Senha";
+                Con.Open();
+
+                using (SqlCommand cmd = new SqlCommand(QueryLogin, Con))
                 {
-                cmd.Parameters.AddWithValue("@Email", Email);
-                cmd.Parameters.AddWithValue("@Senha", Senha);
+                    cmd.Parameters.AddWithValue("@Email", Email);
+                    cmd.Parameters.AddWithValue("@Senha", Senha);
 
-                    SqlDataReader rdr= cmd.ExecuteReader();
+                    SqlDataReader rdr = cmd.ExecuteReader();
 
                     if (rdr.Read())
                     {
-                        UsuarioDomain usuario= new UsuarioDomain() 
+                        UsuarioDomain usuario = new UsuarioDomain()
                         {
-                        IdUsuario = Convert.ToInt32(rdr["IdUsuario"]),
-                        Email = rdr["Email"].ToString(),
-                        Permissao= rdr["Permissao"].ToString()
+                            IdUsuario = Convert.ToInt32(rdr["IdUsuario"]),
+                            Email = rdr["Email"].ToString(),
+                            Permissao = rdr["Permissao"].ToString()
                         };
                         return usuario;
-                    } ;
+                    };
                 }
                 return null;
             }
+        }
     }
 }

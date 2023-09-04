@@ -11,7 +11,7 @@ namespace WepApi.tarde.Domains
         [Required (ErrorMessage = "O E-mail e obrigatorio")]
         public string Email { get; set; }
 
-        [StringLength(20, MinimumLength =3, ErrorMessage = "A senha deve ter enter 3 e 20 caracteres")]
+        [StringLength(20, MinimumLength =3, ErrorMessage = "A senha deve ter entre 3 e 20 caracteres")]
         [Required(ErrorMessage = "a senha deve ter entre 3 e 20 caracteres")]
         public string Senha { get; set; }
 

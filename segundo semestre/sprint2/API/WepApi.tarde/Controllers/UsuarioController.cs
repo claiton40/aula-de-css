@@ -68,13 +68,11 @@ namespace WepApi.tarde.Controllers
                 {
                     token = new JwtSecurityTokenHandler().WriteToken(token)
                 });
-            };
 
                // return Ok(UsuarioBuscado);
             }
             catch (Exception ERRO)
             {
-
                 return BadRequest(ERRO.Message);
             }
         }
