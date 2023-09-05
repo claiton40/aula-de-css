@@ -4,7 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 //Adiciona o servico de controllers
 builder.Services.AddControllers();
 //adicona servico de autenticacao jwt bearer
-builder.Services.AddAuthentication(options =>
+builder.Services.AddAuthentication
+    (
+    options =>
 {
     options.DefaultChallengeScheme = "JwtBearer";
     options.DefaultAuthenticateScheme = "JwtBearer";
