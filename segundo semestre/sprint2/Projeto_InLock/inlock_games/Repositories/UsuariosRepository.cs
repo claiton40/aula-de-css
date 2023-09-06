@@ -6,7 +6,10 @@ namespace inlock_games.Repositories
 {
     public class UsuariosRepository : IUsuariosRepository
     {
-         private string StringConexao = "Data Source = note01-s14; Initial Catalog= Filmes_Teste; User id = sa; Pwd = Senai@134";
-        UsuariosDomain Login(string email, string senha);
+        private string StringConexao = "Data Source = note01-s14; Initial Catalog= Filmes_Teste; User id = sa; Pwd = Senai@134";
+        public UsuariosDomain Login(string email, string senha)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

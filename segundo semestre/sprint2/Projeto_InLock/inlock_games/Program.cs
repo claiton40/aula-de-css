@@ -96,7 +96,7 @@ app.UseSwaggerUI(options =>
     options.RoutePrefix = string.Empty;
 });
 
-var app = builder.Build();
+//var app = builder.Build();
 
 //Usar autenticação
 app.UseAuthentication();

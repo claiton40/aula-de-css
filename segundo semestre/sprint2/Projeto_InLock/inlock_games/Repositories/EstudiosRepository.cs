@@ -4,12 +4,18 @@ using inlock_games.Interfaces;
 
 namespace inlock_games.Repositories
 {
-    public class EstudiosRepository: IEstudiosRepository
+    public class EstudiosRepository : IEstudiosRepository
     {
-        private string StringConexao = "Data Source = note01-s14; Initial Catalog= Filmes_Teste; User id = sa; Pwd = Senai@134";
-        
-        public void Cadastrar(EstudiosDomain NovoEstudio);
 
-        List<EstudiosDomain> ListarTodos();
+        private string StringConexao = "Data Source = note01-s14; Initial Catalog= Filmes_Teste; User id = sa; Pwd = Senai@134";
+        public void Cadastrar(EstudiosDomain NovoEstudio)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<EstudiosDomain> ListarTodos()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
