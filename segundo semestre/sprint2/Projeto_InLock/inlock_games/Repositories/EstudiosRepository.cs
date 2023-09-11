@@ -8,14 +8,30 @@ namespace inlock_games.Repositories
     {
 
         private string StringConexao = "Data Source = note01-s14; Initial Catalog= Filmes_Teste; User id = sa; Pwd = Senai@134";
-        public void Cadastrar(EstudiosDomain NovoEstudio)
-        {
-            throw new NotImplementedException();
-        }
 
         public List<EstudiosDomain> ListarTodos()
         {
-            throw new NotImplementedException();
+            List<EstudiosDomain> ListaEstudio = new List<EstudiosDomain>();
+            using (SqlConnection con = new SqlConnection(StringConexao)) 
+            {
+                string querySelectAll = "select Estudio.IdEstudio, Estudio.Nome from Estudio";
+                con.Open();
+                SqlDataReader rdr;
+                using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
+                {
+                rdr= cmd.ExecuteReader();
+                    while (rdr.Read())
+                    {
+                        EstudiosDomain Estudio = new EstudiosDomain()
+                        {
+                            IdEstudio = Convert.ToInt32(rdr["IdEstudio"]),
+                            Nome = rdr["Nome"].ToString(),
+                        };
+                        ListaEstudio.Add(Estudio);
+                    }
+                }
+            }
+            return ListaEstudio;
         }
     }
 }

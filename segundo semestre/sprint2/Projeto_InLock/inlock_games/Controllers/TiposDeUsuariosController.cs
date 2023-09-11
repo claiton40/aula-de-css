@@ -19,7 +19,7 @@ namespace inlock_games.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get() 
+        public IActionResult Get()
         {
             try
             {
@@ -32,4 +32,5 @@ namespace inlock_games.Controllers
                 return BadRequest(erro);
             }
         }
+    }
 }

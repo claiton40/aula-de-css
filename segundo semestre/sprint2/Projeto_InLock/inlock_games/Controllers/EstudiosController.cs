@@ -29,7 +29,6 @@ namespace inlock_games.Controllers
             }
             catch (Exception erro)
             {
-
                 return BadRequest(erro);
             }
         }
