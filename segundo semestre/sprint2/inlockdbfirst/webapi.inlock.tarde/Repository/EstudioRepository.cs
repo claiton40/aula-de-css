@@ -1,4 +1,5 @@
-﻿using webapi.inlock.tarde.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using webapi.inlock.tarde.Contexts;
 using webapi.inlock.tarde.Domains;
 using webapi.inlock.tarde.Interface;
 
@@ -8,34 +9,50 @@ namespace webapi.inlock.tarde.Repository
     {
         InLockContext Ctx = new InLockContext();
 
-        void IEstudioRepository.Atualizar(Guid id)
+        public void Atualizar(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        Estudio IEstudioRepository.BuscarPorId(Guid id)
+        public Estudio BuscarPorId(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        Estudio IEstudioRepository.BuscarPorId(Estudio estudio)
+        public Estudio BuscarPorId(Estudio estudio)
         {
             throw new NotImplementedException();
         }
 
-        void IEstudioRepository.Deletar(Guid Id)
+        public void Cadastrar(Estudio estudio)
         {
-            throw new NotImplementedException();
+            Ctx.Estudios.Add(estudio);
+
+            Ctx.SaveChanges();
         }
 
-        List<Estudio> IEstudioRepository.Listar()
+        public void Deletar(Guid Id)
+        {
+            Estudio estudioBuscado = Ctx.Estudios.Find(Id);
+
+            if (estudioBuscado != null)
+            {
+                Ctx.Estudios.Remove(estudioBuscado);
+            }
+
+            Ctx.SaveChanges();
+        }
+
+        public List<Estudio> Listar()
         {
             return Ctx.Estudios.ToList();
+
+            
         }
 
-        List<Estudio> IEstudioRepository.ListraComJogos()
+        public List<Estudio> ListraComJogos()
         {
-            throw new NotImplementedException();
+            return Ctx.Estudios.Include(e => e.Jogos).ToList();
         }
     }
 }

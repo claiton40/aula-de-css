@@ -7,6 +7,8 @@ namespace webapi.inlock.tarde.Interface
         List<Estudio> Listar();
         Estudio BuscarPorId(Guid id);
         Estudio BuscarPorId(Estudio estudio);
+
+        void Cadastrar(Estudio estudio);
         void Atualizar(Guid id);
         void Deletar(Guid Id);
         List<Estudio> ListraComJogos();
