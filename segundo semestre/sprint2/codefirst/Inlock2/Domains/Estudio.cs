@@ -9,13 +9,11 @@ namespace Inlock2.Domains
         [Key]
         public Guid IdEstudio { get; set; } = Guid.NewGuid();
 
-        [Required(ErrorMessage ="Nome Obrigatorio")]
-        [Column(TypeName = "varchar(100)")]
-        public string Nome { get; set; }
-        public List<Jogo> Jogo { get;}
+        [Column(TypeName = "VARCHAR(100)")]
+        [Required(ErrorMessage = "Nome obrigatório!")]
+        public string? Nome { get; set; }
 
-
-
+        //ref.lista de jogos
+        public List<Jogo>? Jogo { get; set; }
     }
-
 }
