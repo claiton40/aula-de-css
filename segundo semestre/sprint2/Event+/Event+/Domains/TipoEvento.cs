@@ -10,7 +10,7 @@ namespace Event_.Domains
         public Guid IdTipoDeEvento { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "varchar(100)")]
-        [Required(ErrorMessage = "Titulo e obrigatorio")]
-        public string Titulo { get; set; }
+        [Required(ErrorMessage = "Nome do evento obrigatório!")]
+        public string? Titulo { get; set; }
     }
 }

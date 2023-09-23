@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Event_.Domains
 {
     [Table("Instituicao")]
+    [Index(nameof(Cnpj), IsUnique = true)]
     public class Instituicao
     {
         [Key]
@@ -12,7 +14,7 @@ namespace Event_.Domains
         [Column(TypeName = "VARCHAR(14)")]
         [Required(ErrorMessage = "CNPJ Obrigatorio")]
         [StringLength(14)]
-        public int Cnpj { get; set; }
+        public string? Cnpj { get; set; }
 
         [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "Endereco Obrigatorio")]

@@ -11,7 +11,7 @@ namespace Event_.Domains
         public Guid IdTipoUsuario { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "VARCHAR(100)")]
-        [Required(ErrorMessage = "Nome Obrigatoria")]
-        public string Titulo { get; set; }
+        [Required(ErrorMessage = "Tipo do usuário obrigatório!")]
+        public string? Titulo { get; set; }
     }
 }

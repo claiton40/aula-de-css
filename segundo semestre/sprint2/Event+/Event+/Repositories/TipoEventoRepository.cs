@@ -5,6 +5,16 @@ namespace Event_.Repositories
 {
     public class TipoEventoRepository : ITipoEventoRepository
     {
+        public void Atualizar(Guid id, TipoEvento tipoEvento)
+        {
+            throw new NotImplementedException();
+        }
+
+        public TipoEvento BuscarPorId(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Cadastrar(TipoEvento tipoEvento)
         {
             throw new NotImplementedException();

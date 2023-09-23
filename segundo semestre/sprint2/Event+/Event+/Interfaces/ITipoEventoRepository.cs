@@ -9,5 +9,9 @@ namespace Event_.Interfaces
         void Deletar(Guid id);
 
         List<TipoEvento> Listar();
+
+        TipoEvento BuscarPorId(Guid id);
+
+        void Atualizar(Guid id, TipoEvento tipoEvento);
     }
 }

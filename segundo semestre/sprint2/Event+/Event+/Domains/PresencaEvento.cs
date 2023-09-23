@@ -11,16 +11,16 @@ namespace Event_.Domains
         public Guid IdPresencaEvento { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "BIT")]
-        [Required(ErrorMessage = "Data Obrigatoria")]
+        [Required(ErrorMessage = "Situação Obrigatoria")]
         public bool Situacao { get; set; }
 
         //atributos das dependencias = Usuario
 
-        [Required(ErrorMessage = "Usuario Obrigatorio")]
+        [Required(ErrorMessage = "Usuario obrigatorio")]
         public Guid IdUsuario { get; set; }
 
         [ForeignKey(nameof(IdUsuario))]
-        public Usuario Usuario { get; set; }
+        public Usuario? Usuario { get; set; }
 
         //atributos das dependencias = Evento
 
@@ -28,6 +28,6 @@ namespace Event_.Domains
         public Guid IdEvento { get; set; }
 
         [ForeignKey(nameof(IdEvento))]
-        public Evento Eventos { get; set; }
+        public Evento? Eventos { get; set; }
     }
 }

@@ -11,28 +11,28 @@ namespace Event_.Domains
         public Guid IdEvento { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "DATE")]
-        [Required(ErrorMessage ="Data Obrigatoria")]
+        [Required(ErrorMessage = "A data do evento é obrigatória!")]
         public DateTime DataEvento { get; set; }
 
         [Column(TypeName = "VARCHAR(100)")]
-        [Required(ErrorMessage = "Nome Obrigatoria")]
+        [Required(ErrorMessage = "Nome do evento obrigatório!")]
         public string NomeEvento { get; set; }
 
         [Column(TypeName = "TEXT")]
-        [Required(ErrorMessage = "Descricao Obrigatoria")]
+        [Required(ErrorMessage = "Descrição do evento obrigatória!")]
         public string Descricao { get; set; }
         
         //atributos das dependencias = Tipo de Evento
         public Guid IdTipoDeEvento { get; set; }
 
         [ForeignKey(nameof(IdTipoDeEvento))]
-        public TipoEvento TipoEvento { get; set; }
+        public TipoEvento? TipoEvento { get; set; }
 
         //atributos das dependencias = Instituicao
         public Guid IdInstituicao { get; set; }
 
         [ForeignKey(nameof(IdInstituicao))]
-        public Instituicao Instituicao { get; set; }
+        public Instituicao? Instituicao { get; set; }
 
     }
 }
