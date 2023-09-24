@@ -22,8 +22,6 @@ namespace Event_.Contexts
         {
             optionsBuilder.UseSqlServer("Server=note01-s14; Database=event+Claiton; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true;");
             base.OnConfiguring(optionsBuilder);
-
-
         }
     }
 }

@@ -32,6 +32,6 @@ namespace Event_.Domains
         public Guid IdTipoUsuario { get; set; }
 
         [ForeignKey(nameof(IdTipoUsuario))]
-        public TipoEvento? TipoEvento { get; set; }
+        public TipoUsuario? TipoUsuario { get; set; }
     }
 }
