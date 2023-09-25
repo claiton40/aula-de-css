@@ -4,11 +4,11 @@ using Event_.Interfaces;
 
 namespace Event_.Repositories
 {
-    public class TiposEventoRepository : ITipoEventoRepository
+    public class TipoEventoRepository : ITipoEventoRepository
     {
         private readonly Event_Context _context;
 
-        public TiposEventoRepository()
+        public TipoEventoRepository()
         {
             _context = new Event_Context();
         }
@@ -17,7 +17,7 @@ namespace Event_.Repositories
         {
             try
             {
-                TiposEvento tipoBuscado = _context.TipoEvento.Find(id)!;
+                TipoEvento tipoBuscado = _context.TipoEvento.Find(id)!;
 
                 if (tipoBuscado != null)
                 {

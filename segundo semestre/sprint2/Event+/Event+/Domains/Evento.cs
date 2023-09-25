@@ -16,11 +16,11 @@ namespace Event_.Domains
 
         [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "Nome do evento obrigatório!")]
-        public string NomeEvento { get; set; }
+        public string? NomeEvento { get; set; }
 
         [Column(TypeName = "TEXT")]
         [Required(ErrorMessage = "Descrição do evento obrigatória!")]
-        public string Descricao { get; set; }
+        public string? Descricao { get; set; }
         
         //atributos das dependencias = Tipo de Evento
         public Guid? IdTipoEvento { get; set; }
@@ -29,7 +29,7 @@ namespace Event_.Domains
         public TipoEvento? TipoEvento { get; set; }
 
         //atributos das dependencias = Instituicao
-        public Guid IdInstituicao { get; set; }
+        public Guid? IdInstituicao { get; set; }
 
         [ForeignKey(nameof(IdInstituicao))]
         public Instituicao? Instituicao { get; set; }

@@ -18,10 +18,10 @@ namespace Event_.Domains
 
         [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "Endereco Obrigatorio")]
-        public string Endereco { get;set;}
+        public string? Endereco { get;set;}
 
         [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "Nome Fantasia Obrigatorio")]
-        public string NomeFantasia { get; set; }    
+        public string? NomeFantasia { get; set; }    
     }
 }
