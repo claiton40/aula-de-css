@@ -1,33 +1,96 @@
-﻿using Event_.Domains;
+﻿using Event_.Contexts;
+using Event_.Domains;
 using Event_.Interfaces;
 
 namespace Event_.Repositories
 {
     public class InstituicaoRepository : IInstituicaoRepository
     {
+        private readonly Event_Context _context;
+
+        public InstituicaoRepository()
+        {
+            _context = new Event_Context();
+        }
+
         public void Atualizar(Guid id, Instituicao instituicao)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Instituicao instituicaoBuscada = _context.Instituicao.Find(id)!;
+
+                if (instituicaoBuscada != null)
+                {
+                    instituicaoBuscada.Cnpj = instituicao.Cnpj;
+                    instituicaoBuscada.Endereco = instituicao.Endereco;
+                    instituicaoBuscada.NomeFantasia = instituicao.NomeFantasia;
+                }
+
+                _context.Instituicao.Update(instituicaoBuscada!);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public Instituicao BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Instituicao.Find(id)!;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(Instituicao instituicao)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Instituicao.Add(instituicao);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Instituicao InstituicaoBuscada = _context.Instituicao.Find(id)!;
+
+                if (InstituicaoBuscada != null)
+                {
+                    _context.Instituicao.Remove(InstituicaoBuscada);
+                }
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<Instituicao> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Instituicao.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

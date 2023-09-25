@@ -28,6 +28,6 @@ namespace Event_.Domains
         public Guid IdEvento { get; set; }
 
         [ForeignKey(nameof(IdEvento))]
-        public Evento? Eventos { get; set; }
+        public Evento? Evento { get; set; }
     }
 }

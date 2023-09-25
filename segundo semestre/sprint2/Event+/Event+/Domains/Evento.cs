@@ -23,9 +23,9 @@ namespace Event_.Domains
         public string Descricao { get; set; }
         
         //atributos das dependencias = Tipo de Evento
-        public Guid IdTipoDeEvento { get; set; }
+        public Guid? IdTipoEvento { get; set; }
 
-        [ForeignKey(nameof(IdTipoDeEvento))]
+        [ForeignKey(nameof(IdTipoEvento))]
         public TipoEvento? TipoEvento { get; set; }
 
         //atributos das dependencias = Instituicao

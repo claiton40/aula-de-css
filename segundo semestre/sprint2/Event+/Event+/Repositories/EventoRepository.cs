@@ -1,33 +1,99 @@
-﻿using Event_.Domains;
+﻿using Event_.Contexts;
+using Event_.Domains;
 using Event_.Interfaces;
 
 namespace Event_.Repositories
 {
     public class EventoRepository : IEventoRepository
     {
-        void IEventoRepository.Atualizar(Guid id, Evento evento)
+        private readonly Event_Context _context;
+
+        public EventoRepository()
         {
-            throw new NotImplementedException();
+            _context = new Event_Context();
         }
 
-        Evento IEventoRepository.BuscarPorId(Guid id)
+        public void Atualizar(Guid id, Evento evento)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Evento eventoBuscado = _context.Evento.Find(id)!;
+
+                if (eventoBuscado != null)
+                {
+                    eventoBuscado.DataEvento = evento.DataEvento;
+                    eventoBuscado.NomeEvento = evento.NomeEvento;
+                    eventoBuscado.Descricao = evento.Descricao;
+                    eventoBuscado.IdTipoEvento = evento.IdTipoEvento;
+                }
+
+                _context.Evento.Update(eventoBuscado!);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        void IEventoRepository.Cadastrar(Evento evento)
+        public Evento BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Evento.Find(id)!;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        void IEventoRepository.Deletar(Guid id)
+        public void Cadastrar(Evento evento)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Evento.Add(evento);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
 
-        List<Evento> IEventoRepository.Listar()
+        public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Evento eventoBuscado = _context.Evento.Find(id)!;
+
+                if (eventoBuscado != null)
+                {
+                    _context.Evento.Remove(eventoBuscado);
+                }
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+
+        public List<Evento> Listar()
+        {
+            try
+            {
+                return _context.Evento.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
