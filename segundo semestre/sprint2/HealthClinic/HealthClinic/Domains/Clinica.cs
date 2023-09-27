@@ -26,9 +26,8 @@ namespace HealthClinic.Domains
             [Required(ErrorMessage = "Nome Fantasia Obrigatorio")]
             public string? NomeFantasia { get; set; }
 
-        [Column(TypeName = "VARCHAR(100)")]
-        [Required(ErrorMessage = "Decricao  Obrigatoria")]
-        public string? Descricao { get; set; }
-    }
-    }
-
+            [Column(TypeName = "TEXT")]
+            [Required(ErrorMessage = "Decricao  Obrigatoria")]
+            public string? Descricao { get; set; }
+        }
+}

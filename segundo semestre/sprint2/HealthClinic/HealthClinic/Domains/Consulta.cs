@@ -12,7 +12,7 @@ namespace HealthClinic.Domains
             [Key]
             public Guid IdConsulta { get; set; } = Guid.NewGuid();
 
-            [Column(TypeName = "VARCHAR(14)")]
+            [Column(TypeName = "DATETIME")]
             [Required(ErrorMessage = "Data e hora Obrigatorios")]
             public DateTime? Data { get; set; }
 

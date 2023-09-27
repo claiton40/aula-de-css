@@ -35,9 +35,9 @@ namespace HealthClinic.Domains
         //propriedades da dependencia = entidade Consulta
         
         public Guid IdConsulta { get; set; }
-
+        //verificar com os professores onde que vai essa lista
         [ForeignKey(nameof(IdConsulta))]
-        public Consulta? Consulta { get; set; }
+        public List<Consulta> Consulta = new List<Consulta>();
     }
 
 }
