@@ -14,7 +14,29 @@ namespace HealthClinic.Repositories
         }
         public Admin BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Admin adminBuscado = _context.Admin
+                    .Select(u => new Admin
+                    {
+                        IdAdmin = u.IdAdmin,
+                        Nome = u.Nome,
+                        Email = u.Email,
+                        Senha = u.Senha,
+
+                    }).FirstOrDefault(u => u.IdAdmin == id)!;
+
+                if (adminBuscado != null)
+                {
+                    return adminBuscado;
+
+                }
+                return null!;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(Admin admin)
