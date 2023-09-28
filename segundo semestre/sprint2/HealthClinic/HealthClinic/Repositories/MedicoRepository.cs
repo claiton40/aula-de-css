@@ -1,10 +1,16 @@
-﻿using HealthClinic.Domains;
+﻿using HealthClinic.Contexts;
+using HealthClinic.Domains;
 using HealthClinic.Interfaces;
 
 namespace HealthClinic.Repositories
 {
     public class MedicoRepository : IMedicoRepository
     {
+        private readonly HealthClinic_Context _context;
+        public MedicoRepository()
+        {
+            _context = new HealthClinic_Context();
+        }
         public Medico BuscarPorId(Guid id)
         {
             throw new NotImplementedException();
