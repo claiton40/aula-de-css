@@ -5,7 +5,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HealthClinic.Domains
 {
-    
         [Table("Paciente")]
         [Index(nameof(Email), IsUnique = true)]
         public class Paciente
@@ -28,17 +27,9 @@ namespace HealthClinic.Domains
             [StringLength(60, MinimumLength = 5, ErrorMessage = "A Senha deve contre entre 5 e 60 caracteres")]
             public string? Senha { get; set; }
 
-        [Column(TypeName = "TEXT")]
-        [Required(ErrorMessage = "Descricao da consulta e obrigatoria")]
-        public string? Descricao { get; set; }
-
-        //propriedades da dependencia = entidade Consulta
-        
-        public Guid IdConsulta { get; set; }
-        //verificar com os professores onde que vai essa lista
-        [ForeignKey(nameof(IdConsulta))]
-        public List<Consulta> Consulta = new List<Consulta>();
-    }
-
+            [Column(TypeName = "TEXT")]
+            [Required(ErrorMessage = "Descricao da consulta e obrigatoria")]
+            public string? Descricao { get; set; }
+        }
 }
 

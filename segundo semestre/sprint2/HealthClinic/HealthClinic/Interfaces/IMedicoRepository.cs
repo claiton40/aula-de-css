@@ -6,7 +6,6 @@ namespace HealthClinic.Interfaces
     {
         void Cadastrar(Medico medico);
         List<Medico> Listar();
-        Medico BuscarPorId(Guid id);
-        void Atualizar(Guid id, Medico medico);
+        Medico BuscarPorId(Guid id)
     }
 }

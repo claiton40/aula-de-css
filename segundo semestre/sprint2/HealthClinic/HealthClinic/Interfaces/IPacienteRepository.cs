@@ -7,6 +7,5 @@ namespace HealthClinic.Interfaces
         void Cadastrar(Paciente paciente);
         List<Paciente> Listar();
         Paciente BuscarPorId(Guid id);
-        void Atualizar(Guid id, Paciente paciente);
     }
 }
