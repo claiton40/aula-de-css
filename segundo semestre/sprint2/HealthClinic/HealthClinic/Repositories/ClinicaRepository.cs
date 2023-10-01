@@ -13,12 +13,27 @@ namespace HealthClinic.Repositories
         }
         public void Cadastrar(Clinica clinica)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                _context.Clinica.Add(clinica);
 
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         public List<Clinica> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Clinica.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

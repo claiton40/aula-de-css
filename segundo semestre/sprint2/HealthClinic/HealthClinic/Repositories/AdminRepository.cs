@@ -1,6 +1,7 @@
 ﻿using HealthClinic.Contexts;
 using HealthClinic.Domains;
 using HealthClinic.Interfaces;
+using HealthClinic.Utils;
 
 namespace HealthClinic.Repositories
 {
@@ -41,12 +42,33 @@ namespace HealthClinic.Repositories
 
         public void Cadastrar(Admin admin)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                admin.Senha = Criptografia.GerarHash(admin.Senha!);
+
+
+                _context.Admin.Add(admin);
+
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<Admin> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Admin.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

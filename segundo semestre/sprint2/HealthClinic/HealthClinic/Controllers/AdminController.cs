@@ -12,7 +12,7 @@ namespace HealthClinic.Controllers
         public class AdminController : ControllerBase
         {
             private readonly IAdminRepository _adminRepository;
-
+       
             public AdminController()
             {
                 _adminRepository = new AdminRepository();
@@ -31,6 +31,20 @@ namespace HealthClinic.Controllers
             }
         }
 
+        [HttpPost]
+        public IActionResult Post(Admin admin)
+        {
+            try
+            {
+                _adminRepository.Cadastrar(admin);
+
+                return StatusCode(201, admin);
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error.Message);
+            }
+        }
 
 
     }

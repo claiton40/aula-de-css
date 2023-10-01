@@ -13,27 +13,82 @@ namespace HealthClinic.Repositories
         }
         public Consulta BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Consulta.Find(id)!;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(Consulta consulta)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Consulta.Add(consulta);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Consulta consultaBuscada = _context.Consulta.Find(id)!;
+
+                if (consultaBuscada != null)
+                {
+                    _context.Consulta.Remove(consultaBuscada);
+                }
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<Consulta> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Consulta.ToList();
+            }
+            catch (Exception)
+            {
+                throw; 
+            }
         }
+
+       
 
         public void Prontuario(Paciente paciente)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Paciente pacienteBuscado = _context.Paciente.!;
+
+                if (pacienteBuscado != null)
+                {
+                    pacienteBuscado.Descricao = pacienteBuscado.Descricao;
+                }
+
+                _context.TipoUsuario.Update(tipoBuscado!);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
