@@ -13,17 +13,40 @@ namespace HealthClinic.Repositories
         }
         public Especialidade BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Especialidade.Find(id)!;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(Especialidade especialidade)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Especialidade.Add(especialidade);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<Especialidade> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Especialidade.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

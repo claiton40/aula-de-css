@@ -64,24 +64,27 @@ namespace HealthClinic.Repositories
             }
             catch (Exception)
             {
-                throw; 
+                throw;
             }
         }
 
-       
+        
 
-        public void Prontuario(Paciente paciente)
+        public void Prontuario(Guid id, Paciente paciente)
         {
             try
             {
-                Paciente pacienteBuscado = _context.Paciente.!;
+                Paciente pacienteBuscado = _context.Paciente.Find(id)!;
 
-                if (pacienteBuscado != null)
+                if (eventoBuscado != null)
                 {
-                    pacienteBuscado.Descricao = pacienteBuscado.Descricao;
+                    eventoBuscado.DataEvento = evento.DataEvento;
+                    eventoBuscado.NomeEvento = evento.NomeEvento;
+                    eventoBuscado.Descricao = evento.Descricao;
+                    eventoBuscado.IdTipoEvento = evento.IdTipoEvento;
                 }
 
-                _context.TipoUsuario.Update(tipoBuscado!);
+                _context.Evento.Update(eventoBuscado!);
 
                 _context.SaveChanges();
             }

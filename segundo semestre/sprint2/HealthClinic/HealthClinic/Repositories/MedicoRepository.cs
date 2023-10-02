@@ -13,17 +13,40 @@ namespace HealthClinic.Repositories
         }
         public Medico BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Medico.Find(id)!;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(Medico medico)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Medico.Add(medico);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<Medico> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Medico.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

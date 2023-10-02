@@ -1,6 +1,7 @@
 ﻿using HealthClinic.Contexts;
 using HealthClinic.Domains;
 using HealthClinic.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HealthClinic.Repositories
 {
@@ -35,5 +36,7 @@ namespace HealthClinic.Repositories
                 throw;
             }
         }
+
+        
     }
 }
