@@ -68,23 +68,23 @@ namespace HealthClinic.Repositories
             }
         }
 
-        
 
-        public void Prontuario(Guid id, Paciente paciente)
+
+        public void Prontuario(Guid id, string consulta)
         {
             try
             {
-                Paciente pacienteBuscado = _context.Paciente.Find(id)!;
 
-                if (eventoBuscado != null)
+                Consulta consultaBuscada = _context.Consulta.
+                    Find(id)!;
+
+                if (consultaBuscada != null)
                 {
-                    eventoBuscado.DataEvento = evento.DataEvento;
-                    eventoBuscado.NomeEvento = evento.NomeEvento;
-                    eventoBuscado.Descricao = evento.Descricao;
-                    eventoBuscado.IdTipoEvento = evento.IdTipoEvento;
+                    //AQUI ESTA O PROBLEMA , VERIFICAR PQ NAO ACESSA A DESCRICAO
+                    consultaBuscada.Paciente.Descricao = consulta;
                 }
 
-                _context.Evento.Update(eventoBuscado!);
+                _context.Consulta.Update(consultaBuscada);
 
                 _context.SaveChanges();
             }
@@ -93,5 +93,9 @@ namespace HealthClinic.Repositories
                 throw;
             }
         }
+
+
     }
 }
+
+//HttpPatch

@@ -8,6 +8,6 @@ namespace HealthClinic.Interfaces
         void Deletar(Guid id);
         List<Consulta> Listar();
         Consulta BuscarPorId(Guid id);
-        void Prontuario(Paciente paciente);
+        void Prontuario(Guid id, string consulta);
     }
 }

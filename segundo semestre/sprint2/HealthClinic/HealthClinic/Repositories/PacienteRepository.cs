@@ -2,6 +2,7 @@
 using HealthClinic.Domains;
 using HealthClinic.Interfaces;
 
+
 namespace HealthClinic.Repositories
 {
     public class PacienteRepository : IPacienteRepository
@@ -13,17 +14,42 @@ namespace HealthClinic.Repositories
         }
         public Paciente BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Paciente.Find(id)!;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(Paciente paciente)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Paciente.Add(paciente);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<Paciente> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Paciente.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
+
+        
     }
 }
