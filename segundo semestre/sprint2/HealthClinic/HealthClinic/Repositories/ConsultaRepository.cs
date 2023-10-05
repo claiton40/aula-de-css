@@ -70,21 +70,41 @@ namespace HealthClinic.Repositories
 
 
 
-        public void Prontuario(Guid id, string consulta)
+        public void Prontuario(Guid id, string descricaoConsulta)
         {
             try
             {
 
-                Consulta consultaBuscada = _context.Consulta.
-                    Find(id)!;
+                Consulta consultaBuscada = _context.Consulta
+                    .Select(c => new Consulta
+                    {
+                        IdConsulta= c.IdConsulta,
+                        IdMedico= c.IdMedico,
+                        Data = c.Data,
+                        IdPaciente= c.IdPaciente,
+                        Paciente = new Paciente
+                        {
+                            IdPaciente= c.Paciente!.IdPaciente,
+                            Descricao = c.Paciente!.Descricao,
+                            Email = c.Paciente!.Email,
+                            Nome = c.Paciente.Nome,
+                            Senha = c.Paciente.Senha,
+                        }
+                    })
+                    .FirstOrDefault(c => c.IdConsulta == id)!;
 
                 if (consultaBuscada != null)
                 {
+                    consultaBuscada.IdConsulta = consultaBuscada.IdConsulta;
+                    consultaBuscada.IdMedico = consultaBuscada.IdMedico;
+                    consultaBuscada.Data = consultaBuscada.Data;
+                    consultaBuscada.IdPaciente = consultaBuscada.IdPaciente;
+
                     //AQUI ESTA O PROBLEMA , VERIFICAR PQ NAO ACESSA A DESCRICAO
-                    consultaBuscada.Paciente.Descricao = consulta;
+                    consultaBuscada.Paciente!.Descricao = descricaoConsulta;
                 }
 
-                _context.Consulta.Update(consultaBuscada);
+                _context.Consulta.Update(consultaBuscada!);
 
                 _context.SaveChanges();
             }

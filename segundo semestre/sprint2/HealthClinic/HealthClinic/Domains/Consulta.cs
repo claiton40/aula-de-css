@@ -4,17 +4,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HealthClinic.Domains
 {
-   
-        [Table("Consulta")]
-        public class Consulta
-        {
-        //atributos da classe
-            [Key]
-            public Guid IdConsulta { get; set; } = Guid.NewGuid();
 
-            [Column(TypeName = "DATETIME")]
-            [Required(ErrorMessage = "Data e hora Obrigatorios")]
-            public DateTime? Data { get; set; }
+    [Table("Consulta")]
+    public class Consulta
+    {
+        //atributos da classe
+        [Key]
+        public Guid IdConsulta { get; set; } = Guid.NewGuid();
+
+        [Column(TypeName = "DATETIME")]
+        [Required(ErrorMessage = "Data e hora Obrigatorios")]
+        public DateTime? Data { get; set; }
 
         //propriedades da dependencia = entidade Medico
 
@@ -23,6 +23,8 @@ namespace HealthClinic.Domains
 
         [ForeignKey(nameof(IdMedico))]
         public Medico? Medico { get; set; }
+
+
 
         [Required(ErrorMessage = "Paciente é obrigatório!")]
         public Guid IdPaciente { get; set; }
