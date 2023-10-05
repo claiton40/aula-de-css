@@ -17,7 +17,11 @@ namespace HealthClinic.Controllers
             {
                 _adminRepository = new AdminRepository();
             }
-
+        /// <summary>
+        /// Busca o usuarios do tipo ADMIN pelo ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Busca o usuarios do tipo ADMIN pelo ID</returns>
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(Guid id)
         {
@@ -30,7 +34,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Listar todo usuarios do tipo ADMIN
+        /// </summary>
+        /// <returns>Listar todo usuarios do tipo ADMIN</returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -43,7 +50,11 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Cadastra um usuario do tipo ADMIN
+        /// </summary>
+        /// <param name="admin"></param>
+        /// <returns>Cadastra um usuario do tipo ADMIN</returns>
         [HttpPost]
         public IActionResult Post(Admin admin)
         {

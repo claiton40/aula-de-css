@@ -16,7 +16,10 @@ namespace HealthClinic.Controllers
         {
             _consultaRepository = new ConsultaRepository();
         }
-
+        /// <summary>
+        /// Lista todas as consultas
+        /// </summary>
+        /// <returns>Lista todas as consultas</returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -30,7 +33,11 @@ namespace HealthClinic.Controllers
             }
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {

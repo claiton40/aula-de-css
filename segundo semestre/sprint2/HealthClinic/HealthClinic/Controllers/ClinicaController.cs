@@ -16,7 +16,11 @@ namespace HealthClinic.Controllers
         {
             _clinicaRepository = new ClinicaRepository();
         }
-
+        /// <summary>
+        /// Cadastra a clinica
+        /// </summary>
+        /// <param name="clinica"></param>
+        /// <returns>Cadastra a clinica</returns>
         [HttpPost]
         public IActionResult Post(Clinica clinica)
         {
@@ -32,6 +36,10 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Exibe a clinica cadastrada
+        /// </summary>
+        /// <returns>Exibe a clinica cadastrada</returns>
         [HttpGet]
         public IActionResult Get()
         {

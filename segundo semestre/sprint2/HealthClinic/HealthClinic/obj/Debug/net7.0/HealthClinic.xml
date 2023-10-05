@@ -10,6 +10,19 @@
             </summary>
             <param name="optionsBuilder">Objeto com as configurações definidas</param>
         </member>
+        <member name="M:HealthClinic.Controllers.AdminController.BuscarPorId(System.Guid)">
+            <summary>
+            Busca o usuario do tipo ADMIN pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns>Busca o usuario do tipo ADMIN pelo ID</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.AdminController.Get">
+            <summary>
+            Listar todo usuarios do tipo ADMIN
+            </summary>
+            <returns>Busca o usuario do tipo ADMIN pelo ID</returns>
+        </member>
         <member name="T:HealthClinic.Migrations.bd_v1">
             <inheritdoc />
         </member>

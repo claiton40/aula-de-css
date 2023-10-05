@@ -100,7 +100,7 @@ namespace HealthClinic.Repositories
                     consultaBuscada.Data = consultaBuscada.Data;
                     consultaBuscada.IdPaciente = consultaBuscada.IdPaciente;
 
-                    //AQUI ESTA O PROBLEMA , VERIFICAR PQ NAO ACESSA A DESCRICAO
+                    
                     consultaBuscada.Paciente!.Descricao = descricaoConsulta;
                 }
 
