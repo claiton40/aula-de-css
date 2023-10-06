@@ -17,6 +17,10 @@ namespace HealthClinic.Controllers
             _medicoRepository = new MedicoRepository();
         }
 
+        /// <summary>
+        /// Lista todos o Medicos cadastrados
+        /// </summary>
+        /// <returns>Lista todos o Medicos cadastrados</returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -30,6 +34,11 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Pesquisa Medico por ID
+        /// </summary>
+        /// <param name="id">Informe o ID</param>
+        /// <returns>Pesquisa Medico por ID</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
@@ -43,6 +52,11 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Cadastra um novo Medico
+        /// </summary>
+        /// <param name="medico">Informe os dados do Medico</param>
+        /// <returns>Cadastra um novo Medico</returns>
         [HttpPost]
         public IActionResult Post(Medico medico)
         {

@@ -16,7 +16,11 @@ namespace HealthClinic.Controllers
             _especialidadeRepository = new EspecialidadeRepository();
         }
 
-
+        /// <summary>
+        /// Cadastrar no Especialidade
+        /// </summary>
+        /// <param name="especialidade">Informe o Nome da Especialidade</param>
+        /// <returns>Cadastrar no Especialidade</returns>
         [HttpPost]
         public IActionResult Post(Especialidade especialidade)
         {
@@ -32,6 +36,11 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Pesquisa a Especialidade por ID.
+        /// </summary>
+        /// <param name="id"> Informe o Id da Especialidade</param>
+        /// <returns>Pesquisa a Especialidade por ID.</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
@@ -45,6 +54,10 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Lista todas as Especialidades
+        /// </summary>
+        /// <returns>Lista todas as Especialidades</returns>
         [HttpGet]
         public IActionResult Get()
         {

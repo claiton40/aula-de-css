@@ -12,16 +12,125 @@
         </member>
         <member name="M:HealthClinic.Controllers.AdminController.BuscarPorId(System.Guid)">
             <summary>
-            Busca o usuario do tipo ADMIN pelo ID
+            Busca o usuarios do tipo ADMIN pelo ID
             </summary>
-            <param name="id"></param>
-            <returns>Busca o usuario do tipo ADMIN pelo ID</returns>
+            <param name="id"> Informe o ID do Usuário</param>
+            <returns>Busca o usuarios do tipo ADMIN pelo ID</returns>
         </member>
         <member name="M:HealthClinic.Controllers.AdminController.Get">
             <summary>
             Listar todo usuarios do tipo ADMIN
             </summary>
-            <returns>Busca o usuario do tipo ADMIN pelo ID</returns>
+            <returns>Listar todo usuarios do tipo ADMIN</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.AdminController.Post(HealthClinic.Domains.Admin)">
+            <summary>
+            Cadastra um usuario do tipo ADMIN
+            </summary>
+            <param name="admin">Informe o nome, E-mail e Senha do Usuário </param>
+            <returns>Cadastra um usuario do tipo ADMIN</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.ClinicaController.Post(HealthClinic.Domains.Clinica)">
+            <summary>
+            Cadastra a clinica
+            </summary>
+            <param name="clinica">In forme os dado da Clinica</param>
+            <returns>Cadastra a clinica</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.ClinicaController.Get">
+            <summary>
+            Exibe a clinica cadastrada
+            </summary>
+            <returns>Exibe a clinica cadastrada</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.ConsultaController.Get">
+            <summary>
+            Lista todas as consultas
+            </summary>
+            <returns>Lista todas as consultas</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.ConsultaController.GetById(System.Guid)">
+            <summary>
+            Pesquisa a consulta por ID
+            </summary>
+            <param name="id">Informe o Id da Consulta</param>
+            <returns>Pesquisa a consulta por ID</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.ConsultaController.Post(HealthClinic.Domains.Consulta)">
+            <summary>
+            Cadastrar nova Consulta
+            </summary>
+            <param name="consulta"> Informe os dados da consulta</param>
+            <returns>Cadastrar nova Consulta</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.ConsultaController.Delete(System.Guid)">
+            <summary>
+            Deletar uma Consulta
+            </summary>
+            <param name="id">Informe o Id da Consulta</param>
+            <returns>Deletar uma Consulta</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.ConsultaController.Patch(System.Guid,System.String)">
+            <summary>
+            Atualiza o Prontuario do paciente a partir da consulta.
+            </summary>
+            <param name="id">Informe o Id da Consulta</param>
+            <param name="consulta"> Descreva a evolução do Prontuario</param>
+            <returns>Atualiza o Prontuario do paciente a partir da consulta.</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.EspecialidadeController.Post(HealthClinic.Domains.Especialidade)">
+            <summary>
+            Cadastrar no Especialidade
+            </summary>
+            <param name="especialidade">Informe o Nome da Especialidade</param>
+            <returns>Cadastrar no Especialidade</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.EspecialidadeController.GetById(System.Guid)">
+            <summary>
+            Pesquisa a Especialidade por ID.
+            </summary>
+            <param name="id"> Informe o Id da Especialidade</param>
+            <returns>Pesquisa a Especialidade por ID.</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.EspecialidadeController.Get">
+            <summary>
+            Lista todas as Especialidades
+            </summary>
+            <returns>Lista todas as Especialidades</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.MedicoController.Get">
+            <summary>
+            Lista todos o Medicos cadastrados
+            </summary>
+            <returns>Lista todos o Medicos cadastrados</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.MedicoController.GetById(System.Guid)">
+            <summary>
+            Pesquisa Medico por ID
+            </summary>
+            <param name="id">Informe o ID</param>
+            <returns>Pesquisa Medico por ID</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.MedicoController.Post(HealthClinic.Domains.Medico)">
+            <summary>
+            Cadastra um novo Medico
+            </summary>
+            <param name="medico">Informe os dados do Medico</param>
+            <returns>Cadastra um novo Medico</returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.PacienteController.GetById(System.Guid)">
+            <summary>
+            Pesquisa o Paciente pelo ID
+            </summary>
+            <param name="id">Pesquisa o Paciente pelo ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic.Controllers.PacienteController.Post(HealthClinic.Domains.Paciente)">
+            <summary>
+            Cadastra um novo Paciente
+            </summary>
+            <param name="paciente"></param>
+            <returns>Cadastra um novo Paciente</returns>
         </member>
         <member name="T:HealthClinic.Migrations.bd_v1">
             <inheritdoc />

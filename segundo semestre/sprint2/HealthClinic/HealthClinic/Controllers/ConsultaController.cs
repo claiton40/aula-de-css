@@ -34,10 +34,10 @@ namespace HealthClinic.Controllers
 
         }
         /// <summary>
-        /// 
+        /// Pesquisa a consulta por ID
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">Informe o Id da Consulta</param>
+        /// <returns>Pesquisa a consulta por ID</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
@@ -50,7 +50,11 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Cadastrar nova Consulta
+        /// </summary>
+        /// <param name="consulta"> Informe os dados da consulta</param>
+        /// <returns>Cadastrar nova Consulta</returns>
         [HttpPost]
         public IActionResult Post(Consulta consulta)
         {
@@ -65,7 +69,11 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Deletar uma Consulta
+        /// </summary>
+        /// <param name="id">Informe o Id da Consulta</param>
+        /// <returns>Deletar uma Consulta</returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
@@ -81,6 +89,12 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Atualiza o Prontuario do paciente a partir da consulta.
+        /// </summary>
+        /// <param name="id">Informe o Id da Consulta</param>
+        /// <param name="consulta"> Descreva a evolução do Prontuario</param>
+        /// <returns>Atualiza o Prontuario do paciente a partir da consulta.</returns>
         [HttpPatch]
         public IActionResult Patch(Guid id, string consulta)
         {

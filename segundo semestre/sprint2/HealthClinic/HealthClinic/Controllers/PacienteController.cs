@@ -17,6 +17,11 @@ namespace HealthClinic.Controllers
             _pacienteRepository = new PacienteRepository();
         }
 
+        /// <summary>
+        /// Pesquisa o Paciente pelo ID
+        /// </summary>
+        /// <param name="id">Pesquisa o Paciente pelo ID</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
@@ -30,6 +35,11 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Cadastra um novo Paciente
+        /// </summary>
+        /// <param name="paciente"></param>
+        /// <returns>Cadastra um novo Paciente</returns>
         [HttpPost]
         public IActionResult Post(Paciente paciente)
         {

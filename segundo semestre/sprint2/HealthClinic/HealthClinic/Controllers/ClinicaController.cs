@@ -19,7 +19,7 @@ namespace HealthClinic.Controllers
         /// <summary>
         /// Cadastra a clinica
         /// </summary>
-        /// <param name="clinica"></param>
+        /// <param name="clinica">In forme os dado da Clinica</param>
         /// <returns>Cadastra a clinica</returns>
         [HttpPost]
         public IActionResult Post(Clinica clinica)

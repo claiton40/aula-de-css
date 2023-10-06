@@ -20,7 +20,7 @@ namespace HealthClinic.Controllers
         /// <summary>
         /// Busca o usuarios do tipo ADMIN pelo ID
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id"> Informe o ID do Usuário</param>
         /// <returns>Busca o usuarios do tipo ADMIN pelo ID</returns>
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(Guid id)
@@ -53,7 +53,7 @@ namespace HealthClinic.Controllers
         /// <summary>
         /// Cadastra um usuario do tipo ADMIN
         /// </summary>
-        /// <param name="admin"></param>
+        /// <param name="admin">Informe o nome, E-mail e Senha do Usuário </param>
         /// <returns>Cadastra um usuario do tipo ADMIN</returns>
         [HttpPost]
         public IActionResult Post(Admin admin)
