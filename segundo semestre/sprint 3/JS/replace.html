@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h1>Replace</h1>
+
+<form onsubmit="troca()">
+<label for="n1">nome</label>
+<input type="text" id="n1">
+<br><br>
+
+<label for="n2">nome</label>
+<input type="text" id="n2">
+<br><br>
+<h2 id = "substituto">
+
+</h2>
+
+<button>Alterar</button>
+</form>
+
+<script>
+function troca() 
+{//soma
+event.preventDefault();//parar o submit do formulário
+
+//criar uma variável para cada número
+let n1 = document.getElementById('n1').value;//campo 1
+let n2 = document.getElementById('n2').value;//campo 2 
+document.getElementById("substituto").innerText = `Ola, ${n1.replace(n1, n2)}` 
+}
+</script>
+</body>
+</html>
