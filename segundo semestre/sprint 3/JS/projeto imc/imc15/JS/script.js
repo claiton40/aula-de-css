@@ -16,11 +16,19 @@ if (isNaN(altura) || isNaN(peso) || nome.length <= 2)
 const imc = calcularImc(peso, altura)
 const situacao = geraSituacao(imc)
 //os consolelog e so pra teste
-    console.log(nome);
-    console.log(peso);
-    console.log(altura);
-    console.log(imc);
-    console.log(situacao);
+    // console.log(nome);
+    // console.log(peso);
+    // console.log(altura);
+    // console.log(imc);
+    // console.log(situacao);
+
+    const pessoa = {};
+        pessoa.nome = nome;
+        pessoa.altura = altura;
+        pessoa.peso = peso;
+        pessoa.imc = imc;
+        pessoa.situacao = situacao;
+        console.log(pessoa);
 } // fim da funcao calcular
 
 function calcularImc(peso, altura)
