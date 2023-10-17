@@ -1,8 +1,9 @@
+const ListPessoas = [];
+
 function calcular(e)
 {
     //segura os dados antes de ir para o form. seve para o dado ficar visivel no console
     e.preventDefault();
-    console.log("calc imc");
     //atribuicao das varia que vao pegar os dados do formulario
     let nome = document.getElementById("nome").value.trim();
     let peso = parseFloat (document.getElementById("peso").value);
@@ -22,13 +23,21 @@ const situacao = geraSituacao(imc)
     // console.log(imc);
     // console.log(situacao);
 
-    const pessoa = {};
-        pessoa.nome = nome;
-        pessoa.altura = altura;
-        pessoa.peso = peso;
-        pessoa.imc = imc;
-        pessoa.situacao = situacao;
-        console.log(pessoa);
+    const pessoa = 
+    {
+        nome, //aqui estamos usando a sintaxe abreviada (OBJECT SHORT SINTAXE). Durante a criacao do objeto, se o nome do atributo, for igual a variavel que o alimenta, posso escrever o nome se um vez
+        altura : altura,
+        peso, //OBJECT SHORT SINTAXE
+        imc : imc,
+        situacao : situacao
+    };
+        
+        //console.log(pessoa);
+        //insere pessoas no array
+        ListPessoas.push(pessoa);
+        
+        //exibir dados do array
+        exibirDados()
 } // fim da funcao calcular
 
 function calcularImc(peso, altura)
@@ -73,4 +82,27 @@ function geraSituacao(imc)
     { //a partir de 40
         return 'Cuidado!!!';
     }
+
+    
+}
+
+function exibirDados()
+    {
+
+    let Linhas = ""
+        ListPessoas.forEach
+        ( function(objetoPessoa)
+        {
+console.log(objetoPessoa.nome);
+//linhas de tabela
+    Linhas += ` <tr>
+    <td data-cell="nome">${objetoPessoa.nome}</td>
+<td data-cell="altura">${objetoPessoa.altura}</td>
+<td data-cell="peso">${objetoPessoa.peso}</td>
+<td data-cell="valor do IMC">${objetoPessoa.imc}</td>
+<td data-cell="classificação do IMC">${objetoPessoa.situacao}</td>
+<td data-cell="data de cadastro">19/06/2023 21:27</td>
+</tr>`
+        });
+        document.getElementById()
 }
