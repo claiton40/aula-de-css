@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siqueiracla\\Desktop\\teste\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj": {}
+    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siqueiracla\\Desktop\\teste\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj": {
+    "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siqueiracla\\Desktop\\teste\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj",
+        "projectUniqueName": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj",
         "projectName": "HealthClinic",
-        "projectPath": "C:\\Users\\siqueiracla\\Desktop\\teste\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj",
-        "packagesPath": "C:\\Users\\siqueiracla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siqueiracla\\Desktop\\teste\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\obj\\",
+        "projectPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\HealthClinic.csproj",
+        "packagesPath": "C:\\Users\\clait\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\sprint2\\HealthClinic\\HealthClinic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\siqueiracla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\clait\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
