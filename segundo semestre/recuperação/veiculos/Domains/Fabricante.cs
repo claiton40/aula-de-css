@@ -10,7 +10,7 @@ namespace veiculos.Domains
         public Guid IdFabricante { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "VARCHAR(100)")]
-        [Required(ErrorMessage = "O modelo é obrigatório!")]
+        [Required(ErrorMessage = "O Nome é obrigatório!")]
         public string? Nome { get; set; }
     }
 }

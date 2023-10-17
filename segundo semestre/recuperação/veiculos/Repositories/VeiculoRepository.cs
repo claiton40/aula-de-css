@@ -1,10 +1,16 @@
-﻿using veiculos.Domains;
+﻿using veiculos.Contexts;
+using veiculos.Domains;
 using veiculos.Interfaces;
 
 namespace veiculos.Repositories
 {
     public class VeiculoRepository : IVeiculoRepository
     {
+
+        /// <summary>
+        /// este objeto acessa a classe contexto que, por sua vez, acessa o banco de dados
+        /// </summary>
+        Veiculos_Context ctx = new Veiculos_Context();
 
         public void Atualizar(Guid id, Veiculo veiculo)
         {
@@ -28,7 +34,17 @@ namespace veiculos.Repositories
 
         public List<Veiculo> Listar()
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                return ctx.Veiculo.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
     }
 }
