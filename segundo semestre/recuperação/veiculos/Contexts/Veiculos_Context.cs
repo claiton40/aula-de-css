@@ -15,7 +15,9 @@ namespace veiculos.Contexts
         /// <param name="optionsBuilder">Objeto com as configurações definidas</param>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=note01-s14; Database=veiculos_II; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true;");
+            //"Server=note01-s14; Database=veiculos_II; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true;"
+            //Server=Jabiraca\\SQLEXPRESS; Database=veiculos_II; Integrated Security=True;; TrustServerCertificate=true;
+            optionsBuilder.UseSqlServer("Server=Jabiraca\\SQLEXPRESS; Database=veiculos_II; Integrated Security=True;; TrustServerCertificate=true;");
             base.OnConfiguring(optionsBuilder);
         }
     }

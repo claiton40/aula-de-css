@@ -17,9 +17,22 @@ namespace veiculos.Repositories
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// busca um veiculo por id
+        /// </summary>
+        /// <param name="id">informa o id do veiculo buscado</param>
+        /// <returns> O Veiculo referente ao ID buscado</returns>
         public Veiculo BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return ctx.Veiculo.Find(id);
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
 
         public void Cadastrar(Veiculo veiculo)

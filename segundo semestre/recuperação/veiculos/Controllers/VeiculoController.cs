@@ -29,6 +29,19 @@ namespace veiculos.Controllers
             }
         }
 
+        [HttpGet]
+        public IActionResult BuscarPorId()
+        {
+            try
+            {
+                return Ok(BuscarPorId());
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
     }
 }

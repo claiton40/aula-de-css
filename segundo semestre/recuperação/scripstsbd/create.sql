@@ -19,4 +19,4 @@ CREATE TABLE veiculo
     modelo VARCHAR(50) NOT NULL,
     preco FLOAT NOT NULL, 
 );
---drop database veiculos
+--drop database veiculos_II
