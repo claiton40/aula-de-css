@@ -1,8 +1,8 @@
-// principais funcoes do ARRAY
-// foreeach = void
+// Principais funcoes do ARRAY
+// Foreeach = void
 // Map = retorna um novo array modicficado
 // filter = retorna um array que atenda um condicao
-// reduce
+// reduce = volta um valor unificado array
 
 
 const numeros = [1, 2, 5, 10, 300, "jose"]

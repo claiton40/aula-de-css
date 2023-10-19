@@ -3348,19 +3348,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\clait\\.nuget\\packages\\": {}
+    "C:\\Users\\29321863885\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\recuperação\\veiculos\\veiculos.csproj",
+      "projectUniqueName": "C:\\Users\\29321863885\\Desktop\\teste\\todas-aulas\\segundo semestre\\recuperação\\veiculos\\veiculos.csproj",
       "projectName": "veiculos",
-      "projectPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\recuperação\\veiculos\\veiculos.csproj",
-      "packagesPath": "C:\\Users\\clait\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\clait\\Documents\\backupclaiton\\Backup\\dev\\senai\\todas-aulas\\segundo semestre\\recuperação\\veiculos\\obj\\",
+      "projectPath": "C:\\Users\\29321863885\\Desktop\\teste\\todas-aulas\\segundo semestre\\recuperação\\veiculos\\veiculos.csproj",
+      "packagesPath": "C:\\Users\\29321863885\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\29321863885\\Desktop\\teste\\todas-aulas\\segundo semestre\\recuperação\\veiculos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\clait\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\29321863885\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3446,7 +3446,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

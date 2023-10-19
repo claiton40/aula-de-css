@@ -29,12 +29,12 @@ namespace veiculos.Controllers
             }
         }
 
-        [HttpGet]
-        public IActionResult BuscarPorId()
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(Guid id)
         {
             try
             {
-                return Ok(BuscarPorId());
+                return Ok(veiculo.BuscarPorId(id));
             }
             catch (Exception)
             {

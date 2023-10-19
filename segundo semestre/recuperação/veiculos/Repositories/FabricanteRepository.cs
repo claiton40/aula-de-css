@@ -18,7 +18,15 @@ namespace veiculos.Repositories
 
         public Fabricante BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return ctx.Fabricante.Find(id);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Cadastrar(Fabricante fabricante)
