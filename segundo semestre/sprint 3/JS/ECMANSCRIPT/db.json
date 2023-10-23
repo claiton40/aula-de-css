@@ -1,0 +1,30 @@
+{
+  "contatos": [
+    {
+      "cep": "09403100",
+      "endereco": "Avenida Princesa Izabel",
+      "bairro": "Aliança",
+      "cidade": "Ribeirão Pires",
+      "estado": "SP",
+      "id": 1
+    },
+    {
+      "cep": "09130220",
+      "endereco": "Avenida Sara Zirlis",
+      "telefone": "49737769",
+      "bairro": "Vila Lutécia",
+      "cidade": "Santo André",
+      "estado": "SP",
+      "id": 3
+    },
+    {
+      "cep": "09080510",
+      "endereco": "Avenida Industrial",
+      "telefone": "49737769",
+      "bairro": "Campestre",
+      "cidade": "Santo André",
+      "estado": "SP",
+      "id": 4
+    }
+  ]
+}

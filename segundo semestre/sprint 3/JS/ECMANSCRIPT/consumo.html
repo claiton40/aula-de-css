@@ -1,76 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form>
+    <form onsubmit="cadastrar(event)">
         <label for="cep">CEP</label>
-        <input
-          type="number"
-          placeholder="digite o cep"
-          id="cep"
-          onblur="chamarApi()"
-        />
-        <span id="not-found">   </span>
+        <input type="number" placeholder="digite o cep" id="cep" onblur="chamarApi()" />
+        <span id="not-found"> </span>
         <br /><br />
-  
+        
+        <label for="telefone">Telefone</label>
+        <input type="number" placeholder="digite o telefone" id="telefone" />
+        <span id="not-found"> </span>
+        <br /><br />
+
         <label for="endereco">Endereço</label>
         <input type="text" placeholder=" ... " id="endereco" />
         <br /><br />
-  
+
         <label for="bairro">Bairro</label>
         <input type="text" placeholder=" ... " id="bairro" />
         <br /><br />
-  
+
         <label for="cidade">Cidade</label>
         <input type="text" placeholder=" ... " id="cidade" />
         <br /><br />
-  
+
         <label for="estado">Estado</label>
         <input type="text" placeholder=" ... " id="estado" />
         <br /><br />
-      </form>
+        <button>Salvar Contato</button>
+    </form>
+
     <script>
+
+        const urlLocal = " http://localhost:3000/contatos"
+
+        async function cadastrar(e) {
+            e.preventDefault();
+            const cep = document.getElementById('cep').value
+            const endereco = document.getElementById('endereco').value
+            const telefone = document.getElementById('telefone').value
+            const bairro = document.getElementById('bairro').value
+            const cidade = document.getElementById('cidade').value
+            const estado = document.getElementById('estado').value
+
+            const objDados = { cep, endereco, telefone, bairro, cidade, estado }
+            // 09403100
+            try {
+                const promise = await fetch(urlLocal,
+                    {
+                        body: JSON.stringify(objDados),
+                        headers: { "Content-Type": "application/json" },
+                        method: "post"
+                    })
+                const retorno = await promise.json();
+                console.log(retorno);
+            } catch (error) {
+                alert('deu ruim' + error)
+            }
+        }
+
+        async function chamarApi() {
+            const cep = document.getElementById(
+                "cep"
+            ).value;
+
+            try {
+                const promise = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                const endereco = await promise.json();
+                console.log(endereco);
+
+                //exibir campos
+                exibirEndereco(endereco)
+            }
+            catch (error) {
+                document.getElementById("not-found").innerHTML = "CEP Invalido"
+                document.getElementById("endereco").value = ""
+                document.getElementById("telefone").value = ""
+                document.getElementById("bairro").value = ""
+                document.getElementById("cidade").value = ""
+                document.getElementById("estado").value = ""
+                console.log("Deu ruim na API")
+            }
+
+        }
+
+        function exibirEndereco(endereco) {
+            document.getElementById("not-found").innerHTML = ""
+            document.getElementById("bairro").value = endereco.bairro
+            document.getElementById("endereco").value = endereco.logradouro
+            document.getElementById("telefone").value = endereco.telefone
+            document.getElementById("cidade").value = endereco.localidade
+            document.getElementById("estado").value = endereco.uf
+        }
+
         
-async function chamarApi()
-{
-    const cep = document.getElementById(
-        "cep"
-    ).value;
-    try 
-    {
-        const promise = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
-        const endereco = await promise.json();
-        console.log(endereco);
 
-        //exibir campos
-        exibirEndereco(endereco)
-        } 
-    catch (error) 
-    {
-        document.getElementById("not-found").innerHTML= "CEP Invalido"
-        document.getElementById("endereco").value = ""
-        document.getElementById("bairro").value = ""
-        document.getElementById("cidade").value = ""
-        document.getElementById("estado").value = ""
-        console.log("Deu ruim na API")
-    }
-    
-}
 
-function exibirEndereco(endereco) {
-    document.getElementById("not-found").innerHTML= ""
-        document.getElementById("endereco").value = endereco.logradouro
-        document.getElementById("bairro").value = endereco.bairro
-        document.getElementById("cidade").value = endereco.localidade
-        document.getElementById("estado").value = endereco.uf
-}
     </script>
 
-    <!-- <button onclick="chamarApi()">clica aqui meu truta</button> -->
 </body>
+
 </html>
