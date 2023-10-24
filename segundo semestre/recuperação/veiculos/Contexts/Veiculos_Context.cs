@@ -17,7 +17,7 @@ namespace veiculos.Contexts
         {
             //"Server=note01-s14; Database=veiculos_II; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true;"
             //Server=Jabiraca\\SQLEXPRESS; Database=veiculos_II; Integrated Security=True;; TrustServerCertificate=true;
-            optionsBuilder.UseSqlServer("Server=note01-s14; Database=veiculos_II; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=Jabiraca\\SQLEXPRESS; Database=veiculos_II; Integrated Security=True;; TrustServerCertificate=true");
             base.OnConfiguring(optionsBuilder);
         }
     }

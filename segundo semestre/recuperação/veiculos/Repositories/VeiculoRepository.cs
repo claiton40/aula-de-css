@@ -34,17 +34,45 @@ namespace veiculos.Repositories
                 throw;
             }
         }
-
+        /// <summary>
+        /// Cadastra um novo veiculo
+        /// </summary>
+        /// <param name="veiculo">dados do objeto veiculo</param>
         public void Cadastrar(Veiculo veiculo)
         {
-            throw new NotImplementedException();
+            ctx.Veiculo.Add(veiculo);
+
+            ctx.SaveChanges(); 
         }
 
+        /// <summary>
+        /// Deletar um veiculo do bancoi de dados
+        /// </summary>
+        /// <param name="id">O id do veiculo a ser apagado</param>
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+               Veiculo veiculoBuscado = ctx.Veiculo.Find(id)!;
+
+                if (veiculoBuscado != null)
+                {
+                    ctx.Veiculo.Remove(veiculoBuscado);
+
+                    ctx.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
+        /// <summary>
+        /// Lista todos os veiculos da base
+        /// </summary>
+        /// <returns>Uma lsita com todos os veiculos da base</returns>
         public List<Veiculo> Listar()
         {
 

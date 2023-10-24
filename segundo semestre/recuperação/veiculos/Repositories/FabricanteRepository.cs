@@ -1,4 +1,5 @@
-﻿using veiculos.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using veiculos.Contexts;
 using veiculos.Domains;
 using veiculos.Interfaces;
 
@@ -16,11 +17,16 @@ namespace veiculos.Repositories
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Busca fabricante pro id
+        /// </summary>
+        /// <param name="id"> id do fabricante buscado</param>
+        /// <returns>fabricante do id informado</returns>
         public Fabricante BuscarPorId(Guid id)
         {
             try
             {
-                return ctx.Fabricante.Find(id);
+                return ctx.Fabricante.Find(id)!;
             }
             catch (Exception)
             {
@@ -29,14 +35,48 @@ namespace veiculos.Repositories
             }
         }
 
+        /// <summary>
+        /// Cadastra um novo fabricante na base
+        /// </summary>
+        /// <param name="fabricante">dados para o objeto fabricante</param>
         public void Cadastrar(Fabricante fabricante)
         {
-            throw new NotImplementedException();
+            try
+            {
+                ctx.Fabricante.Add(fabricante);
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
+        /// <summary>
+        /// Deleta um fabricante da base
+        /// </summary>
+        /// <param name="id">id do fabricante a ser apagado</param>
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                Fabricante fabricanteBuscado = ctx.Fabricante.Find(id)!;
+                
+                    if (fabricanteBuscado != null)
+                    {
+                        ctx.Fabricante.Remove(fabricanteBuscado);
+                    }
+
+                    ctx.SaveChanges();
+                
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         /// <summary>

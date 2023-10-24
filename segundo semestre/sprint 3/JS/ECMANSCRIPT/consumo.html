@@ -17,7 +17,6 @@
         
         <label for="telefone">Telefone</label>
         <input type="number" placeholder="digite o telefone" id="telefone" />
-        <span id="not-found"> </span>
         <br /><br />
 
         <label for="endereco">Endereço</label>
@@ -52,7 +51,6 @@
             const estado = document.getElementById('estado').value
 
             const objDados = { cep, endereco, telefone, bairro, cidade, estado }
-            // 09403100
             try {
                 const promise = await fetch(urlLocal,
                     {
