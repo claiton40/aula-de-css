@@ -53,6 +53,25 @@ namespace veiculos.Controllers
 
         }
 
+        [HttpPatch]
+        public IActionResult Atualizar(Guid id, Fabricante fabricante)
+        {
+            try
+            {
+                _fabricante.Atualizar(id, fabricante);
+
+                return Ok();
+            } 
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+
+
         /// <summary>
         /// Deleta um fabricante da base
         /// </summary>

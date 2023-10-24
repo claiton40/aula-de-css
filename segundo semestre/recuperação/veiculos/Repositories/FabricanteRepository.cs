@@ -12,10 +12,12 @@ namespace veiculos.Repositories
         /// </summary>
         Veiculos_Context ctx = new Veiculos_Context();
 
-        public void Atualizar(Guid id, Fabricante fabricanteAtualizado)
+        public Fabricante GetFabricante(Guid id)
         {
-            throw new NotImplementedException();
+            return ctx.Fabricante!.Find(id);
         }
+
+        
 
         /// <summary>
         /// Busca fabricante pro id
@@ -94,6 +96,25 @@ namespace veiculos.Repositories
 
                 throw;
             }
+        }
+
+        public void Atualizar(Guid id, Fabricante fabricanteAtualizado)
+        {
+            try
+            {
+                Fabricante fabricanteBuscado = ctx.Fabricante.Find(id)!;
+
+                fabricanteBuscado.Nome = fabricanteAtualizado.Nome;
+
+                ctx.Fabricante.Update(fabricanteBuscado);
+
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            } 
         }
     }
 }
