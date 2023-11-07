@@ -1,5 +1,6 @@
 import React from 'react';
-import 'Banner.css'
+import 'MainContent.css'
+
 
 const MainContent = () => {
     return (
