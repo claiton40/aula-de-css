@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Eventos = () => {
+const EventosPage = () => {
     return (
         <div>
-            {/* ta faltando algo aqui? */}
+            <h1>Página de Eventos</h1>
         </div>
     );
 };
 
-export default Eventos;
+export default EventosPage;

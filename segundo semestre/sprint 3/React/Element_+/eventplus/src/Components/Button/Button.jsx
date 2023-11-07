@@ -1,11 +1,10 @@
-import React from 'react';
-import './Button.css'
+import React from "react";
 
-const Button = (props) => {
-    return (
-        <div class='button' >
-            <button type={props.tipo}>{props.textoBotao}</button>
-        </div>
+const Button = (props) => {//constructor
+  return (
+    <button type={props.tipo}>
+      {props.textoBotao}
+    </button>
     );
 };
 

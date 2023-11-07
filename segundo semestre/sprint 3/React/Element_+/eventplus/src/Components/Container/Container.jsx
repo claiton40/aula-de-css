@@ -1,7 +1,7 @@
-import React, { children } from 'react';
-import './Container.css'
+import React from 'react';
+import './Container.css';
 
-const Container = () => {
+const Container = ( { children } ) => {
     return (
         <div className='container'>
             {children}
