@@ -1,10 +1,15 @@
 import React from 'react';
 import Title from '../../Components/Title/Title';
 import Banner from '../../Components/Banner/Banner';
+import VisionSection from '../../Components/VisionSection/VisionSection';
+import MainContent from '../../Components/MainContent/MainContent';
+import "./HomePage.css";
 
 const HomePage = () => {
     return (
-        <div>
+        <MainContent>
+            <Banner/>
+            <VisionSection />
         
             <h1>Página Home</h1>
             <div>
@@ -14,7 +19,7 @@ const HomePage = () => {
 
                 />
             </div>
-        </div>
+        </MainContent>
     );
 };
 
