@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HomePage.css'
 import Title from '../../Components/Title/Title';
 import Banner from '../../Components/Banner/Banner';
@@ -10,6 +10,11 @@ import "./HomePage.css";
 import Container from '../../Components/Container/Container'
 
 const HomePage = () => {
+
+  useEffect(() => {
+    //CHAMAR A API
+    
+  }, [])
     return (
         <MainContent>
             <Banner/>
