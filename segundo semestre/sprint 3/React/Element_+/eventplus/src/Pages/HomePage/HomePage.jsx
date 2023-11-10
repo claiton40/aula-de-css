@@ -7,18 +7,37 @@ import ContactSection from "../../Components/ContactSection/ContactSection";
 import NextEvent from "../../Components/NextEvent/NextEvent";
 import Title from "../../Components/Title/Title";
 import Container from "../../Components/Container/Container";
-import { useEffect, useState } from "react";
+import { useEffect, useState, } from "react";
 import ReactDOM from "react-dom/client";
+import axios from "axios";
 
 const HomePage = () => {
 
-  useEffect(() => {
+  useEffect( () => {
     
+    async function getProximosEventos(){
+    try {
+      
+        const promisse  = await axios.get (
+          "http://localhost:5000/api/Evento/ListarProximos"
+        )
+  
+        setNextEvents(promisse.data)
+        }
+    
+    catch (error) {
+       
+          
+    }
+  }
+    getProximosEventos();
+
   }, [])
   
-  const [verEvento, setverEvento] = useState( [{id: 1, nome: "evento merda", data: "10/09/1979"}, {id: 2, nome: "evento top", data: "10/09/1979"}])
-
+  const [nextEvents, setNextEvents] = useState ([]);
  
+
+
   return (
     <MainContent>
       <Banner />
@@ -32,13 +51,13 @@ const HomePage = () => {
             
           {
           // execulta em cada elemento do array
-          verEvento.map((e) => {
+          nextEvents.map((e) => {
           return (
           <NextEvent 
-          title= {e.nome} 
+          title= {e.nomeEvento} 
           description={e.descricao}
-          eventDate={e.data}
-          idEvento={e.id} />
+          eventDate={e.dataEvento}
+          idEvento={e.idEvento} />
                 );
                                 }
                         )

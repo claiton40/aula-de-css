@@ -8,10 +8,10 @@ function Exemplo() {
 
   //useEfect
   useEffect (() =>{
-    obterDados()
     setTimeout(() => {
-      setCount((count) => count + 1);
+    setCount(() => count + 1);
     }, 1000);
+    
   })
 
   //função para obter dados
@@ -19,13 +19,17 @@ function Exemplo() {
 
     const dados = await fetch('https://jsonplaceholder.typicode.com/photos')
     const converter = await dados.json();
-
+    
   }
+
+  
 
   return(
     <div>
       
+   
       <h1>I've rendered {count} times!</h1>;
+     
       <img src="https://via.placeholder.com/600/771796">
       </img> 
 
