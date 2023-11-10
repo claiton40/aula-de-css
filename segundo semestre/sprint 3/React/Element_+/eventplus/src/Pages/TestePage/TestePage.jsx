@@ -1,49 +1,36 @@
-import React, { useState } from "react";
-import Input from "../../Components/Input/Input";
-import Button from "../../Components/Button/Button";
-import Header from "../../Components/Header/Header";
+import React, { useEffect, useState } from "react"
 
-const TestePage = () => {
-
-  const [total, setTotal] = useState();
-  const [n1, setN1] = useState();
-  const [n2, setN2] = useState();
+function Exemplo() {
   
-  function handleCalcular(e) {//chamar no submit do form
-    e.preventDefault();
-    setTotal( parseFloat(n1) + parseFloat(n2) );
+  //usestate
+  const [array, setArray] = useState([]);
+  const [count, setCount] = useState(0);
+
+  //useEfect
+  useEffect (() =>{
+    obterDados()
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  })
+
+  //função para obter dados
+  const obterDados = async () => {
+
+    const dados = await fetch('https://jsonplaceholder.typicode.com/photos')
+    const converter = await dados.json();
+
   }
 
-  return (
-    <>
-      <Header />
-      <h1>Página de Testes</h1>
-      <h2>Calculator</h2>
-      <p>Resultado: <strong>{total}</strong></p>
+  return(
+    <div>
+      
+      <h1>I've rendered {count} times!</h1>;
+      <img src="https://via.placeholder.com/600/771796">
+      </img> 
 
-      <form onSubmit={handleCalcular}>
-        <Input 
-          tipo="number"
-          id="numero1"
-          nome="numero1"
-          dicaCampo="Primeiro Número"
-          valor={n1}
-          fnAltera={setN1}
-          />
-        <Input
-          tipo="number"
-          id="numero2"
-          nome="numero2"
-          dicaCampo="Segundo Número"
-          valor={n2}
-          fnAltera={setN2}
-        />
+    </div>
+  )
+}
 
-        <Button tipo="submit" textoBotao="Somar" />
-        <p>Resultado: <strong>{total}</strong></p>
-      </form>
-    </>
-  );
-};
-
-export default TestePage;
+export default Exemplo;
