@@ -27,6 +27,7 @@ const HomePage = () => {
     
     catch (error) {
        
+      console.log("Falhou a API!");
           
     }
   }

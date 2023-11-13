@@ -29,8 +29,10 @@ function Exemplo() {
       
    
       <h1>I've rendered {count} times!</h1>;
+      
      
       <img src="https://via.placeholder.com/600/771796">
+
       </img> 
 
     </div>
