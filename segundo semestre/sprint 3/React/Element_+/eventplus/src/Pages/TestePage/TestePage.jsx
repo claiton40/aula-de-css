@@ -1,42 +1,24 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from 'react';
 
-function Exemplo() {
-  
-  //usestate
-  const [array, setArray] = useState([]);
-  const [count, setCount] = useState(0);
+const TestePage = () => {
 
-  //useEfect
-  useEffect (() =>{
-    setTimeout(() => {
-    setCount(() => count + 1);
-    }, 1000);
-    
-  })
+  const [count, setCount] = useState(10);
+  const [calculation, setCalculation] = useState(10);//20
 
-  //função para obter dados
-  const obterDados = async () => {
+  //roda quando o componente for carregado
+  // e também quando o count for atualizado
+  useEffect(() => {
+    setCalculation(count * 2);
+    console.log('Rodei');
+  },[count]);
 
-    const dados = await fetch('https://jsonplaceholder.typicode.com/photos')
-    const converter = await dados.json();
-    
-  }
-
-  
-
-  return(
+  return (
     <div>
-      
-   
-      <h1>I've rendered {count} times!</h1>;
-      
-     
-      <img src="https://via.placeholder.com/600/771796">
-
-      </img> 
-
+      <p>Count: {count}</p>
+      <button onClick={() => setCount((c) => c + 1)}>+</button>
+      <p>Calculation: {calculation}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Exemplo;
+export default TestePage;

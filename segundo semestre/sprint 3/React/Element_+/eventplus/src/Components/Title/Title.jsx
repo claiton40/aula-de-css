@@ -1,5 +1,5 @@
 import React from 'react';
-import './Title.css'
+import './Title.css';
 
 const Title = ( 
     {titleText, additionalClass = "" , color = ""} 

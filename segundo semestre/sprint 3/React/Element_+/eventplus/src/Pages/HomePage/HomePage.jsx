@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './HomePage.css'
 import MainContent from "../../Components/MainContent/MainContent";
 import Banner from "../../Components/Banner/Banner";
@@ -7,37 +7,28 @@ import ContactSection from "../../Components/ContactSection/ContactSection";
 import NextEvent from "../../Components/NextEvent/NextEvent";
 import Title from "../../Components/Title/Title";
 import Container from "../../Components/Container/Container";
-import { useEffect, useState, } from "react";
-import ReactDOM from "react-dom/client";
-import axios from "axios";
+import api from "../../Services/Service";
 
 const HomePage = () => {
-
-  useEffect( () => {
-    
-    async function getProximosEventos(){
-    try {
-      
-        const promisse  = await axios.get (
-          "http://localhost:5000/api/Evento/ListarProximos"
-        )
   
-        setNextEvents(promisse.data)
+    useEffect(()=> {
+      // chamar a api
+      async function getProximosEventos() {
+        try {
+          const promise = await api.get("/Evento/ListarProximos");
+
+          setNextEvents(promise.data);
+
+        } catch (error) {
+          console.log('Deu ruim na api');
         }
-    
-    catch (error) {
-       
-      console.log("Falhou a API!");
-          
-    }
-  }
-    getProximosEventos();
+      }
+      getProximosEventos();
+        console.log("A HOME FOI MONTADA!!!!");
+    }, []);
 
-  }, [])
-  
-  const [nextEvents, setNextEvents] = useState ([]);
- 
-
+  // fake mock - api mocada
+  const [nextEvents, setNextEvents] = useState([]);
 
   return (
     <MainContent>
@@ -50,19 +41,19 @@ const HomePage = () => {
 
           <div className="events-box">
             
-          {
-          // execulta em cada elemento do array
-          nextEvents.map((e) => {
-          return (
-          <NextEvent 
-          title= {e.nomeEvento} 
-          description={e.descricao}
-          eventDate={e.dataEvento}
-          idEvento={e.idEvento} />
+            {
+              nextEvents.map((e) => {
+                return(
+                    <NextEvent
+                      title={e.nomeEvento}
+                      description={ e.descricao}
+                      eventDate={e.dataEvento}
+                      idEvento={e.idEvento}
+                    />
                 );
-                                }
-                        )
-          }  
+              })
+            }
+            
           </div>
         </Container>
       </section>

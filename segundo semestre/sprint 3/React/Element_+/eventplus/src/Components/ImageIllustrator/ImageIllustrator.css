@@ -1,15 +1,14 @@
-
-.ilustrator-box {
+.illustrator-box {
     display: none;
 }
 
 @media screen and (min-width: 1200px) {
 
-    .ilustrator-box {
+    .illustrator-box {
         display: flex;
     }
 
-    .ilustrator-box__image {
+    .illustrator-box__image {
         width: 100%;
         max-width: 436px;
     }
