@@ -9,6 +9,7 @@ import Container from "../../Components/Container/Container";
 import { Input, Button } from "../../Components/FormComponents/FormComponents";
 import { useState } from "react";
 import api from "../../Services/Service"
+import TableTp from "./TableTp/TableTp";
 
 
 const TipoEventosPage = () => {
@@ -17,7 +18,14 @@ const TipoEventosPage = () => {
 
   const [titulo, setTitulo] = useState ("");
 
-  async function handleSubmit(e) {
+  const [tipoEventos, setTipoEventos] = useState([
+    {idTipoEvento: "123", titulo: "Evento teste"},
+    {idTipoEvento: "223", titulo: "Evento teste333"},
+    {idTipoEvento: "333", titulo: "Evento teste444"},
+  ]);
+
+  async function handleSubmit(e)
+  {
    //para submit do formulario
    e.preventDefault();
    //validar caracteres
@@ -28,23 +36,37 @@ const TipoEventosPage = () => {
    //chamar api
    try {
     const retorno = await api.post("/TiposEvento", {titulo: titulo})
-    console.log("cadastrado com sucessp");
+    console.log("cadastrado com sucesso");
     console.log(retorno.data);
+    setTitulo("");
    } catch (error) {
     
    }
   }
 
- 
-
-  function handleUpdate() {
+  function handleUpdate() 
+  {
     alert("editando")
-
   }
 
+  function showUpdateForm()
+  {
+    alert("alertando")
+  }
+
+  function handleDelete()
+  {
+    alert("alertando")
+  }
+
+  function editActionAbort()
+  {
+    alert("alertando")
+  }
 
   return (
     <MainContent>
+      {/* cadastrro de eventos */}
       <section className="cadastro-evento-section">
         <Container>
         <div className="cadastro-evento__box">
@@ -85,6 +107,18 @@ const TipoEventosPage = () => {
             {/*  */}
           </form>
         </div>
+        </Container>
+      </section>
+      {/* listagem dos tipos */}
+      <section className="lista-eventos-section">
+        <Container>
+          <Title  titleText={"Lista de tipos de eventos"} />
+          <TableTp
+          dados={tipoEventos}
+          fnUpdate = {showUpdateForm}
+          fnDelete = {handleDelete}
+          />
+          
         </Container>
       </section>
     </MainContent>
