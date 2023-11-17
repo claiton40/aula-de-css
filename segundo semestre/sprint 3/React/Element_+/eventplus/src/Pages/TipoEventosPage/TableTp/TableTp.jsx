@@ -4,6 +4,9 @@ import editPen from '../../../assets/images/edit-pen.svg'
 import trashDelete from '../../../assets/images/trash-delete.svg'
 
 const TableTp = ({dados, fnUpdate, fnDelete}) => {
+
+
+  
     
     return (
         <table className='table-data'>

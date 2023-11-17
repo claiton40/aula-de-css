@@ -7,22 +7,41 @@ import ImageIllustrator from '../../Components/ImageIllustrator/ImageIllustrator
 import eventTypeImage from '../../assets/images/tipo-evento.svg'
 import Container from "../../Components/Container/Container";
 import { Input, Button } from "../../Components/FormComponents/FormComponents";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import api from "../../Services/Service"
+
 import TableTp from "./TableTp/TableTp";
 
 
 const TipoEventosPage = () => {
 
+  useEffect(()=> {
+    // chamar a api
+    async function getTiposEventos() {
+      try {
+        const promise = await api.get("/TiposEvento");
+
+        setTipoEventos(promise.data);
+
+      } catch (error) {
+        console.log('Deu ruim na api');
+      }
+    }
+    getTiposEventos();
+      console.log("montou os eventos");
+  }, []);
+  
+
   const [frmEdit, sefrmEdit ] = useState (false);
 
   const [titulo, setTitulo] = useState ("");
 
-  const [tipoEventos, setTipoEventos] = useState([
-    {idTipoEvento: "123", titulo: "Evento teste"},
-    {idTipoEvento: "223", titulo: "Evento teste333"},
-    {idTipoEvento: "333", titulo: "Evento teste444"},
-  ]);
+  const [tipoEventos, setTipoEventos] = useState([]);
+
+  
+  // {idTipoEvento: "123", titulo: "Evento teste"},
+  // {idTipoEvento: "223", titulo: "Evento teste333"},
+  // {idTipoEvento: "333", titulo: "Evento teste444"},
 
   async function handleSubmit(e)
   {
