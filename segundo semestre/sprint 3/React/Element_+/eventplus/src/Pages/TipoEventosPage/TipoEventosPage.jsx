@@ -9,11 +9,12 @@ import Container from "../../Components/Container/Container";
 import { Input, Button } from "../../Components/FormComponents/FormComponents";
 import { useState, useEffect} from "react";
 import api from "../../Services/Service"
-
 import TableTp from "./TableTp/TableTp";
+import Notification from "../../Components/Notification/Notification"
 
 
 const TipoEventosPage = () => {
+
 
   useEffect(()=> {
     // chamar a api
@@ -38,6 +39,8 @@ const TipoEventosPage = () => {
 
   const [tipoEventos, setTipoEventos] = useState([]);
 
+  const [notifyUser, setNotifyUser] = useState({})
+
   
   // {idTipoEvento: "123", titulo: "Evento teste"},
   // {idTipoEvento: "223", titulo: "Evento teste333"},
@@ -56,6 +59,14 @@ const TipoEventosPage = () => {
    try {
     const retorno = await api.post("/TiposEvento", {titulo: titulo})
     console.log("cadastrado com sucesso");
+    setNotifyUser({
+      titleNote: "Sucesso",
+      textNote: `Cadastrado com sucesso!`,
+      imgIcon: "success",
+      imgAlt:
+        "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+      showMessage: true,
+    }); 
     console.log(retorno.data);
     setTitulo("");
    } catch (error) {
@@ -73,9 +84,12 @@ const TipoEventosPage = () => {
     alert("alertando")
   }
 
-  function handleDelete()
+ async function handleDelete(idTipoEvento)
   {
-    alert("alertando")
+    const retorno = await api.delete(`/TiposEvento/${idTipoEvento}`);
+    const retornoGet = await api.get("/TiposEvento");
+    setTipoEventos(retornoGet.data)
+    
   }
 
   function editActionAbort()
@@ -85,6 +99,7 @@ const TipoEventosPage = () => {
 
   return (
     <MainContent>
+      <Notification {...notifyUser} setNotifyUser={setNotifyUser} />
       {/* cadastrro de eventos */}
       <section className="cadastro-evento-section">
         <Container>

@@ -41,7 +41,8 @@ const TableTp = ({dados, fnUpdate, fnDelete}) => {
             src={trashDelete}
             alt=""
             onClick={() => {
-                fnDelete()
+                fnDelete(tp.idTipoEvento)
+  
             }} 
             />
           </td>
