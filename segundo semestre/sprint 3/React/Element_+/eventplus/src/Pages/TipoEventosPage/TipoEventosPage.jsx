@@ -11,6 +11,7 @@ import { useState, useEffect} from "react";
 import api from "../../Services/Service"
 import TableTp from "./TableTp/TableTp";
 import Notification from "../../Components/Notification/Notification"
+import Spinner from "../../Components/Spinner/Spinner"
 
 
 const TipoEventosPage = () => {
@@ -19,6 +20,8 @@ const TipoEventosPage = () => {
   useEffect(()=> {
     // chamar a api
     async function getTiposEventos() {
+
+      setshowSpinner(true);
       try {
         const promise = await api.get("/TiposEvento");
 
@@ -28,18 +31,26 @@ const TipoEventosPage = () => {
         console.log('Deu ruim na api');
       }
     }
+   
     getTiposEventos();
+    setshowSpinner(false);
       console.log("montou os eventos");
   }, []);
   
 
-  const [frmEdit, sefrmEdit ] = useState (false);
+  const [frmEdit, sefrmEdit ] = useState (true);
 
   const [titulo, setTitulo] = useState ("");
 
   const [tipoEventos, setTipoEventos] = useState([]);
 
   const [notifyUser, setNotifyUser] = useState({})
+
+  const [idEvento, setIdEvento] = useState (null);
+
+  const [showSpinner, setshowSpinner] = useState (false);
+
+   
 
   
   // {idTipoEvento: "123", titulo: "Evento teste"},
@@ -69,37 +80,80 @@ const TipoEventosPage = () => {
     }); 
     console.log(retorno.data);
     setTitulo("");
+
+    const retornoGet = await api.get("/TiposEvento");
+    setTipoEventos(retornoGet.data)
    } catch (error) {
     
    }
   }
 
-  function handleUpdate() 
+ async function handleUpdate(e) 
   {
-    alert("editando")
+    e.preventDefault();
+
+    try {
+
+      const retorno = await api.put(`/TiposEvento/` + idEvento, {
+        titulo : titulo
+      }) 
+
+      const retornoGet = await api.get (`/TiposEvento`);
+      setTipoEventos(retornoGet.data);
+      editActionAbort();
+      alert("funcionou o role")
+      
+    } catch (error) {
+      alert("falhou o role")
+      console.log(error);
+    }
+
   }
 
-  function showUpdateForm()
+ async function showUpdateForm(idElemento)
   {
-    alert("alertando")
+    sefrmEdit(true);
+    try {
+      const retorno = await api.get(`/TiposEvento/`+ idElemento);
+    setTitulo(retorno.data.titulo);
+    setIdEvento(retorno.data.idTipoEvento);
+    } catch (error) {
+      alert("falhou o role")
+    }
   }
 
  async function handleDelete(idTipoEvento)
   {
-    const retorno = await api.delete(`/TiposEvento/${idTipoEvento}`);
+    try {
+      const retorno = await api.delete(`/TiposEvento/${idTipoEvento}`);
+    setNotifyUser({
+      titleNote: "Sucesso",
+      textNote: `Apagado com sucesso!`,
+      imgIcon: "success",
+      imgAlt:
+        "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+      showMessage: true,
+    });
+
     const retornoGet = await api.get("/TiposEvento");
     setTipoEventos(retornoGet.data)
     
+    } catch (error) {
+      
+    }
   }
 
   function editActionAbort()
   {
-    alert("alertando")
+    sefrmEdit(false);
+    setTitulo("");
+    setIdEvento(null);
   }
 
   return (
     <MainContent>
       <Notification {...notifyUser} setNotifyUser={setNotifyUser} />
+      {showSpinner ? <Spinner/> : null}
       {/* cadastrro de eventos */}
       <section className="cadastro-evento-section">
         <Container>
@@ -136,7 +190,41 @@ const TipoEventosPage = () => {
              
             </>) :
             
-            (<p>Tela de edicao</p>)}
+            (
+              <>
+              <Input
+              id = {"Titulo"}
+              placeholder = {"Titulo"}
+              name = {"titulo"}
+              type = {"text"}
+              required = {"required"}
+              value = {titulo}
+              manipulationFunction = {(e) => {
+                setTitulo(e.target.value)
+              }}
+              />
+
+              <div className="buttons-editbox">
+              <Button
+               type={"submit"}
+               id = {"atualizar"}
+               name = {"atualizar"}
+               textButton = {"Atualizar"}
+
+               additionalClass = {"butto-component--middle"}
+                />
+                
+                <Button
+               type={"button"}
+               id = {"cancelar"}
+               name = {"cancelar"}
+               textButton = {"Cancelar"}
+               manipulationFunction={editActionAbort}
+               additionalClass = {"butto-component--middle"}
+                />
+              </div>
+              </>
+            )}
            
             {/*  */}
           </form>
