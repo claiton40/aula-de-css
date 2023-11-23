@@ -5,7 +5,7 @@ import MainContent from "../../Components/MainContent/MainContent";
 import ImageIllustrator from '../../Components/ImageIllustrator/ImageIllustrator';
 import eventImage from '../../assets/images/evento.svg'
 import Container from "../../Components/Container/Container";
-import { Input, Button } from "../../Components/FormComponents/FormComponents";
+import { Input, Button, Select } from "../../Components/FormComponents/FormComponents";
 import { useState, useEffect} from "react";
 import api from "../../Services/Service"
 import TableEv from './TableEv/TableEv';
@@ -47,6 +47,10 @@ const EventosPage = () => {
 
     const [nome, setNome] = useState ("");
 
+    const [descricao, setDescricao] = useState ("");
+
+    const [data, setData] = useState ("");
+
     const [eventos, setEventos] = useState([]);
 
     const [tipoEventos, setTipoEventos] = useState([]);
@@ -79,13 +83,34 @@ const EventosPage = () => {
 
   async function handleDelete(idEvento)
   {
-    console.log("teste");
+    try {
+      const retorno = await api.delete(`/Evento/${idEvento}`);
+    setNotifyUser({
+      titleNote: "Sucesso",
+      textNote: `Apagado com sucesso!`,
+      imgIcon: "success",
+      imgAlt:
+        "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+      showMessage: true,
+    });
+
+    const retornoGet = await api.get("/Evento");
+    setEventos(retornoGet.data)
+    
+    } catch (error) {
+      setNotifyUser({
+        titleNote: "Erro",
+        textNote: `Erro ao apagar`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+    }
   }
 
     
-
-
-
+//elemetos da tela
 
     return (
         <MainContent>
@@ -120,12 +145,7 @@ const EventosPage = () => {
               name = {"descricao"}
               placeholder = {"Descrição"}
               required = {"required"}
-              //value = {titulo}
-            //   manipulationFunction = {
-            //     (e) =>{
-            //       setTitulo(e.target.value)
-            //     } 
-            //   }
+              value = {descricao}
             />            
 
 <Input 
@@ -134,12 +154,8 @@ const EventosPage = () => {
               name = {"tipo"}
               placeholder = {"Tipo do Evento"}
               required = {"required"}
-              //value = {titulo}
-            //   manipulationFunction = {
-            //     (e) =>{
-            //       setTitulo(e.target.value)
-            //     } 
-            //   }
+              value = {<Select/>}
+          
             />
 
 <Input 
@@ -148,7 +164,7 @@ const EventosPage = () => {
               name = {"data"}
               placeholder = {"Data do Evento"}
               required = {"required"}
-              //value = {titulo}
+              value = {data}
             //   manipulationFunction = {
             //     (e) =>{
             //       setTitulo(e.target.value)

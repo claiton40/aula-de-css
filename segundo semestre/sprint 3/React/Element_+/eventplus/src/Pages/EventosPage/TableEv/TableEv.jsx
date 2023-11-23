@@ -3,6 +3,7 @@ import './TableEv.css';
 import editPen from '../../../assets/images/edit-pen.svg'
 import trashDelete from '../../../assets/images/trash-delete.svg'
 
+import { dateFormatDbToView } from '../../../Utils/stringFunction'
 
 
 const TableEv = ({dadosT, dados, fnUpdate, fnDelete}) => {
@@ -15,7 +16,9 @@ const TableEv = ({dadosT, dados, fnUpdate, fnDelete}) => {
              <thead className="table-data__head">
                 <tr className="table-data__head-row">
                     <th className="table-data__head-title table-data__head-title--big">Nome</th>
+                    <th className="table-data__head-title table-data__head-title--big">Descricao</th>
                     <th className="table-data__head-title table-data__head-title--big">Tipo de Evento</th>
+                    <th className="table-data__head-title table-data__head-title--big">Data</th>
                     <th className="table-data__head-title table-data__head-title--little">Editar</th>
                     <th className="table-data__head-title table-data__head-title--little">Deletar</th>
                 </tr>
@@ -31,9 +34,15 @@ const TableEv = ({dadosT, dados, fnUpdate, fnDelete}) => {
             {tp.nomeEvento}
           </td>
           <td className="table-data__data table-data__data--big">
+            {tp.descricao}
+          </td>
+          <td className="table-data__data table-data__data--big">
             {dadosT.map((e)=>{
               return e.idTipoEvento === tp.idTipoEvento ? e.titulo : ""
             })}
+          </td>
+          <td className="table-data__data table-data__data--big">
+            {dateFormatDbToView(tp.dataEvento)}
           </td>
           <td className="table-data__data table-data__data--little">
             <img className="table-data__icon" src={editPen} alt=""
