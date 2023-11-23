@@ -84,7 +84,14 @@ const TipoEventosPage = () => {
     const retornoGet = await api.get("/TiposEvento");
     setTipoEventos(retornoGet.data)
    } catch (error) {
-    
+    setNotifyUser({
+      titleNote: "Erro",
+      textNote: `Falha ao Cadastrar!`,
+      imgIcon: "warning",
+      imgAlt:
+        "Imagem de ilustração de erro.",
+      showMessage: true,
+    });
    }
   }
 
@@ -96,16 +103,32 @@ const TipoEventosPage = () => {
 
       const retorno = await api.put(`/TiposEvento/` + idEvento, {
         titulo : titulo
+        
       }) 
 
       const retornoGet = await api.get (`/TiposEvento`);
       setTipoEventos(retornoGet.data);
       editActionAbort();
-      alert("funcionou o role")
+      setNotifyUser({
+        titleNote: "Sucesso",
+        textNote: `Atualizado com sucesso!`,
+        imgIcon: "success",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
       
     } catch (error) {
-      alert("falhou o role")
       console.log(error);
+      setNotifyUser({
+        titleNote: "Erro",
+        textNote: `Falha ao atualizar`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+
     }
 
   }
@@ -118,7 +141,7 @@ const TipoEventosPage = () => {
     setTitulo(retorno.data.titulo);
     setIdEvento(retorno.data.idTipoEvento);
     } catch (error) {
-      alert("falhou o role")
+      console.log("erro na atualização da tela");
     }
   }
 
@@ -139,7 +162,14 @@ const TipoEventosPage = () => {
     setTipoEventos(retornoGet.data)
     
     } catch (error) {
-      
+      setNotifyUser({
+        titleNote: "Erro",
+        textNote: `Erro ao apagar`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
     }
   }
 

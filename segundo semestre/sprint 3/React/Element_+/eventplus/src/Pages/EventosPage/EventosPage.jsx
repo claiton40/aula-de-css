@@ -1,11 +1,187 @@
 import React from 'react';
 import Title from '../../Components/Title/Title';
+import './EventosPage.css';
+import MainContent from "../../Components/MainContent/MainContent";
+import ImageIllustrator from '../../Components/ImageIllustrator/ImageIllustrator';
+import eventImage from '../../assets/images/evento.svg'
+import Container from "../../Components/Container/Container";
+import { Input, Button } from "../../Components/FormComponents/FormComponents";
+import { useState, useEffect} from "react";
+import api from "../../Services/Service"
+import TableEv from './TableEv/TableEv';
+import Notification from "../../Components/Notification/Notification"
+import Spinner from "../../Components/Spinner/Spinner"
+
+
 
 const EventosPage = () => {
+
+  //useEfect
+  useEffect(()=> {
+
+    
+    // chamar a api
+    async function getEventos() {
+
+   
+      try {
+        const promiseE = await api.get("/Evento");
+        const promiseT = await api.get("/TiposEvento");
+
+        setTipoEventos(promiseT.data);
+
+        setEventos(promiseE.data);
+
+      } catch (error) {
+        console.log('Deu ruim na api');
+      }
+    }
+   
+    getEventos();
+    
+      console.log("montou os eventos");
+  }, []);
+  
+
+    //useStates (variáveis, nesse caso.)
+
+    const [nome, setNome] = useState ("");
+
+    const [eventos, setEventos] = useState([]);
+
+    const [tipoEventos, setTipoEventos] = useState([]);
+
+    const [idEvento, setIdEvento] = useState (null);
+
+    
+
+    const [notifyUser, setNotifyUser] = useState({})
+
+
+    // funções (metodos)
+
+    async function showUpdateForm(idElemento)
+  {
+    
+    try {
+      const retornoE = await api.get(`/Evento/`+ idElemento);
+      const retornoT = await api.get(`/TiposEvento` + idElemento );
+    setEventos(retornoE.data.nomeEvento);
+    setIdEvento(retornoE.data.idEvento);
+    setTipoEventos(retornoT.data.titulo);
+
+    console.log(retornoE.data.nomeEvento);
+    
+    } catch (error) {
+      console.log("erro na atualização da tela");
+    }
+  }
+
+  async function handleDelete(idEvento)
+  {
+    console.log("teste");
+  }
+
+    
+
+
+
+
     return (
-        <div>
-             <Title titleText={"Página Eventos"} />
+        <MainContent>
+        {/* cadastrro de eventos */}
+        <section className="cadastro-evento-section">
+            <Container>
+            <div className="cadastro-evento__box">
+          <Title titleText={"Cadastro de Eventos"} />
+          <ImageIllustrator 
+            alterText={"??????"}
+            imageRender={eventImage}
+          />
+
+<form className="ftipo-evento">
+          <Input 
+              type={"text"}
+              id = {"nome"}
+              name = {"nome"}
+              placeholder = {"Nome"}
+              required = {"required"}
+              value = {nome}
+              manipulationFunction = {
+                (e) =>{
+                  setNome(e.target.value)
+                } 
+              }
+            />
+
+            <Input 
+              type={"text"}
+              id = {"descricao"}
+              name = {"descricao"}
+              placeholder = {"Descrição"}
+              required = {"required"}
+              //value = {titulo}
+            //   manipulationFunction = {
+            //     (e) =>{
+            //       setTitulo(e.target.value)
+            //     } 
+            //   }
+            />            
+
+<Input 
+              type={"tipo"}
+              id = {"tipo"}
+              name = {"tipo"}
+              placeholder = {"Tipo do Evento"}
+              required = {"required"}
+              //value = {titulo}
+            //   manipulationFunction = {
+            //     (e) =>{
+            //       setTitulo(e.target.value)
+            //     } 
+            //   }
+            />
+
+<Input 
+              type={"date"}
+              id = {"data"}
+              name = {"data"}
+              placeholder = {"Data do Evento"}
+              required = {"required"}
+              //value = {titulo}
+            //   manipulationFunction = {
+            //     (e) =>{
+            //       setTitulo(e.target.value)
+            //     } 
+            //   }
+            />
+
+            <Button
+            type={"submit"}
+            id = {"cadastrar"}
+            name = {"cadastrar"}
+            textButton = {"Cadastrar"}
+            />
+
+          </form>
+
         </div>
+            </Container>
+        </section>
+        <section className="lista-eventos-section">
+
+        <Container>
+          <Title  titleText={"Lista de tipos de eventos"} />
+          <TableEv
+          dados={eventos}
+          dadosT={tipoEventos}
+          fnUpdate = {showUpdateForm}
+          fnDelete = {handleDelete}
+          />
+        </Container>
+
+        </section>
+        </MainContent>
     );
 };
 

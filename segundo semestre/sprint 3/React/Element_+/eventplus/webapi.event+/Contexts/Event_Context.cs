@@ -28,8 +28,14 @@ namespace webapi.event_.Contexts
         /// <param name="optionsBuilder">Objeto com as configurações definidas</param>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=note01-s14; Database=EventPlusDoClaitinho; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true;");
+            // string da JABIRACA: Server=Jabiraca\SQLEXPRESS; Database=EventPlusDoClaitinho; Integrated Security=True; TrustServerCertificate=true;
+            // string do SENAI: Server=note01-s14; Database=EventPlusDoClaitinho; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true; 
+            // string do NOTEBOOK: FALTA FAZER!!!!!!!!!!
+            optionsBuilder.UseSqlServer("Server=Jabiraca\\SQLEXPRESS; Database=EventPlusDoClaitinho; Integrated Security=True; TrustServerCertificate=true;");
             base.OnConfiguring(optionsBuilder);
+            // COMANDOS PRA CRIAR MIGRATIONS E BANCO DENTRO DO CONSOLE DO NUGET:
+            // Add-Migration <NOME DO BANCO>
+            // Update - Database
         }
     }
 }

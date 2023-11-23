@@ -21,7 +21,7 @@ const TableTp = ({dados, fnUpdate, fnDelete}) => {
 
 
 <tbody>
-{dados.map((tp) => {
+{dados.map ((tp) => {
             return (
 <tr className="table-data__head-row">
           <td className="table-data__data table-data__data--big">
