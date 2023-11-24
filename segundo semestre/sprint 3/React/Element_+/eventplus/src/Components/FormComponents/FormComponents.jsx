@@ -65,7 +65,7 @@ export const Select = ({
         id={id}
         required = {required}
         className = {`input-component ${additionalClass}`}
-        onChange = {manipulationFunction}
+        //onChange = {manipulationFunction}
         value = {defaultValue}
         >
             <option value="">Selecione</option>

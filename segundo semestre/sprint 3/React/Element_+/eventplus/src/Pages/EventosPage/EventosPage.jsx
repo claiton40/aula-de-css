@@ -16,6 +16,8 @@ import Spinner from "../../Components/Spinner/Spinner"
 
 const EventosPage = () => {
 
+
+  
   //useEfect
   useEffect(()=> {
 
@@ -26,11 +28,32 @@ const EventosPage = () => {
    
       try {
         const promiseE = await api.get("/Evento");
+        const promiseI = await api.get("/Instituicao");
         const promiseT = await api.get("/TiposEvento");
-
+        
         setTipoEventos(promiseT.data);
 
+
+
+        // const select = []
+
+        // tipoEventos.forEach(
+        //   (e) => 
+        //   {
+        //     value : e.idTipoEvento
+        //     text : e.titulo
+        //   }
+        // )
+        
+        setTipoEventos2(promiseT.data);
+
+
         setEventos(promiseE.data);
+
+        setIdInstituicao(promiseI.data[0].idInstituicao)
+
+       
+       
 
       } catch (error) {
         console.log('Deu ruim na api');
@@ -46,6 +69,8 @@ const EventosPage = () => {
     //useStates (variáveis, nesse caso.)
 
     const [nome, setNome] = useState ("");
+    
+    const [idInstituicao, setIdInstituicao] = useState ("");
 
     const [descricao, setDescricao] = useState ("");
 
@@ -54,6 +79,8 @@ const EventosPage = () => {
     const [eventos, setEventos] = useState([]);
 
     const [tipoEventos, setTipoEventos] = useState([]);
+    
+    const [tipoEventos2, setTipoEventos2] = useState([]);
 
     const [idEvento, setIdEvento] = useState (null);
 
@@ -199,10 +226,10 @@ const EventosPage = () => {
             />            
 
           <Select 
-              value = {tipoEventos}
-              id = {tipoEventos}
-              required
-              dados={tipoEventos}
+              value = {tipoEventos2}
+              id = {tipoEventos2}
+              dados={tipoEventos2}
+              additionalClass = {tipoEventos2}
               manipulationFunction = {
                 (e) =>
                 {
