@@ -30,8 +30,8 @@ namespace webapi.event_.Contexts
         {
             // string da JABIRACA: Server=Jabiraca\SQLEXPRESS; Database=EventPlusDoClaitinho; Integrated Security=True; TrustServerCertificate=true;
             // string do SENAI: Server=note01-s14; Database=EventPlusDoClaitinho; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true; 
-            // string do NOTEBOOK: FALTA FAZER!!!!!!!!!!
-            optionsBuilder.UseSqlServer("Server=note01-s14; Database=EventPlusDoClaitinho; User Id= sa; Pwd = Senai@134; TrustServerCertificate=true;");
+            // string do NOTEBOOK: Server=Claiton2; Database=EventPlusDoClaitinho; Integrated Security=True; TrustServerCertificate=true;
+            optionsBuilder.UseSqlServer("Server=Claiton2; Database=EventPlusDoClaitinho; Integrated Security=True; TrustServerCertificate=true;");
             base.OnConfiguring(optionsBuilder);
             // COMANDOS PRA CRIAR MIGRATIONS E BANCO DENTRO DO CONSOLE DO NUGET:
             // Add-Migration <NOME DO BANCO>
