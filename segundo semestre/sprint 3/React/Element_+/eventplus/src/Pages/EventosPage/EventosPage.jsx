@@ -81,6 +81,51 @@ const EventosPage = () => {
     }
   }
 
+  async function handleSubmit(e)
+  {
+   //para submit do formulario
+   e.preventDefault();
+   //validar caracteres
+   if (nome.trim().length<3)  {
+    alert ("O nome deve ter mais de 3 caracteres")
+    return
+   }
+   //chamar api
+   try {
+    const retorno = await api.post("/Evento", {nome,
+    descricao,
+    tipoEventos,
+    data
+    })
+    console.log("cadastrado com sucesso");
+    setNotifyUser({
+      titleNote: "Sucesso",
+      textNote: `Cadastrado com sucesso!`,
+      imgIcon: "success",
+      imgAlt:
+        "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+      showMessage: true,
+    }); 
+    console.log(retorno.data);
+    setNome("");
+    setDescricao("");
+    setTipoEventos("");
+    setData("");
+
+    const retornoGet = await api.get("/Evento");
+    setEventos(retornoGet.data)
+   } catch (error) {
+    setNotifyUser({
+      titleNote: "Erro",
+      textNote: `Falha ao Cadastrar!`,
+      imgIcon: "warning",
+      imgAlt:
+        "Imagem de ilustração de erro.",
+      showMessage: true,
+    });
+   }
+  }
+
   async function handleDelete(idEvento)
   {
     try {
@@ -108,7 +153,6 @@ const EventosPage = () => {
       });
     }
   }
-
     
 //elemetos da tela
 
@@ -124,7 +168,7 @@ const EventosPage = () => {
             imageRender={eventImage}
           />
 
-<form className="ftipo-evento">
+<form className="ftipo-evento" onSubmit={handleSubmit}>
           <Input 
               type={"text"}
               id = {"nome"}
@@ -146,30 +190,39 @@ const EventosPage = () => {
               placeholder = {"Descrição"}
               required = {"required"}
               value = {descricao}
+              manipulationFunction = {
+                (e) =>
+                {
+                  setDescricao(e.target.value)
+                }
+              }
             />            
 
-<Input 
-              type={"tipo"}
-              id = {"tipo"}
-              name = {"tipo"}
-              placeholder = {"Tipo do Evento"}
-              required = {"required"}
-              value = {<Select/>}
-          
+          <Select 
+              value = {tipoEventos}
+              id = {tipoEventos}
+              required
+              dados={tipoEventos}
+              manipulationFunction = {
+                (e) =>
+                {
+                  setTipoEventos(e.target.value)
+                }
+              }
             />
 
-<Input 
+          <Input 
               type={"date"}
               id = {"data"}
               name = {"data"}
               placeholder = {"Data do Evento"}
               required = {"required"}
               value = {data}
-            //   manipulationFunction = {
-            //     (e) =>{
-            //       setTitulo(e.target.value)
-            //     } 
-            //   }
+              manipulationFunction = {
+                (e) =>{
+                  setData(e.target.value)
+                }
+              }
             />
 
             <Button

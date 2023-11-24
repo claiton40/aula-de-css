@@ -71,7 +71,11 @@ export const Select = ({
             <option value="">Selecione</option>
             {
                 dados.map((opt) => {
-                    return <option key ={opt.value} value = {opt.value}>{opt.text}</option>
+                    return <option 
+                    key ={opt.value}
+                    value = {opt.value}>
+                        {opt.text}
+                    </option>
                 } )
             }
         </select>
